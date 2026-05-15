@@ -41,19 +41,15 @@ export default function ProblemTable({
     (async () => {
       let remote = {};
       try {
-        // Try GitHub first (auto-updated by workflow)
-        const res = await fetch(
-          'https://raw.githubusercontent.com/zerotrac/leetcode_problem_rating/main/frontend/public/tags.json'
-        );
+        const res = await fetch('/tags.json', { cache: 'no-cache' });
         if (res.ok) remote = await res.json();
       } catch (e) {
-        // Fallback to local if GitHub is unavailable
         try {
-          const res = await fetch('/tags.json');
+          const res = await fetch(
+            'https://raw.githubusercontent.com/AKforCodes/Leetcode-ELO/main/frontend/public/tags.json'
+          );
           if (res.ok) remote = await res.json();
-        } catch (e2) {
-          // no tags available; that's fine
-        }
+        } catch (e2) {}
       }
 
       let local = {};
