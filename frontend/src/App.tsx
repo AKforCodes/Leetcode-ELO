@@ -1,5 +1,6 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import ProblemTable from "./components/ProblemTable";
+import Guide from "./components/Guide";
 
 type Problem = {
   rating: number;
@@ -56,6 +57,18 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [showGuide, setShowGuide] = useState(false);
+  const guideRef = useRef<HTMLDivElement>(null);
+
+  function toggleGuide() {
+    setShowGuide((prev) => {
+      const next = !prev;
+      if (next) {
+        setTimeout(() => guideRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+      }
+      return next;
+    });
+  }
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -100,6 +113,19 @@ export default function App() {
           <div className="summary">{summary}</div>
           <button
             type="button"
+            className="guide-btn"
+            aria-expanded={showGuide}
+            aria-controls="guide"
+            onClick={toggleGuide}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            <span>{showGuide ? "Hide Guide" : "Guide"}</span>
+          </button>
+          <button
+            type="button"
             className="theme-toggle"
             aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
@@ -120,6 +146,11 @@ export default function App() {
       </header>
 
       {error && <div className="error">{error}</div>}
+      {showGuide && (
+        <div ref={guideRef}>
+          <Guide />
+        </div>
+      )}
       <main>
         <ProblemTable problems={problems} loading={loading} />
       </main>
