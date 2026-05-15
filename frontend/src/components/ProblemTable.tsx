@@ -1,11 +1,12 @@
 import React, { useMemo, useState } from "react";
 
 function ratingTier(r: number): string {
-  if (r < 1400) return "easy";
-  if (r < 1800) return "medium";
-  if (r < 2200) return "hard";
-  if (r < 2600) return "expert";
-  return "legendary";
+  if (r < 1500) return "beginner";
+  if (r < 1700) return "competent";
+  if (r < 1900) return "strong";
+  if (r < 2100) return "elite";
+  if (r < 2500) return "exceptional";
+  return "world";
 }
 
 type Problem = {

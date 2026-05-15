@@ -1,9 +1,17 @@
 import React from "react";
 
+type TierClass =
+  | "beginner"
+  | "competent"
+  | "strong"
+  | "elite"
+  | "exceptional"
+  | "world";
+
 type Tier = {
   range: string;
   tier: string;
-  tierClass: "easy" | "medium" | "hard" | "expert" | "legendary";
+  tierClass: TierClass;
   companies: string[];
   practice: string;
 };
@@ -12,7 +20,7 @@ const TIERS: Tier[] = [
   {
     range: "1200–1400",
     tier: "Beginner",
-    tierClass: "easy",
+    tierClass: "beginner",
     companies: ["Mid-tier startups", "Agency roles", "Non-FAANG SWE"],
     practice:
       "Comfortable on Easys and some Mediums. Most non-elite companies are passable with strong system design / behavioral prep.",
@@ -20,7 +28,7 @@ const TIERS: Tier[] = [
   {
     range: "1500–1700",
     tier: "Competent",
-    tierClass: "medium",
+    tierClass: "competent",
     companies: ["Amazon", "Microsoft", "Apple", "Meta", "Capgemini", "Cloudflare", "Stripe SWE"],
     practice:
       "Reliable on Mediums, can attempt Hards. Solid OA territory for Big Tech. Amazon and Meta phone screens become very passable here.",
@@ -28,7 +36,7 @@ const TIERS: Tier[] = [
   {
     range: "1700–1900",
     tier: "Strong",
-    tierClass: "hard",
+    tierClass: "strong",
     companies: ["Google", "Stripe SWE (senior)", "Palantir", "Databricks", "TikTok / ByteDance"],
     practice:
       "Consistently solves 2 Mediums + 1 Hard per contest. Core FAANG coding rounds feel under control. You're top ~15%.",
@@ -36,7 +44,7 @@ const TIERS: Tier[] = [
   {
     range: "1900–2100",
     tier: "Elite",
-    tierClass: "expert",
+    tierClass: "elite",
     companies: ["HRT (algo eng)", "Two Sigma QR", "D.E. Shaw", "Headlands", "Google L5+", "DeepMind SWE"],
     practice:
       "Hard problems feel tractable. Quant SWE coding rounds (HRT, Jump, Two Sigma) become realistic. You're top ~5%.",
@@ -44,7 +52,7 @@ const TIERS: Tier[] = [
   {
     range: "2100–2500",
     tier: "Exceptional",
-    tierClass: "legendary",
+    tierClass: "exceptional",
     companies: ["Jane Street SWE", "Citadel Securities SWE", "Jump Trading SWE", "Competitive programming roles"],
     practice:
       "Top-tier quant firm SWE coding. These firms hire ex-ICPC/IOI competitors. Rating alone won't get you in — full profile (math, finance, behavioral) matters.",
@@ -52,7 +60,7 @@ const TIERS: Tier[] = [
   {
     range: "2500+",
     tier: "World Class",
-    tierClass: "legendary",
+    tierClass: "world",
     companies: ["CodeNation / Trilogy", "Competitive programming jobs", "Top quant SWE specialist"],
     practice:
       "IOI/ICPC finalist territory. Extremely rare. No standard company interview is a blocker at this level.",

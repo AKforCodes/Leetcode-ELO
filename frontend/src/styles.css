@@ -14,16 +14,26 @@
   --brand-strong: #ff8c00;
   --brand-soft: #fff4e1;
 
-  --easy: #00b8a3;
-  --easy-soft: #e6f8f5;
-  --medium: #ffb700;
-  --medium-soft: #fff6dc;
-  --hard: #ef4743;
-  --hard-soft: #fde8e7;
-  --expert: #8b5cf6;
-  --expert-soft: #f1ecfe;
-  --legend: #ec4899;
-  --legend-soft: #fde8f1;
+  /* 6 distinct tier colors (light theme) */
+  --t-beginner: #16a34a;      /* emerald — calm, accessible */
+  --t-beginner-soft: #e7f7ec;
+  --t-competent: #0ea5e9;     /* sky blue */
+  --t-competent-soft: #e0f3fd;
+  --t-strong: #f97316;        /* orange */
+  --t-strong-soft: #fff0e0;
+  --t-elite: #dc2626;         /* crimson */
+  --t-elite-soft: #fde7e7;
+  --t-exceptional: #7c3aed;   /* deep violet */
+  --t-exceptional-soft: #efe7fd;
+  --t-world: #be185d;         /* magenta */
+  --t-world-soft: #fce4ee;
+
+  /* legacy aliases kept for any straggling references */
+  --easy: var(--t-beginner);    --easy-soft: var(--t-beginner-soft);
+  --medium: var(--t-strong);    --medium-soft: var(--t-strong-soft);
+  --hard: var(--t-elite);       --hard-soft: var(--t-elite-soft);
+  --expert: var(--t-exceptional); --expert-soft: var(--t-exceptional-soft);
+  --legend: var(--t-world);     --legend-soft: var(--t-world-soft);
 
   --link: #0a84ff;
 
@@ -49,16 +59,19 @@ html[data-theme="dark"] {
   --brand-strong: #ffb547;
   --brand-soft: rgba(255, 161, 22, 0.14);
 
-  --easy: #2dd4bf;
-  --easy-soft: rgba(45, 212, 191, 0.14);
-  --medium: #fbbf24;
-  --medium-soft: rgba(251, 191, 36, 0.14);
-  --hard: #f87171;
-  --hard-soft: rgba(248, 113, 113, 0.16);
-  --expert: #c4b5fd;
-  --expert-soft: rgba(196, 181, 253, 0.14);
-  --legend: #f9a8d4;
-  --legend-soft: rgba(249, 168, 212, 0.14);
+  /* 6 distinct tier colors (dark theme — desaturated lighter variants) */
+  --t-beginner: #4ade80;        --t-beginner-soft: rgba(74, 222, 128, 0.14);
+  --t-competent: #38bdf8;       --t-competent-soft: rgba(56, 189, 248, 0.14);
+  --t-strong: #fb923c;          --t-strong-soft: rgba(251, 146, 60, 0.14);
+  --t-elite: #f87171;           --t-elite-soft: rgba(248, 113, 113, 0.16);
+  --t-exceptional: #c4b5fd;     --t-exceptional-soft: rgba(196, 181, 253, 0.14);
+  --t-world: #f472b6;           --t-world-soft: rgba(244, 114, 182, 0.16);
+
+  --easy: var(--t-beginner);    --easy-soft: var(--t-beginner-soft);
+  --medium: var(--t-strong);    --medium-soft: var(--t-strong-soft);
+  --hard: var(--t-elite);       --hard-soft: var(--t-elite-soft);
+  --expert: var(--t-exceptional); --expert-soft: var(--t-exceptional-soft);
+  --legend: var(--t-world);     --legend-soft: var(--t-world-soft);
 
   --link: #60a5fa;
 
@@ -382,11 +395,18 @@ button:disabled { background: #d4d7dc; color: #8a8f98; cursor: not-allowed; box-
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.01em;
 }
-.rating-pill.tier-easy      { background: var(--easy-soft);    color: var(--easy); }
-.rating-pill.tier-medium    { background: var(--medium-soft);  color: #b07900; }
-.rating-pill.tier-hard      { background: var(--hard-soft);    color: var(--hard); }
-.rating-pill.tier-expert    { background: var(--expert-soft);  color: var(--expert); }
-.rating-pill.tier-legendary { background: var(--legend-soft);  color: var(--legend); }
+.rating-pill.tier-beginner    { background: var(--t-beginner-soft);    color: var(--t-beginner); }
+.rating-pill.tier-competent   { background: var(--t-competent-soft);   color: var(--t-competent); }
+.rating-pill.tier-strong      { background: var(--t-strong-soft);      color: var(--t-strong); }
+.rating-pill.tier-elite       { background: var(--t-elite-soft);       color: var(--t-elite); }
+.rating-pill.tier-exceptional { background: var(--t-exceptional-soft); color: var(--t-exceptional); }
+.rating-pill.tier-world       { background: var(--t-world-soft);       color: var(--t-world); }
+/* legacy class aliases (used by ProblemTable's ratingTier()) */
+.rating-pill.tier-easy        { background: var(--t-beginner-soft);    color: var(--t-beginner); }
+.rating-pill.tier-medium      { background: var(--t-strong-soft);      color: var(--t-strong); }
+.rating-pill.tier-hard        { background: var(--t-elite-soft);       color: var(--t-elite); }
+.rating-pill.tier-expert      { background: var(--t-exceptional-soft); color: var(--t-exceptional); }
+.rating-pill.tier-legendary   { background: var(--t-world-soft);       color: var(--t-world); }
 
 .col-id {
   width: 76px;
@@ -519,11 +539,12 @@ button:disabled { background: #d4d7dc; color: #8a8f98; cursor: not-allowed; box-
   font-weight: 600;
   letter-spacing: 0.01em;
 }
-.tier-chip.tier-easy      { background: var(--easy-soft);    color: var(--easy); }
-.tier-chip.tier-medium    { background: var(--medium-soft);  color: #b07900; }
-.tier-chip.tier-hard      { background: var(--hard-soft);    color: var(--hard); }
-.tier-chip.tier-expert    { background: var(--expert-soft);  color: var(--expert); }
-.tier-chip.tier-legendary { background: var(--legend-soft);  color: var(--legend); }
+.tier-chip.tier-beginner    { background: var(--t-beginner-soft);    color: var(--t-beginner); }
+.tier-chip.tier-competent   { background: var(--t-competent-soft);   color: var(--t-competent); }
+.tier-chip.tier-strong      { background: var(--t-strong-soft);      color: var(--t-strong); }
+.tier-chip.tier-elite       { background: var(--t-elite-soft);       color: var(--t-elite); }
+.tier-chip.tier-exceptional { background: var(--t-exceptional-soft); color: var(--t-exceptional); }
+.tier-chip.tier-world       { background: var(--t-world-soft);       color: var(--t-world); }
 
 .company-chips {
   display: flex;
