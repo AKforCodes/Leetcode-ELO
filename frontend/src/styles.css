@@ -293,3 +293,38 @@ footer{
   border-top:1px solid var(--border);
   text-align:center
 }
+
+.table-scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  margin:0 -8px
+}
+
+@media (max-width: 768px){
+  .app{padding:12px}
+  header{flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:20px}
+  header h1{font-size:22px}
+  .table-wrap{padding:12px;border-radius:8px}
+  .control-panel{gap:14px;margin-bottom:16px}
+  .search-inputs{grid-template-columns:1fr;gap:8px}
+  .filters-grid{grid-template-columns:1fr;gap:12px}
+  .sort-controls{flex-wrap:wrap}
+  .spreadsheet{font-size:13px;min-width:640px}
+  .spreadsheet thead th,
+  .spreadsheet td{padding:8px 6px}
+  .col-rating{width:60px;font-size:14px}
+  .col-id{width:54px}
+  .col-title{max-width:200px}
+  .tag{padding:2px 7px;font-size:11px}
+  .pagination{flex-wrap:wrap;gap:8px;justify-content:flex-start}
+  .pagination button{min-width:64px;padding:8px 12px}
+  .pagination label{margin-left:0;width:100%;justify-content:flex-start}
+  input,select,button{font-size:16px}
+}
+
+@media (max-width: 480px){
+  .app{padding:8px}
+  header h1{font-size:19px}
+  .table-wrap{padding:8px}
+  .spreadsheet{font-size:12px}
+}

@@ -200,6 +200,7 @@ export default function ProblemTable({
 
       <div className="result-count">{loading ? "Loading..." : `${filtered.length} result${filtered.length !== 1 ? 's' : ''}`}</div>
 
+      <div className="table-scroll">
       <table className="spreadsheet">
         <thead>
           <tr>
@@ -236,6 +237,7 @@ export default function ProblemTable({
           ))}
         </tbody>
       </table>
+      </div>
 
       <div className="pagination">
         <button onClick={() => setPage((p) => Math.max(1, p - 1))} disabled={page <= 1}>
