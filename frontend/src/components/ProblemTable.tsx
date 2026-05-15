@@ -1,5 +1,13 @@
 import React, { useMemo, useState } from "react";
 
+function ratingTier(r: number): string {
+  if (r < 1400) return "easy";
+  if (r < 1800) return "medium";
+  if (r < 2200) return "hard";
+  if (r < 2600) return "expert";
+  return "legendary";
+}
+
 type Problem = {
   rating: number;
   id: string;
@@ -215,14 +223,16 @@ export default function ProblemTable({
         <tbody>
           {paged.map((p) => (
             <tr key={p.id + p.slug}>
-              <td className="col-rating">{Math.round(p.rating)}</td>
-              <td className="col-id">{p.id}</td>
-              <td className="col-title">
+              <td className="col-rating" data-label="Rating">
+                <span className={`rating-pill tier-${ratingTier(p.rating)}`}>{Math.round(p.rating)}</span>
+              </td>
+              <td className="col-id" data-label="ID">{p.id}</td>
+              <td className="col-title" data-label="Title">
                 <a href={`https://leetcode.com/problems/${p.slug}/`} target="_blank" rel="noreferrer">
                   {p.title}
                 </a>
               </td>
-              <td className="col-tags">
+              <td className="col-tags" data-label="Topics">
                 <div className="tags">
                   {(tagsMap[p.id] || []).map((t) => (
                     <span className="tag" key={t}>
@@ -231,8 +241,8 @@ export default function ProblemTable({
                   ))}
                 </div>
               </td>
-              <td className="col-contest">{p.contest}</td>
-              <td className="col-index">{p.index}</td>
+              <td className="col-contest" data-label="Contest">{p.contest}</td>
+              <td className="col-index" data-label="Index">{p.index}</td>
             </tr>
           ))}
         </tbody>
