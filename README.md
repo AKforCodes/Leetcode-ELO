@@ -1,10 +1,10 @@
 # LeetCode ELO Explorer
 
-A web app to explore and filter LeetCode problems by **ELO rating** — a far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
+A web app to explore and filter LeetCode problems by **ELO rating**, a far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
 
 ## What is ELO?
 
-ELO is a rating system originally designed for chess that scores players (or, here, *problems*) on a continuous scale based on competitive results. Two problems both labeled "Medium" on LeetCode can be wildly different in difficulty — one might sit at ~1400 ELO (approachable for early intermediates) while another sits at ~2000 ELO (regularly stumps strong contest competitors).
+ELO is a rating system originally designed for chess that scores players (or, here, *problems*) on a continuous scale based on competitive results. Two problems both labeled "Medium" on LeetCode can be wildly different in difficulty. One might sit at ~1400 ELO (approachable for early intermediates) while another sits at ~2000 ELO (regularly stumps strong contest competitors).
 
 The ratings used here come from [zerotrac's dataset](https://github.com/zerotrac/leetcode_problem_rating), which derives each problem's ELO from how contestants actually performed on it during weekly and biweekly contests. The result is a single number that captures *real-world* difficulty far better than LeetCode's three coarse buckets.
 
@@ -27,11 +27,11 @@ Browsing LeetCode itself, you cannot:
 
 This explorer fixes that. It gives you:
 
-- **Precise difficulty targeting** — pick an ELO range and grind problems calibrated to your current level
-- **Topic + difficulty intersection** — practice graph problems at exactly the level you are preparing for
-- **A practice roadmap** — the built-in Guide shows the ELO targets for startup / mid / FAANG-style interviews so you know what "ready" actually looks like
-- **Always-fresh data** — a weekly GitHub Action re-fetches the dataset and LeetCode topic tags so newly added problems show up automatically
-- **Instant search** — all data is shipped as static JSON, so filtering is client-side and zero-latency
+- **Precise difficulty targeting** : pick an ELO range and grind problems calibrated to your current level
+- **Topic + difficulty intersection** : practice graph problems at exactly the level you are preparing for
+- **A practice roadmap** : the built-in Guide shows the ELO targets for startup / mid / FAANG-style interviews so you know what "ready" actually looks like
+- **Always-fresh data** : a weekly GitHub Action re-fetches the dataset and LeetCode topic tags so newly added problems show up automatically
+- **Instant search** : all data is shipped as static JSON, so filtering is client-side and zero-latency
 
 In short: it turns LeetCode's flat problem list into a structured, measurable training tool.
 
@@ -51,7 +51,7 @@ This project depends entirely on zerotrac's incredible work of calculating ELO r
   - Contest type
 - **Sort** by rating or problem ID
 - **Pagination** with adjustable page size
-- **Auto-updated** — topics fetch weekly via GitHub Actions
+- **Auto-updated** : topics fetch weekly via GitHub Actions
 
 ## For Users
 
@@ -87,9 +87,9 @@ node scripts/fetch_leetcode_topics.js --resume --delay=200
 ```
 
 Flags:
-- `--resume` — Skip already-fetched problems (continues from last run)
-- `--delay=200` — Wait 200ms between requests (default 180ms)
-- `--limit=20` — Fetch only first 20 problems (for testing)
+- `--resume` : Skip already-fetched problems (continues from last run)
+- `--delay=200` : Wait 200ms between requests (default 180ms)
+- `--limit=20` : Fetch only first 20 problems (for testing)
 
 ### Automated Updates
 
