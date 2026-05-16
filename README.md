@@ -2,6 +2,8 @@
 
 A web app to explore and filter LeetCode problems by **ELO rating**, a far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
 
+🔗 **Live app:** [leetcode-elo.vercel.app](https://leetcode-elo.vercel.app/)
+
 ## What is ELO?
 
 ELO is a rating system originally designed for chess that scores players (or, here, *problems*) on a continuous scale based on competitive results. Two problems both labeled "Medium" on LeetCode can be wildly different in difficulty. One might sit at ~1400 ELO (approachable for early intermediates) while another sits at ~2000 ELO (regularly stumps strong contest competitors).
@@ -55,7 +57,7 @@ This project depends entirely on zerotrac's incredible work of calculating ELO r
 
 ## For Users
 
-Visit the deployed app (Vercel link to be added) and start exploring!
+Visit **[leetcode-elo.vercel.app](https://leetcode-elo.vercel.app/)** and start exploring!
 
 - No setup required
 - Ratings and topics auto-update every week
