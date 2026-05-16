@@ -87,7 +87,11 @@ See `GITHUB_ACTIONS_SETUP.md` for details on manual triggers.
 
 ## License
 
-This explorer is built on zerotrac's LeetCode Problem Rating dataset. Please respect their work and license.
+This project is licensed under the [MIT License](LICENSE).
+
+Bundled third-party data and its license are listed in [NOTICE](NOTICE):
+- `ratings.txt` is from [zerotrac/leetcode_problem_rating](https://github.com/zerotrac/leetcode_problem_rating) (MIT, © 2021 Shuxin Chen).
+- `frontend/public/tags.json` is fetched from the public LeetCode GraphQL API; LeetCode retains all rights to their content.
 
 ## Contributing
 

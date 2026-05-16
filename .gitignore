@@ -23,12 +23,17 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# IDE
+# IDE / tooling
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.claude/
+.ruff_cache/
+.vercel/
+__pycache__/
+*.py[cod]
 
 # Temporary files
 *.tmp
