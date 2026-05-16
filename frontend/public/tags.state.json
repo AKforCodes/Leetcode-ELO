@@ -2475,5 +2475,13 @@
   "count-digit-appearances": true,
   "traffic-signal-color": true,
   "find-the-degree-of-each-vertex": true,
-  "count-indices-with-opposite-parity": true
+  "count-indices-with-opposite-parity": true,
+  "minimum-cost-to-buy-apples-ii": true,
+  "minimum-threshold-path-with-limited-heavy-edges": true,
+  "minimum-generations-to-target-point": true,
+  "minimum-flips-to-make-binary-string-coherent": true,
+  "minimize-array-sum-using-divisible-replacements": true,
+  "count-valid-word-occurrences": true,
+  "score-validator": true,
+  "concatenate-array-with-reverse": true
 }
