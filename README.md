@@ -1,6 +1,39 @@
 # LeetCode ELO Explorer
 
-A web app to explore and filter LeetCode problems by difficulty (ELO rating), topics, and other criteria.
+A web app to explore and filter LeetCode problems by **ELO rating** — a far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
+
+## What is ELO?
+
+ELO is a rating system originally designed for chess that scores players (or, here, *problems*) on a continuous scale based on competitive results. Two problems both labeled "Medium" on LeetCode can be wildly different in difficulty — one might sit at ~1400 ELO (approachable for early intermediates) while another sits at ~2000 ELO (regularly stumps strong contest competitors).
+
+The ratings used here come from [zerotrac's dataset](https://github.com/zerotrac/leetcode_problem_rating), which derives each problem's ELO from how contestants actually performed on it during weekly and biweekly contests. The result is a single number that captures *real-world* difficulty far better than LeetCode's three coarse buckets.
+
+Rough tier guide:
+
+| ELO range | Tier         | Feel                                        |
+|-----------|--------------|---------------------------------------------|
+| < 1300    | Beginner     | Warm-ups, fundamentals                      |
+| 1300–1600 | Easy–Medium  | Standard interview territory                |
+| 1600–1900 | Medium–Hard  | FAANG-style mid/senior interview questions  |
+| 1900–2100 | Hard         | Top-tier interviews, strong contest problems |
+| 2100+     | Very Hard    | Elite contest problems                      |
+
+## What this app does
+
+Browsing LeetCode itself, you cannot:
+- Sort problems by **true** difficulty
+- Filter "show me all Medium problems between 1500 and 1700 that involve graphs"
+- See at a glance which "Easy" problems are deceptively hard (or which "Hard" problems are surprisingly approachable)
+
+This explorer fixes that. It gives you:
+
+- **Precise difficulty targeting** — pick an ELO range and grind problems calibrated to your current level
+- **Topic + difficulty intersection** — practice graph problems at exactly the level you are preparing for
+- **A practice roadmap** — the built-in Guide shows the ELO targets for startup / mid / FAANG-style interviews so you know what "ready" actually looks like
+- **Always-fresh data** — a weekly GitHub Action re-fetches the dataset and LeetCode topic tags so newly added problems show up automatically
+- **Instant search** — all data is shipped as static JSON, so filtering is client-side and zero-latency
+
+In short: it turns LeetCode's flat problem list into a structured, measurable training tool.
 
 ## 🙏 Credits
 
