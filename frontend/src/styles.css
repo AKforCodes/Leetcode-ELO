@@ -113,6 +113,14 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoratio
   max-width: 1240px;
   margin: 0 auto;
   padding: 48px 28px 64px;
+  padding-left: max(28px, env(safe-area-inset-left));
+  padding-right: max(28px, env(safe-area-inset-right));
+  padding-bottom: max(64px, env(safe-area-inset-bottom));
+}
+
+button, .ghost-btn, .icon-btn, .sort-order, a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 /* ============ HEADER ============ */
@@ -711,12 +719,22 @@ footer a:hover { color: var(--brand-strong); border-bottom-color: var(--brand); 
 
 /* ============ MOBILE ============ */
 @media (max-width: 640px) {
-  .app { padding: 24px 14px 40px; }
+  .app {
+    padding: 20px 14px 40px;
+    padding-left: max(14px, env(safe-area-inset-left));
+    padding-right: max(14px, env(safe-area-inset-right));
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+  }
 
-  .site-header { margin-bottom: 24px; padding-bottom: 20px; gap: 16px; }
-  .brand h1 { font-size: 26px; }
-  .brand-tag { font-size: 13.5px; }
-  .brand-mark { width: 34px; height: 34px; }
+  .site-header { margin-bottom: 20px; padding-bottom: 16px; gap: 12px; flex-wrap: nowrap; align-items: center; }
+  .brand { gap: 10px; flex: 1; min-width: 0; }
+  .brand h1 { font-size: 22px; }
+  .brand-tag { font-size: 12.5px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .brand-mark { width: 40px; height: 40px; }
+  .controls { gap: 6px; }
+  .ghost-btn { padding: 8px 10px; font-size: 12.5px; }
+  .ghost-btn span { display: none; }
+  .ghost-btn svg { width: 17px; height: 17px; }
 
   .stat-row { grid-template-columns: repeat(2, 1fr); }
   .stat { padding: 12px 14px; }
@@ -797,16 +815,26 @@ footer a:hover { color: var(--brand-strong); border-bottom-color: var(--brand); 
   .hide-on-mobile { display: none !important; }
   .practice-mobile { display: block; }
 
-  .pagination { padding: 14px; justify-content: center; gap: 8px; }
-  .pagination button { flex: 1; min-width: 0; }
-  .pagination span { width: 100%; text-align: center; margin-right: 0; order: -1; }
-  .pagination label { width: 100%; justify-content: space-between; }
+  .pagination {
+    padding: 12px 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  .pagination span { grid-column: 1 / -1; text-align: center; margin-right: 0; order: -1; font-size: 12.5px; }
+  .pagination button { width: 100%; min-width: 0; }
+  .pagination label { grid-column: 1 / -1; justify-content: space-between; }
 }
 
 @media (max-width: 380px) {
-  .app { padding: 20px 12px 32px; }
-  .brand h1 { font-size: 24px; }
+  .app { padding: 18px 12px 32px; }
+  .brand h1 { font-size: 20px; }
+  .brand-mark { width: 36px; height: 36px; }
+  .brand-tag { -webkit-line-clamp: 1; }
   .spreadsheet td.col-title a { font-size: 15px; }
+  .stat { padding: 10px 12px; }
+  .stat-value { font-size: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
