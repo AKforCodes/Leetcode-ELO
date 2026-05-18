@@ -18,7 +18,7 @@ type Tier = {
 
 const TIERS: Tier[] = [
   {
-    range: "1200–1400",
+    range: "1200-1400",
     tier: "Beginner",
     tierClass: "beginner",
     companies: ["Mid-tier startups", "Agency roles", "Non-FAANG SWE"],
@@ -26,7 +26,7 @@ const TIERS: Tier[] = [
       "Comfortable on Easys and some Mediums. Most non-elite companies are passable with strong system design / behavioral prep.",
   },
   {
-    range: "1500–1700",
+    range: "1500-1700",
     tier: "Competent",
     tierClass: "competent",
     companies: ["Amazon", "Microsoft", "Apple", "Meta", "Capgemini", "Cloudflare", "Stripe SWE"],
@@ -34,7 +34,7 @@ const TIERS: Tier[] = [
       "Reliable on Mediums, can attempt Hards. Solid OA territory for Big Tech. Amazon and Meta phone screens become very passable here.",
   },
   {
-    range: "1700–1900",
+    range: "1700-1900",
     tier: "Strong",
     tierClass: "strong",
     companies: ["Google", "Stripe SWE (senior)", "Palantir", "Databricks", "TikTok / ByteDance"],
@@ -42,7 +42,7 @@ const TIERS: Tier[] = [
       "Consistently solves 2 Mediums + 1 Hard per contest. Core FAANG coding rounds feel under control. You're top ~15%.",
   },
   {
-    range: "1900–2100",
+    range: "1900-2100",
     tier: "Elite",
     tierClass: "elite",
     companies: ["HRT (algo eng)", "Two Sigma QR", "D.E. Shaw", "Headlands", "Google L5+", "DeepMind SWE"],
@@ -50,12 +50,12 @@ const TIERS: Tier[] = [
       "Hard problems feel tractable. Quant SWE coding rounds (HRT, Jump, Two Sigma) become realistic. You're top ~5%.",
   },
   {
-    range: "2100–2500",
+    range: "2100-2500",
     tier: "Exceptional",
     tierClass: "exceptional",
     companies: ["Jane Street SWE", "Citadel Securities SWE", "Jump Trading SWE", "Competitive programming roles"],
     practice:
-      "Top-tier quant firm SWE coding. These firms hire ex-ICPC/IOI competitors. Rating alone won't get you in — full profile (math, finance, behavioral) matters.",
+      "Top-tier quant firm SWE coding. These firms hire ex-ICPC/IOI competitors. Rating alone won't get you in. Full profile (math, finance, behavioral) matters.",
   },
   {
     range: "2500+",
@@ -73,13 +73,19 @@ export default function Guide() {
       <div className="guide-header">
         <h2>ELO Tier Guide</h2>
         <p className="guide-sub">
-          Where your contest rating maps to real-world target companies. Use it to gauge whether
+          Where your contest rating maps-real-world target companies. Use it-gauge whether
           you're in shape for a given interview loop.
         </p>
       </div>
 
       <div className="guide-table-wrap">
         <table className="guide-table">
+          <colgroup>
+            <col className="col-rating-w" />
+            <col className="col-tier-w" />
+            <col className="col-companies-w" />
+            <col className="col-practice-w" />
+          </colgroup>
           <thead>
             <tr>
               <th>Rating</th>
@@ -115,8 +121,8 @@ export default function Guide() {
       </div>
 
       <p className="guide-footnote">
-        Caveats: tiers are guidelines, not guarantees. Coding rating ≠ interview performance —
-        system design, behavioral, and seniority bar matter. Role granularity (e.g. L5+, "senior")
+        Caveats: tiers are guidelines, not guarantees. Coding rating ≠ interview performance.
+        System design, behavioral, and seniority bar matter. Role granularity (e.g. L5+, "senior")
         shifts placement within a company. Data informed by frequency-weighted analysis of
         community-curated company question lists.
       </p>

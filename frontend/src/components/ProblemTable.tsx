@@ -133,34 +133,48 @@ export default function ProblemTable({
     <div className="table-wrap">
       <div className="control-panel">
         <div className="search-section">
-          <h3>Search</h3>
           <div className="search-inputs">
-            <input
-              placeholder="🔍 Search title..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="search-input"
-            />
-            <input
-              placeholder="🏷️ Search ID (e.g., 1, 2, 3)..."
-              value={idQuery}
-              onChange={(e) => setIdQuery(e.target.value)}
-              className="search-input"
-            />
-            <input
-              placeholder="🔖 Search topics/tags..."
-              value={categoryQuery}
-              onChange={(e) => setCategoryQuery(e.target.value)}
-              className="search-input"
-            />
+            <div className="input-wrap">
+              <svg className="input-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+              <input
+                placeholder="Search by title"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                aria-label="Search by title"
+              />
+            </div>
+            <div className="input-wrap">
+              <span className="input-prefix" aria-hidden="true">#</span>
+              <input
+                placeholder="Problem ID"
+                value={idQuery}
+                onChange={(e) => setIdQuery(e.target.value)}
+                inputMode="numeric"
+                aria-label="Search by problem ID"
+              />
+            </div>
+            <div className="input-wrap">
+              <svg className="input-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                <line x1="7" y1="7" x2="7.01" y2="7" />
+              </svg>
+              <input
+                placeholder="Topic or tag"
+                value={categoryQuery}
+                onChange={(e) => setCategoryQuery(e.target.value)}
+                aria-label="Search by topic or tag"
+              />
+            </div>
           </div>
         </div>
 
         <div className="filters-section">
-          <h3>Filters & Sort</h3>
           <div className="filters-grid">
             <div className="filter-group">
-              <label>ELO Range</label>
+              <label>Rating range</label>
               <div className="range-inputs">
                 <input
                   placeholder="Min"
@@ -168,7 +182,7 @@ export default function ProblemTable({
                   value={minRating === "" ? "" : minRating}
                   onChange={(e) => setMinRating(e.target.value === "" ? "" : Number(e.target.value))}
                 />
-                <span>—</span>
+                <span aria-hidden="true">→</span>
                 <input
                   placeholder="Max"
                   type="number"
@@ -191,16 +205,25 @@ export default function ProblemTable({
             </div>
 
             <div className="filter-group">
-              <label>Sort By</label>
+              <label>Sort by</label>
               <div className="sort-controls">
                 <select value={sortBy} onChange={(e) => setSortBy(e.target.value as any)}>
                   <option value="rating">Rating</option>
                   <option value="id">ID</option>
                 </select>
-                <label className="sort-order">
-                  <input type="checkbox" checked={desc} onChange={(e) => setDesc(e.target.checked)} />
-                  <span>{desc ? "↓ Desc" : "↑ Asc"}</span>
-                </label>
+                <button
+                  type="button"
+                  className="sort-order"
+                  onClick={() => setDesc((d) => !d)}
+                  aria-label={desc ? "Sort descending" : "Sort ascending"}
+                  title={desc ? "Sort descending" : "Sort ascending"}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ transform: desc ? "none" : "rotate(180deg)", transition: "transform .15s ease" }}>
+                    <path d="M12 5v14" />
+                    <path d="m19 12-7 7-7-7" />
+                  </svg>
+                  <span>{desc ? "Desc" : "Asc"}</span>
+                </button>
               </div>
             </div>
           </div>

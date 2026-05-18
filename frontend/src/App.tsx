@@ -49,7 +49,7 @@ function getInitialTheme(): Theme {
   if (typeof window === "undefined") return "light";
   const saved = localStorage.getItem("theme") as Theme | null;
   if (saved === "light" || saved === "dark") return saved;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "light";
 }
 
 export default function App() {
@@ -97,55 +97,92 @@ export default function App() {
     }
   }
 
-  const summary = useMemo(() => {
-    if (!problems.length) return "0 problems";
-    const avg = Math.round(
-      problems.reduce((s, p) => s + (p.rating || 0), 0) / problems.length
-    );
-    return `${problems.length} problems — avg rating ${avg}`;
+  const stats = useMemo(() => {
+    if (!problems.length) return null;
+    const ratings = problems.map((p) => p.rating || 0).filter((r) => r > 0);
+    if (!ratings.length) return null;
+    const avg = Math.round(ratings.reduce((s, r) => s + r, 0) / ratings.length);
+    const min = Math.min(...ratings);
+    const max = Math.max(...ratings);
+    return { count: problems.length, avg, min, max };
   }, [problems]);
 
   return (
     <div className="app">
-      <header>
-        <h1>LeetCode ELO Explorer</h1>
+      <header className="site-header">
+        <div className="brand">
+          <img
+            src={theme === "dark" ? "/brand/logo-dark.png" : "/brand/logo-white.png"}
+            alt=""
+            className="brand-mark"
+            width={72}
+            height={72}
+            decoding="async"
+          />
+          <div className="brand-text">
+            <h1>
+              LeetCode <em>ELO</em>
+            </h1>
+            <p className="brand-tag">Contest ratings, mapped to where they actually land.</p>
+          </div>
+        </div>
         <div className="controls">
-          <div className="summary">{summary}</div>
           <button
             type="button"
-            className="guide-btn"
+            className="ghost-btn"
             aria-expanded={showGuide}
             aria-controls="guide"
             onClick={toggleGuide}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
             </svg>
-            <span>{showGuide ? "Hide Guide" : "Guide"}</span>
+            <span>{showGuide ? "Hide guide" : "Tier guide"}</span>
           </button>
           <button
             type="button"
-            className="theme-toggle"
+            className="icon-btn"
             aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {theme === "dark" ? (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="4"/>
-                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
               </svg>
             ) : (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
               </svg>
             )}
           </button>
         </div>
       </header>
 
-      {error && <div className="error">{error}</div>}
+      {stats && (
+        <section className="stat-row" aria-label="Dataset overview">
+          <div className="stat">
+            <span className="stat-label">Problems</span>
+            <span className="stat-value">{stats.count.toLocaleString()}</span>
+          </div>
+          <div className="stat">
+            <span className="stat-label">Average rating</span>
+            <span className="stat-value">{stats.avg.toLocaleString()}</span>
+          </div>
+          <div className="stat">
+            <span className="stat-label">Lowest</span>
+            <span className="stat-value">{Math.round(stats.min).toLocaleString()}</span>
+          </div>
+          <div className="stat">
+            <span className="stat-label">Highest</span>
+            <span className="stat-value">{Math.round(stats.max).toLocaleString()}</span>
+          </div>
+        </section>
+      )}
+
+      {error && <div className="error" role="alert">{error}</div>}
       {showGuide && (
         <div ref={guideRef}>
           <Guide />
@@ -157,7 +194,8 @@ export default function App() {
 
       <footer>
         <small>
-          Data source: <a href="https://github.com/zerotrac/leetcode_problem_rating">zerotrac/leetcode_problem_rating</a>
+          Data from <a href="https://github.com/zerotrac/leetcode_problem_rating">zerotrac/leetcode_problem_rating</a>.
+          Built for the in-between hour before a contest.
         </small>
       </footer>
     </div>
