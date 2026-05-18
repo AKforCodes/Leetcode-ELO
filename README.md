@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="frontend/public/brand/logo-white.png" alt="LeetCode ELO logo" width="160" />
+</p>
+
 # LeetCode ELO Explorer
 
 A web app to explore and filter LeetCode problems by **ELO rating**, a far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
