@@ -1,4 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { matchesTopicQuery, buildHaystack } from "../lib/topicFilter";
+import { DEFAULT_STATE, readStateFromUrl, writeStateToUrl } from "../lib/urlState";
+
+const INITIAL_URL_STATE =
+  typeof window !== "undefined" ? readStateFromUrl(window.location.search) : {};
 
 function ratingTier(r: number): string {
   if (r < 1500) return "beginner";
@@ -26,17 +31,75 @@ export default function ProblemTable({
   problems: Problem[];
   loading?: boolean;
 }) {
-  const [query, setQuery] = useState("");
-  const [idQuery, setIdQuery] = useState("");
-  const [minRating, setMinRating] = useState<number | "">("");
-  const [maxRating, setMaxRating] = useState<number | "">("");
-  const [contestFilter, setContestFilter] = useState("all");
-  const [sortBy, setSortBy] = useState<"rating" | "id">("rating");
-  const [desc, setDesc] = useState(true);
+  const [query, setQuery] = useState(INITIAL_URL_STATE.query ?? DEFAULT_STATE.query);
+  const [idQuery, setIdQuery] = useState(INITIAL_URL_STATE.idQuery ?? DEFAULT_STATE.idQuery);
+  const [minRating, setMinRating] = useState<number | "">(
+    INITIAL_URL_STATE.minRating ?? DEFAULT_STATE.minRating
+  );
+  const [maxRating, setMaxRating] = useState<number | "">(
+    INITIAL_URL_STATE.maxRating ?? DEFAULT_STATE.maxRating
+  );
+  const [contestFilter, setContestFilter] = useState(
+    INITIAL_URL_STATE.contestFilter ?? DEFAULT_STATE.contestFilter
+  );
+  const [sortBy, setSortBy] = useState<"rating" | "id">(
+    INITIAL_URL_STATE.sortBy ?? DEFAULT_STATE.sortBy
+  );
+  const [desc, setDesc] = useState(INITIAL_URL_STATE.desc ?? DEFAULT_STATE.desc);
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(50);
-  const [categoryQuery, setCategoryQuery] = useState("");
+  const [categoryQuery, setCategoryQuery] = useState(
+    INITIAL_URL_STATE.categoryQuery ?? DEFAULT_STATE.categoryQuery
+  );
   const [tagsMap, setTagsMap] = useState<Record<string, string[]>>({});
+  const [solved, setSolved] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set();
+    try {
+      const raw = localStorage.getItem("leetcode_solved_v1");
+      if (!raw) return new Set();
+      const arr = JSON.parse(raw);
+      return Array.isArray(arr) ? new Set(arr.map(String)) : new Set();
+    } catch {
+      return new Set();
+    }
+  });
+  const [hideSolved, setHideSolved] = useState(
+    INITIAL_URL_STATE.hideSolved ?? DEFAULT_STATE.hideSolved
+  );
+
+  useEffect(() => {
+    try {
+      localStorage.setItem("leetcode_solved_v1", JSON.stringify(Array.from(solved)));
+    } catch {}
+  }, [solved]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const qs = writeStateToUrl({
+      query,
+      idQuery,
+      categoryQuery,
+      minRating,
+      maxRating,
+      contestFilter,
+      sortBy,
+      desc,
+      hideSolved
+    });
+    const next = `${window.location.pathname}${qs}${window.location.hash}`;
+    if (next !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
+      window.history.replaceState(null, "", next);
+    }
+  }, [query, idQuery, categoryQuery, minRating, maxRating, contestFilter, sortBy, desc, hideSolved]);
+
+  const toggleSolved = useCallback((id: string) => {
+    setSolved((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }, []);
 
   const contests = useMemo(() => {
     const set = new Set(problems.map((p) => p.contest || ""));
@@ -95,16 +158,16 @@ export default function ProblemTable({
     setPage(1); // reset to first page on filter change
     return problems
       .filter((p) => {
+        if (hideSolved && solved.has(String(p.id))) return false;
         // ID search
         if (idQuery && !p.id.toLowerCase().includes(idQuery.toLowerCase())) return false;
         // main text search (title)
         if (query && !p.title.toLowerCase().includes(query.toLowerCase())) return false;
         // category/tags search
         if (categoryQuery) {
-          const q = categoryQuery.toLowerCase();
           const tags = tagsMap[p.id] || [];
-          const hay = [p.title, p.title_zh, p.slug, ...(tags || [])].join(" ").toLowerCase();
-          if (!hay.includes(q)) return false;
+          const hay = buildHaystack([p.title, p.title_zh, p.slug, ...tags]);
+          if (!matchesTopicQuery(hay, categoryQuery)) return false;
         }
         if (contestFilter !== "all" && p.contest !== contestFilter) return false;
         const min = minRating === "" ? -Infinity : Number(minRating);
@@ -116,7 +179,59 @@ export default function ProblemTable({
         const key = sortBy === "rating" ? a.rating - b.rating : Number(a.id) - Number(b.id);
         return desc ? -key : key;
       });
-  }, [problems, query, idQuery, categoryQuery, tagsMap, minRating, maxRating, contestFilter, sortBy, desc]);
+  }, [problems, query, idQuery, categoryQuery, tagsMap, minRating, maxRating, contestFilter, sortBy, desc, hideSolved, solved]);
+
+  const titleInputRef = useRef<HTMLInputElement>(null);
+
+  const [copied, setCopied] = useState(false);
+  const copyShareLink = useCallback(async () => {
+    if (typeof window === "undefined") return;
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // clipboard blocked — fallback: select-prompt
+      window.prompt("Copy this link:", url);
+    }
+  }, []);
+
+  const openRandomProblem = useCallback(() => {
+    if (!filtered.length) return;
+    const pick = filtered[Math.floor(Math.random() * filtered.length)];
+    if (!pick.slug) return;
+    window.open(`https://leetcode.com/problems/${pick.slug}/`, "_blank", "noopener,noreferrer");
+  }, [filtered]);
+
+  useEffect(() => {
+    const isEditableTarget = (el: EventTarget | null) => {
+      if (!(el instanceof HTMLElement)) return false;
+      const tag = el.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return true;
+      if (el.isContentEditable) return true;
+      return false;
+    };
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (isEditableTarget(e.target)) return;
+
+      if (e.key === "/") {
+        e.preventDefault();
+        titleInputRef.current?.focus();
+        titleInputRef.current?.select();
+        return;
+      }
+      if (e.key === "r" || e.key === "R") {
+        e.preventDefault();
+        openRandomProblem();
+      }
+    };
+
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [openRandomProblem]);
 
   // pagination
   const total = filtered.length;
@@ -140,11 +255,13 @@ export default function ProblemTable({
                 <path d="m20 20-3.5-3.5" />
               </svg>
               <input
+                ref={titleInputRef}
                 placeholder="Search by title"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 aria-label="Search by title"
               />
+              {!query && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">/</kbd>}
             </div>
             <div className="input-wrap">
               <span className="input-prefix" aria-hidden="true">#</span>
@@ -230,12 +347,63 @@ export default function ProblemTable({
         </div>
       </div>
 
-      <div className="result-count">{loading ? "Loading..." : `${filtered.length} result${filtered.length !== 1 ? 's' : ''}`}</div>
+      <div className="result-row">
+        <div className="result-count">
+          {loading ? "Loading..." : `${filtered.length} result${filtered.length !== 1 ? 's' : ''}`}
+          {solved.size > 0 && !loading && (
+            <span className="solved-count"> · {solved.size} solved</span>
+          )}
+        </div>
+        <div className="result-actions">
+          <button
+            type="button"
+            className="random-btn"
+            onClick={copyShareLink}
+            title="Copy a link to this exact filtered view"
+            aria-label="Copy share link"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+            </svg>
+            <span>{copied ? "Copied!" : "Share"}</span>
+          </button>
+          <label className="hide-solved-toggle" title="Hide problems you've marked solved">
+            <input
+              type="checkbox"
+              checked={hideSolved}
+              onChange={(e) => setHideSolved(e.target.checked)}
+            />
+            <span className="hst-check" aria-hidden="true" />
+            <span className="hst-label">Hide solved</span>
+          </label>
+        <button
+          type="button"
+          className="random-btn"
+          onClick={openRandomProblem}
+          disabled={!filtered.length}
+          title="Open a random problem from the current filter (R)"
+          aria-label="Open a random problem from the current filter"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3" />
+            <circle cx="8" cy="8" r="1.2" />
+            <circle cx="16" cy="16" r="1.2" />
+            <circle cx="16" cy="8" r="1.2" />
+            <circle cx="8" cy="16" r="1.2" />
+            <circle cx="12" cy="12" r="1.2" />
+          </svg>
+          <span>Random</span>
+          <kbd className="kbd-hint" aria-hidden="true">R</kbd>
+        </button>
+        </div>
+      </div>
 
       <div className="table-scroll">
       <table className="spreadsheet">
         <thead>
           <tr>
+            <th className="col-done-h" aria-label="Solved"></th>
             <th>Rating</th>
             <th>ID</th>
             <th>Title</th>
@@ -245,8 +413,21 @@ export default function ProblemTable({
           </tr>
         </thead>
         <tbody>
-          {paged.map((p) => (
-            <tr key={p.id + p.slug}>
+          {paged.map((p) => {
+            const isSolved = solved.has(String(p.id));
+            return (
+            <tr key={p.id + p.slug} className={isSolved ? "row-solved" : undefined}>
+              <td className="col-done" data-label="Solved">
+                <label className="solve-check" title={isSolved ? "Mark as unsolved" : "Mark as solved"}>
+                  <input
+                    type="checkbox"
+                    checked={isSolved}
+                    onChange={() => toggleSolved(String(p.id))}
+                    aria-label={isSolved ? `Mark ${p.title} as unsolved` : `Mark ${p.title} as solved`}
+                  />
+                  <span aria-hidden="true" />
+                </label>
+              </td>
               <td className="col-rating" data-label="Rating">
                 <span className={`rating-pill tier-${ratingTier(p.rating)}`}>{Math.round(p.rating)}</span>
               </td>
@@ -268,7 +449,8 @@ export default function ProblemTable({
               <td className="col-contest" data-label="Contest">{p.contest}</td>
               <td className="col-index" data-label="Index">{p.index}</td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
       </div>

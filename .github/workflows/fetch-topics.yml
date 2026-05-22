@@ -21,6 +21,13 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Refresh ratings.txt from zerotrac
+        run: |
+          curl -fsSL --retry 3 --retry-delay 5 \
+            https://raw.githubusercontent.com/zerotrac/leetcode_problem_rating/main/ratings.txt \
+            -o ratings.txt
+          wc -l ratings.txt
+
       - name: Fetch topics from LeetCode
         run: |
           node scripts/fetch_leetcode_topics.js --resume --delay=200
@@ -30,10 +37,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f frontend/public/tags.json frontend/public/tags.state.json
+          git add -f ratings.txt frontend/public/tags.json frontend/public/tags.state.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update leetcode topics (auto)"
+            git commit -m "chore: refresh ratings + topics (auto)"
             git push
           fi
