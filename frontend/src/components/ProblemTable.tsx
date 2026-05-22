@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { matchesTopicQuery, buildHaystack } from "../lib/topicFilter";
 import { DEFAULT_STATE, readStateFromUrl, writeStateToUrl } from "../lib/urlState";
+import { isoDate, loadSolvedDates, saveSolvedDates, type SolvedDates } from "../lib/activity";
+import ActivityPanel from "./ActivityPanel";
 
 const INITIAL_URL_STATE =
   typeof window !== "undefined" ? readStateFromUrl(window.location.search) : {};
@@ -52,26 +54,15 @@ export default function ProblemTable({
     INITIAL_URL_STATE.categoryQuery ?? DEFAULT_STATE.categoryQuery
   );
   const [tagsMap, setTagsMap] = useState<Record<string, string[]>>({});
-  const [solved, setSolved] = useState<Set<string>>(() => {
-    if (typeof window === "undefined") return new Set();
-    try {
-      const raw = localStorage.getItem("leetcode_solved_v1");
-      if (!raw) return new Set();
-      const arr = JSON.parse(raw);
-      return Array.isArray(arr) ? new Set(arr.map(String)) : new Set();
-    } catch {
-      return new Set();
-    }
-  });
+  const [solvedDates, setSolvedDates] = useState<SolvedDates>(() => loadSolvedDates());
+  const solved = useMemo(() => new Set(Object.keys(solvedDates)), [solvedDates]);
   const [hideSolved, setHideSolved] = useState(
     INITIAL_URL_STATE.hideSolved ?? DEFAULT_STATE.hideSolved
   );
 
   useEffect(() => {
-    try {
-      localStorage.setItem("leetcode_solved_v1", JSON.stringify(Array.from(solved)));
-    } catch {}
-  }, [solved]);
+    saveSolvedDates(solvedDates);
+  }, [solvedDates]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -93,10 +84,10 @@ export default function ProblemTable({
   }, [query, idQuery, categoryQuery, minRating, maxRating, contestFilter, sortBy, desc, hideSolved]);
 
   const toggleSolved = useCallback((id: string) => {
-    setSolved((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
+    setSolvedDates((prev) => {
+      const next = { ...prev };
+      if (next[id]) delete next[id];
+      else next[id] = isoDate(new Date());
       return next;
     });
   }, []);
@@ -263,6 +254,7 @@ export default function ProblemTable({
 
   return (
     <div className="table-wrap">
+      <ActivityPanel solvedDates={solvedDates} />
       <div className="control-panel">
         <div className="search-section">
           <div className="search-inputs">
