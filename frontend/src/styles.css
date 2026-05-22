@@ -1226,8 +1226,26 @@ footer a:hover { color: var(--brand-strong); border-bottom-color: var(--brand); 
 
   /* Touch-target sizing (>=44pt where reachable). */
   .random-btn { height: 42px; padding: 0 14px; }
-  .result-row { padding: 0 14px; gap: 8px; }
-  .result-actions { gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  /* Stack the result-row on mobile: count on top, actions in a clean equal-width row below. */
+  .result-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+  .result-row .result-count { padding: 0; }
+  .result-actions {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+  }
+  .result-actions > * {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: center;
+  }
 
   /* Per-row solved check: expand hit area, slightly larger ring. */
   .col-done, .col-done-h { width: auto; }
