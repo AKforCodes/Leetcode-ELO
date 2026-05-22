@@ -182,6 +182,7 @@ export default function ProblemTable({
   }, [problems, query, idQuery, categoryQuery, tagsMap, minRating, maxRating, contestFilter, sortBy, desc, hideSolved, solved]);
 
   const titleInputRef = useRef<HTMLInputElement>(null);
+  const topicInputRef = useRef<HTMLInputElement>(null);
 
   const [copied, setCopied] = useState(false);
   const copyShareLink = useCallback(async () => {
@@ -231,6 +232,12 @@ export default function ProblemTable({
       if (e.key === "h" || e.key === "H") {
         e.preventDefault();
         setHideSolved((v) => !v);
+        return;
+      }
+      if (e.key === "t" || e.key === "T") {
+        e.preventDefault();
+        topicInputRef.current?.focus();
+        topicInputRef.current?.select();
       }
     };
 
@@ -284,11 +291,13 @@ export default function ProblemTable({
                 <line x1="7" y1="7" x2="7.01" y2="7" />
               </svg>
               <input
+                ref={topicInputRef}
                 placeholder="Topic or tag"
                 value={categoryQuery}
                 onChange={(e) => setCategoryQuery(e.target.value)}
                 aria-label="Search by topic or tag"
               />
+              {!categoryQuery && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">T</kbd>}
             </div>
           </div>
         </div>

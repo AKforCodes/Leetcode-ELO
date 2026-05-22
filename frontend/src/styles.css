@@ -756,9 +756,22 @@ html[data-theme="dark"] .shortcuts-popover {
 }
 .shortcuts-list .kbd-hint {
   margin-left: 0;
-  min-width: 26px;
+  min-width: 22px;
   height: 22px;
   font-size: 12px;
+}
+.shortcuts-keys {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 72px;
+  flex-shrink: 0;
+}
+.shortcuts-or {
+  color: var(--text-secondary);
+  opacity: 0.5;
+  font-size: 11px;
+  line-height: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {

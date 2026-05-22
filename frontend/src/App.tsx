@@ -200,23 +200,45 @@ export default function App() {
                 <div className="shortcuts-title">Keyboard shortcuts</div>
                 <ul className="shortcuts-list">
                   <li>
-                    <kbd className="kbd-hint">/</kbd>
+                    <span className="shortcuts-keys">
+                      <kbd className="kbd-hint">/</kbd>
+                    </span>
                     <span>Focus search</span>
                   </li>
                   <li>
-                    <kbd className="kbd-hint">R</kbd>
+                    <span className="shortcuts-keys">
+                      <kbd className="kbd-hint">T</kbd>
+                      <span className="shortcuts-or">/</span>
+                      <kbd className="kbd-hint">t</kbd>
+                    </span>
+                    <span>Focus topic</span>
+                  </li>
+                  <li>
+                    <span className="shortcuts-keys">
+                      <kbd className="kbd-hint">R</kbd>
+                      <span className="shortcuts-or">/</span>
+                      <kbd className="kbd-hint">r</kbd>
+                    </span>
                     <span>Open a random problem</span>
                   </li>
                   <li>
-                    <kbd className="kbd-hint">H</kbd>
+                    <span className="shortcuts-keys">
+                      <kbd className="kbd-hint">H</kbd>
+                      <span className="shortcuts-or">/</span>
+                      <kbd className="kbd-hint">h</kbd>
+                    </span>
                     <span>Toggle hide solved</span>
                   </li>
                   <li>
-                    <kbd className="kbd-hint">?</kbd>
+                    <span className="shortcuts-keys">
+                      <kbd className="kbd-hint">?</kbd>
+                    </span>
                     <span>Toggle this menu</span>
                   </li>
                   <li>
-                    <kbd className="kbd-hint">Esc</kbd>
+                    <span className="shortcuts-keys">
+                      <kbd className="kbd-hint">Esc</kbd>
+                    </span>
                     <span>Close this menu</span>
                   </li>
                 </ul>

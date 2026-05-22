@@ -182,15 +182,20 @@ async function main() {
 
   for (let i = 0; i < input.length; i += 1) {
     const row = input[i];
-    if (doneSlugs[row.slug]) continue;
+    // Skip only if previously marked done AND we have real tags. Empty tag
+    // results (LC hasn't categorized the problem yet) stay pending so the
+    // next run retries them.
+    if (doneSlugs[row.slug] && (tagsById[row.id] || []).length > 0) continue;
 
     process.stdout.write(`[${i + 1}/${input.length}] ${row.id} ${row.slug} ... `);
     try {
       const tags = await fetchTagsForSlug(row.slug);
       tagsById[row.id] = tags;
-      doneSlugs[row.slug] = true;
+      if (tags.length > 0) {
+        doneSlugs[row.slug] = true;
+      }
       success += 1;
-      process.stdout.write(`ok (${tags.length} tags)\n`);
+      process.stdout.write(`ok (${tags.length} tags)${tags.length === 0 ? " — empty, will retry next run" : ""}\n`);
     } catch (e) {
       failed += 1;
       process.stdout.write(`failed: ${String(e.message || e)}\n`);
