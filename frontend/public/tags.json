@@ -13001,14 +13001,49 @@
     "Array",
     "Dynamic Programming"
   ],
-  "3894": [],
-  "3895": [],
-  "3896": [],
-  "3897": [],
-  "3898": [],
-  "3899": [],
-  "3900": [],
-  "3901": [],
+  "3894": [
+    "Math",
+    "String",
+    "Simulation"
+  ],
+  "3895": [
+    "Array",
+    "Math"
+  ],
+  "3896": [
+    "Array",
+    "Math",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting",
+    "Number Theory"
+  ],
+  "3897": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "3898": [
+    "Array",
+    "Graph Theory",
+    "Matrix"
+  ],
+  "3899": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "3900": [
+    "Hash Table",
+    "String",
+    "Prefix Sum"
+  ],
+  "3901": [
+    "Array",
+    "Math",
+    "Segment Tree",
+    "Number Theory"
+  ],
   "3903": [
     "Array",
     "Prefix Sum"
@@ -13025,24 +13060,98 @@
   "3906": [
     "Dynamic Programming"
   ],
-  "3908": [],
-  "3909": [],
-  "3910": [],
-  "3911": [],
-  "3912": [],
-  "3913": [],
-  "3914": [],
-  "3915": [],
-  "3917": [],
-  "3918": [],
-  "3919": [],
-  "3920": [],
-  "3921": [],
-  "3922": [],
-  "3923": [],
-  "3924": [],
-  "3925": [],
-  "3926": [],
-  "3927": [],
-  "3928": []
+  "3908": [
+    "Math"
+  ],
+  "3909": [
+    "Array"
+  ],
+  "3910": [
+    "Array",
+    "Bit Manipulation",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Union-Find",
+    "Graph Theory",
+    "Enumeration"
+  ],
+  "3911": [
+    "Array",
+    "Binary Search"
+  ],
+  "3912": [
+    "Array"
+  ],
+  "3913": [
+    "String",
+    "Sorting",
+    "Counting"
+  ],
+  "3914": [
+    "Array",
+    "Greedy"
+  ],
+  "3915": [
+    "Array",
+    "Dynamic Programming",
+    "Segment Tree"
+  ],
+  "3917": [
+    "Array"
+  ],
+  "3918": [
+    "Math",
+    "Number Theory"
+  ],
+  "3919": [
+    "Array",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "3920": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "3921": [
+    "Array",
+    "String",
+    "Simulation"
+  ],
+  "3922": [
+    "String"
+  ],
+  "3923": [
+    "Array",
+    "Hash Table",
+    "Simulation"
+  ],
+  "3924": [
+    "Binary Search",
+    "Breadth-First Search",
+    "Graph Theory"
+  ],
+  "3925": [
+    "Array",
+    "Simulation"
+  ],
+  "3926": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "3927": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Greedy",
+    "Number Theory"
+  ],
+  "3928": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ]
 }
