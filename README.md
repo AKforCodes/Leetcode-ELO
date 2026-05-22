@@ -2,11 +2,19 @@
   <img src="frontend/public/brand/logo-white.png" alt="LeetCode ELO logo" width="160" />
 </p>
 
-# LeetCode ELO Explorer
+<h1 align="center">LeetCode ELO Explorer</h1>
 
-A web app to explore and filter LeetCode problems by **ELO rating**, a far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
+<p align="center">
+  <strong>A web app to explore and filter LeetCode problems by ELO rating.</strong><br/>
+  A far more precise measure of difficulty than the standard Easy / Medium / Hard tiers.
+</p>
 
-🔗 **Live app:** [leetcode-elo.vercel.app](https://leetcode-elo.vercel.app/)
+<p align="center">
+  🔗 <a href="https://leetcode-elo.vercel.app/"><strong>Live app: leetcode-elo.vercel.app</strong></a> &nbsp;·&nbsp;
+  ⭐ <a href="https://github.com/AKforCodes/Leetcode-ELO">Star on GitHub</a>
+</p>
+
+---
 
 ## What is ELO?
 
