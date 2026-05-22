@@ -1210,6 +1210,36 @@ footer a:hover { color: var(--brand-strong); border-bottom-color: var(--brand); 
   .pagination span { grid-column: 1 / -1; text-align: center; margin-right: 0; order: -1; font-size: 12.5px; }
   .pagination button { width: 100%; min-width: 0; }
   .pagination label { grid-column: 1 / -1; justify-content: space-between; }
+
+  /* No physical keyboard on touch devices — hide all keyboard-shortcut UI. */
+  .shortcuts-wrap { display: none !important; }
+  .shortcuts-popover { display: none !important; }
+
+  /* Touch-target sizing (>=44pt where reachable). */
+  .random-btn { height: 42px; padding: 0 14px; }
+  .result-row { padding: 0 14px; gap: 8px; }
+  .result-actions { gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+  /* Per-row solved check: expand hit area, slightly larger ring. */
+  .col-done, .col-done-h { width: auto; }
+  .solve-check { width: 44px; height: 44px; }
+  .solve-check > span { width: 24px; height: 24px; }
+  .solve-check > span::after { width: 15px; height: 15px; }
+
+  /* Hide-solved toggle reaches comfortable height. */
+  .hide-solved-toggle { height: 42px; padding: 0 8px; }
+  .hide-solved-toggle .hst-check { width: 20px; height: 20px; }
+  .hide-solved-toggle .hst-check::after { width: 12px; height: 12px; }
+
+  /* Solved column on stacked-card layout: keep checkbox at top-right corner. */
+  .spreadsheet td.col-done {
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 44px;
+    padding: 0;
+  }
+  .spreadsheet tbody tr { padding-left: 56px; }
 }
 
 @media (max-width: 380px) {

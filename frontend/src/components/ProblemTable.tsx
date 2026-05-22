@@ -132,24 +132,29 @@ export default function ProblemTable({
         local = {};
       }
 
-      // Normalize: for each problem, look up remote/local by id, slug, title, title_zh
+      // Normalize: for each problem, prefer REMOTE (authoritative, refreshes weekly)
+      // over local cache. Empty arrays are treated as "no data" so a previously
+      // cached empty result never shadows fresh tags after LC categorizes a problem.
+      const hasTags = (v) => Array.isArray(v) && v.length > 0;
       const normalized = {};
       for (const p of problems) {
         const candidates = [String(p.id), p.slug || '', p.title || '', p.title_zh || ''];
         let tags = null;
         for (const c of candidates) {
           if (!c) continue;
-          if (local[c]) { tags = local[c]; break; }
-          if (remote[c]) { tags = remote[c]; break; }
+          if (hasTags(remote[c])) { tags = remote[c]; break; }
+          if (hasTags(local[c])) { tags = local[c]; break; }
         }
         if (tags) normalized[String(p.id)] = tags;
       }
 
-      // Also pick up any local entries that are keyed by id but not in problems list
-      for (const k of Object.keys(local)) if (/^\d+$/.test(k) && !normalized[k]) normalized[k] = local[k];
+      // Pick up any local entries keyed by id but not in problems list (legacy data).
+      for (const k of Object.keys(local)) {
+        if (/^\d+$/.test(k) && !normalized[k] && hasTags(local[k])) normalized[k] = local[k];
+      }
 
       setTagsMap(normalized);
-      // also persist merged normalized mapping so future edits use id keys
+      // Persist only non-empty entries so empty placeholders never get baked into the cache.
       try { localStorage.setItem('leetcode_tags_v1', JSON.stringify(normalized)); } catch (e) {}
     })();
   }, [problems]);
