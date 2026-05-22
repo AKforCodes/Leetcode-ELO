@@ -58,7 +58,47 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [showGuide, setShowGuide] = useState(false);
+  const [showShortcuts, setShowShortcuts] = useState(false);
   const guideRef = useRef<HTMLDivElement>(null);
+  const shortcutsWrapRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!showShortcuts) return;
+    function onDoc(e: MouseEvent | TouchEvent) {
+      const wrap = shortcutsWrapRef.current;
+      if (wrap && e.target instanceof Node && !wrap.contains(e.target)) {
+        setShowShortcuts(false);
+      }
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setShowShortcuts(false);
+    }
+    document.addEventListener("mousedown", onDoc);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [showShortcuts]);
+
+  useEffect(() => {
+    function isEditable(el: EventTarget | null) {
+      if (!(el instanceof HTMLElement)) return false;
+      const tag = el.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return true;
+      return el.isContentEditable;
+    }
+    function onKey(e: KeyboardEvent) {
+      if (e.ctrlKey || e.metaKey || e.altKey) return;
+      if (isEditable(e.target)) return;
+      if (e.key === "?") {
+        e.preventDefault();
+        setShowShortcuts((s) => !s);
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   function toggleGuide() {
     setShowGuide((prev) => {
@@ -140,6 +180,49 @@ export default function App() {
             </svg>
             <span>{showGuide ? "Hide guide" : "Tier guide"}</span>
           </button>
+          <div className="shortcuts-wrap" ref={shortcutsWrapRef}>
+            <button
+              type="button"
+              className="icon-btn"
+              aria-label="Keyboard shortcuts"
+              aria-expanded={showShortcuts}
+              aria-haspopup="true"
+              title="Keyboard shortcuts"
+              onClick={() => setShowShortcuts((s) => !s)}
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+                <path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M7 14h10" />
+              </svg>
+            </button>
+            {showShortcuts && (
+              <div className="shortcuts-popover" role="dialog" aria-label="Keyboard shortcuts">
+                <div className="shortcuts-title">Keyboard shortcuts</div>
+                <ul className="shortcuts-list">
+                  <li>
+                    <kbd className="kbd-hint">/</kbd>
+                    <span>Focus search</span>
+                  </li>
+                  <li>
+                    <kbd className="kbd-hint">R</kbd>
+                    <span>Open a random problem</span>
+                  </li>
+                  <li>
+                    <kbd className="kbd-hint">H</kbd>
+                    <span>Toggle hide solved</span>
+                  </li>
+                  <li>
+                    <kbd className="kbd-hint">?</kbd>
+                    <span>Toggle this menu</span>
+                  </li>
+                  <li>
+                    <kbd className="kbd-hint">Esc</kbd>
+                    <span>Close this menu</span>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
           <button
             type="button"
             className="icon-btn"

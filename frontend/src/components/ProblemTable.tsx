@@ -226,6 +226,11 @@ export default function ProblemTable({
       if (e.key === "r" || e.key === "R") {
         e.preventDefault();
         openRandomProblem();
+        return;
+      }
+      if (e.key === "h" || e.key === "H") {
+        e.preventDefault();
+        setHideSolved((v) => !v);
       }
     };
 
