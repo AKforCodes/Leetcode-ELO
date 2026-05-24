@@ -13153,5 +13153,25 @@
     "Graph Theory",
     "Heap (Priority Queue)",
     "Shortest Path"
+  ],
+  "3931": [
+    "String"
+  ],
+  "3932": [
+    "Math",
+    "Binary Search"
+  ],
+  "3933": [
+    "Array",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "3934": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Rolling Hash",
+    "Suffix Array",
+    "Hash Function"
   ]
 }

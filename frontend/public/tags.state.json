@@ -2483,5 +2483,9 @@
   "minimize-array-sum-using-divisible-replacements": true,
   "count-valid-word-occurrences": true,
   "score-validator": true,
-  "concatenate-array-with-reverse": true
+  "concatenate-array-with-reverse": true,
+  "smallest-unique-subarray": true,
+  "largest-local-values-in-a-matrix-ii": true,
+  "count-k-th-roots-in-a-range": true,
+  "check-adjacent-digit-differences": true
 }
