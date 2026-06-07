@@ -13174,12 +13174,62 @@
     "Suffix Array",
     "Hash Function"
   ],
-  "3936": [],
-  "3937": [],
-  "3938": [],
-  "3939": [],
-  "3940": [],
-  "3941": [],
-  "3942": [],
-  "3943": []
+  "3936": [
+    "Array",
+    "Two Pointers"
+  ],
+  "3937": [
+    "Array",
+    "Enumeration"
+  ],
+  "3938": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "3939": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "3940": [
+    "Array",
+    "Two Pointers"
+  ],
+  "3941": [
+    "Hash Table",
+    "String"
+  ],
+  "3942": [
+    "Array"
+  ],
+  "3943": [
+    "Array",
+    "Hash Table",
+    "Divide and Conquer",
+    "Counting"
+  ],
+  "3945": [
+    "Hash Table",
+    "Math"
+  ],
+  "3946": [
+    "Array",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "3947": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Heap (Priority Queue)"
+  ],
+  "3948": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Queue"
+  ]
 }

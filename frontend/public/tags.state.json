@@ -2487,5 +2487,17 @@
   "smallest-unique-subarray": true,
   "largest-local-values-in-a-matrix-ii": true,
   "count-k-th-roots-in-a-range": true,
-  "check-adjacent-digit-differences": true
+  "check-adjacent-digit-differences": true,
+  "number-of-pairs-after-increment": true,
+  "count-non-adjacent-subsets-in-a-rooted-tree": true,
+  "maximum-path-intersection-sum-in-a-grid": true,
+  "maximum-number-of-items-from-sale-ii": true,
+  "lexicographically-maximum-mex-array": true,
+  "minimum-operations-to-sort-a-permutation": true,
+  "maximum-number-of-items-from-sale-i": true,
+  "minimum-operations-to-make-array-modulo-alternating-i": true,
+  "minimum-swaps-to-move-zeros-to-end": true,
+  "password-strength": true,
+  "limit-occurrences-in-sorted-array": true,
+  "digit-frequency-score": true
 }
