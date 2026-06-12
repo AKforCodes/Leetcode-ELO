@@ -156,7 +156,7 @@ export default function ProblemTable({
   // Normalize keys to problem IDs when possible (supports keys by id, slug, or title)
   React.useEffect(() => {
     (async () => {
-      let remote = {};
+      let remote: Record<string, string[]> = {};
       try {
         const res = await fetch('/tags.json', { cache: 'no-cache' });
         if (res.ok) remote = await res.json();
@@ -169,7 +169,7 @@ export default function ProblemTable({
         } catch (e2) {}
       }
 
-      let local = {};
+      let local: Record<string, string[]> = {};
       try {
         const raw = localStorage.getItem("leetcode_tags_v1");
         local = raw ? JSON.parse(raw) : {};
@@ -180,8 +180,8 @@ export default function ProblemTable({
       // Normalize: for each problem, prefer REMOTE (authoritative, refreshes weekly)
       // over local cache. Empty arrays are treated as "no data" so a previously
       // cached empty result never shadows fresh tags after LC categorizes a problem.
-      const hasTags = (v) => Array.isArray(v) && v.length > 0;
-      const normalized = {};
+      const hasTags = (v: unknown): v is string[] => Array.isArray(v) && v.length > 0;
+      const normalized: Record<string, string[]> = {};
       for (const p of problems) {
         const candidates = [String(p.id), p.slug || '', p.title || '', p.title_zh || ''];
         let tags = null;
