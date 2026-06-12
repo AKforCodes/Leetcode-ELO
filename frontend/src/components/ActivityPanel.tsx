@@ -6,23 +6,47 @@ import {
   getDayCounts,
   type SolvedDates
 } from "../lib/activity";
+import type { LCAccount, LCProfilePayload } from "../lib/leetcode";
+import LeetCodeConnect from "./LeetCodeConnect";
 
 type Props = {
   solvedDates: SolvedDates;
+  lcAccount: LCAccount | null;
+  lcDayCounts: Record<string, number>;
+  lcTotalSolved: number | null;
+  lcStreak: number | null;
+  onAccountChange: (acc: LCAccount | null) => void;
+  onSyncedProfile: (profile: LCProfilePayload) => void;
 };
 
-export default function ActivityPanel({ solvedDates }: Props) {
+export default function ActivityPanel({
+  solvedDates,
+  lcAccount,
+  lcDayCounts,
+  lcTotalSolved,
+  lcStreak,
+  onAccountChange,
+  onSyncedProfile
+}: Props) {
   const [open, setOpen] = useState(false);
 
-  const { streak, total, todayCount, cells } = useMemo(() => {
-    const dayCounts = getDayCounts(solvedDates);
+  const { streak, total, todayCount, cells, sourceLabel } = useMemo(() => {
+    const localCounts = getDayCounts(solvedDates);
+    const connected = !!(lcAccount?.verified && Object.keys(lcDayCounts).length > 0);
+    // When connected, prefer LeetCode's submission calendar for visuals (real data).
+    // Fall back to local-tick counts otherwise.
+    const dayCounts = connected ? { ...localCounts, ...lcDayCounts } : localCounts;
     const cells = buildHeatmap(dayCounts, 13);
-    const total = Object.keys(solvedDates).length;
-    const streak = computeStreak(dayCounts);
+    const localTotal = Object.keys(solvedDates).length;
+    const total = connected && lcTotalSolved != null ? lcTotalSolved : localTotal;
+    const streak = connected && lcStreak != null ? lcStreak : computeStreak(dayCounts);
     const todayIso = cells.find((c) => c.isToday)?.date ?? "";
     const todayCount = dayCounts[todayIso] || 0;
-    return { streak, total, todayCount, cells };
-  }, [solvedDates]);
+    const sourceLabel = connected
+      ? `Showing your real LeetCode activity, synced from @${lcAccount!.username}.`
+      : "Counts the day you ticked a problem solved on this site.";
+    return { streak, total, todayCount, cells, sourceLabel };
+  }, [solvedDates, lcAccount, lcDayCounts, lcTotalSolved, lcStreak]);
 
   const weeks = cells.length / 7;
 
@@ -57,6 +81,14 @@ export default function ActivityPanel({ solvedDates }: Props) {
               </span>
             </>
           )}
+          {lcAccount?.verified && (
+            <span className="activity-lc-badge" title={`Connected to LeetCode as ${lcAccount.username}`}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              LC
+            </span>
+          )}
         </div>
         <span className="activity-chevron" aria-hidden="true">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: open ? "rotate(180deg)" : "none", transition: "transform .18s ease" }}>
@@ -66,6 +98,11 @@ export default function ActivityPanel({ solvedDates }: Props) {
       </button>
       {open && (
         <div id="activity-body" className="activity-body">
+          <LeetCodeConnect
+            account={lcAccount}
+            onAccountChange={onAccountChange}
+            onSyncedProfile={onSyncedProfile}
+          />
           <div
             className="heatmap"
             role="img"
@@ -79,8 +116,8 @@ export default function ActivityPanel({ solvedDates }: Props) {
               <div
                 key={c.date}
                 className={`hm-cell hm-${bucketForCount(c.count)}${c.isFuture ? " hm-future" : ""}${c.isToday ? " hm-today" : ""}`}
-                title={`${c.date}: ${c.count} solved`}
-                aria-label={`${c.date}: ${c.count} solved`}
+                title={`${c.date}: ${c.count} submission${c.count === 1 ? "" : "s"}`}
+                aria-label={`${c.date}: ${c.count} submissions`}
               />
             ))}
           </div>
@@ -93,7 +130,7 @@ export default function ActivityPanel({ solvedDates }: Props) {
             <span className="hm-cell hm-4" aria-hidden="true" />
             <span className="hm-legend-label">More</span>
           </div>
-          <p className="activity-note">Counts the day you ticked a problem solved on this site.</p>
+          <p className="activity-note">{sourceLabel}</p>
         </div>
       )}
     </section>

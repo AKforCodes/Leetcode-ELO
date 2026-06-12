@@ -2,6 +2,13 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import { matchesTopicQuery, buildHaystack } from "../lib/topicFilter";
 import { DEFAULT_STATE, readStateFromUrl, writeStateToUrl } from "../lib/urlState";
 import { isoDate, loadSolvedDates, saveSolvedDates, type SolvedDates } from "../lib/activity";
+import {
+  calendarToDayCounts,
+  loadAccount,
+  timestampToIsoDate,
+  type LCAccount,
+  type LCProfilePayload
+} from "../lib/leetcode";
 import ActivityPanel from "./ActivityPanel";
 
 const INITIAL_URL_STATE =
@@ -56,6 +63,47 @@ export default function ProblemTable({
   const [tagsMap, setTagsMap] = useState<Record<string, string[]>>({});
   const [solvedDates, setSolvedDates] = useState<SolvedDates>(() => loadSolvedDates());
   const solved = useMemo(() => new Set(Object.keys(solvedDates)), [solvedDates]);
+
+  // LeetCode account linkage. Account persists across reloads; the synced
+  // calendar / streak / total live in memory and are re-fetched on Sync.
+  const [lcAccount, setLcAccount] = useState<LCAccount | null>(() => loadAccount());
+  const [lcDayCounts, setLcDayCounts] = useState<Record<string, number>>({});
+  const [lcTotalSolved, setLcTotalSolved] = useState<number | null>(null);
+  const [lcStreak, setLcStreak] = useState<number | null>(null);
+
+  const handleSyncedProfile = useCallback((profile: LCProfilePayload) => {
+    setLcDayCounts(calendarToDayCounts(profile.submissionCalendar));
+    setLcStreak(profile.streak ?? null);
+    const totalAc = (profile.submitStats as any)?.acSubmissionNum?.find?.(
+      (s: any) => s.difficulty === "All"
+    )?.count;
+    setLcTotalSolved(typeof totalAc === "number" ? totalAc : null);
+
+    // Auto-tick the recently AC'd problems against our local ratings list.
+    if (profile.recentAcSubmissionList?.length) {
+      setSolvedDates((prev) => {
+        const next = { ...prev };
+        for (const ac of profile.recentAcSubmissionList) {
+          const match = problems.find((p) => p.slug === ac.titleSlug);
+          if (!match) continue;
+          if (!next[String(match.id)]) {
+            next[String(match.id)] = timestampToIsoDate(ac.timestamp);
+          }
+        }
+        return next;
+      });
+    }
+  }, [problems]);
+
+  // When the account is cleared (Disconnect), drop synced overlay data too.
+  const handleAccountChange = useCallback((acc: LCAccount | null) => {
+    setLcAccount(acc);
+    if (!acc) {
+      setLcDayCounts({});
+      setLcTotalSolved(null);
+      setLcStreak(null);
+    }
+  }, []);
   const [hideSolved, setHideSolved] = useState(
     INITIAL_URL_STATE.hideSolved ?? DEFAULT_STATE.hideSolved
   );
@@ -254,7 +302,15 @@ export default function ProblemTable({
 
   return (
     <div className="table-wrap">
-      <ActivityPanel solvedDates={solvedDates} />
+      <ActivityPanel
+        solvedDates={solvedDates}
+        lcAccount={lcAccount}
+        lcDayCounts={lcDayCounts}
+        lcTotalSolved={lcTotalSolved}
+        lcStreak={lcStreak}
+        onAccountChange={handleAccountChange}
+        onSyncedProfile={handleSyncedProfile}
+      />
       <div className="control-panel">
         <div className="search-section">
           <div className="search-inputs">
