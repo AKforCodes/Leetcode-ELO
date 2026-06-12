@@ -60,7 +60,12 @@ export default function ProblemTable({
   const [categoryQuery, setCategoryQuery] = useState(
     INITIAL_URL_STATE.categoryQuery ?? DEFAULT_STATE.categoryQuery
   );
+  const [companyQuery, setCompanyQuery] = useState(
+    INITIAL_URL_STATE.companyQuery ?? DEFAULT_STATE.companyQuery
+  );
   const [tagsMap, setTagsMap] = useState<Record<string, string[]>>({});
+  const [companiesMap, setCompaniesMap] = useState<Record<string, string[]>>({});
+  const [companyNames, setCompanyNames] = useState<Record<string, string>>({});
   const [solvedDates, setSolvedDates] = useState<SolvedDates>(() => loadSolvedDates());
   const solved = useMemo(() => new Set(Object.keys(solvedDates)), [solvedDates]);
 
@@ -118,6 +123,7 @@ export default function ProblemTable({
       query,
       idQuery,
       categoryQuery,
+      companyQuery,
       minRating,
       maxRating,
       contestFilter,
@@ -129,7 +135,7 @@ export default function ProblemTable({
     if (next !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
       window.history.replaceState(null, "", next);
     }
-  }, [query, idQuery, categoryQuery, minRating, maxRating, contestFilter, sortBy, desc, hideSolved]);
+  }, [query, idQuery, categoryQuery, companyQuery, minRating, maxRating, contestFilter, sortBy, desc, hideSolved]);
 
   const toggleSolved = useCallback((id: string) => {
     setSolvedDates((prev) => {
@@ -198,6 +204,28 @@ export default function ProblemTable({
     })();
   }, [problems]);
 
+  // load companies from JSON (same pattern as tags)
+  React.useEffect(() => {
+    (async () => {
+      let data = {};
+      try {
+        const res = await fetch('/companies.json', { cache: 'no-cache' });
+        if (res.ok) data = await res.json();
+      } catch (e) {
+        try {
+          const res = await fetch(
+            'https://raw.githubusercontent.com/AKforCodes/Leetcode-ELO/main/frontend/public/companies.json'
+          );
+          if (res.ok) data = await res.json();
+        } catch (e2) {}
+      }
+      if ((data as any).problems) {
+        setCompaniesMap((data as any).problems);
+        setCompanyNames((data as any).companyNames || {});
+      }
+    })();
+  }, []);
+
   const filtered = useMemo(() => {
     setPage(1); // reset to first page on filter change
     return problems
@@ -213,6 +241,14 @@ export default function ProblemTable({
           const hay = buildHaystack([p.title, p.title_zh, p.slug, ...tags]);
           if (!matchesTopicQuery(hay, categoryQuery)) return false;
         }
+        // company filter
+        if (companyQuery) {
+          const companies = companiesMap[p.id] || [];
+          const hay = companies
+            .map((c) => (companyNames[c] || c).toLowerCase())
+            .join(" ");
+          if (!hay.includes(companyQuery.toLowerCase())) return false;
+        }
         if (contestFilter !== "all" && p.contest !== contestFilter) return false;
         const min = minRating === "" ? -Infinity : Number(minRating);
         const max = maxRating === "" ? Infinity : Number(maxRating);
@@ -223,10 +259,11 @@ export default function ProblemTable({
         const key = sortBy === "rating" ? a.rating - b.rating : Number(a.id) - Number(b.id);
         return desc ? -key : key;
       });
-  }, [problems, query, idQuery, categoryQuery, tagsMap, minRating, maxRating, contestFilter, sortBy, desc, hideSolved, solved]);
+  }, [problems, query, idQuery, categoryQuery, companyQuery, tagsMap, companiesMap, companyNames, minRating, maxRating, contestFilter, sortBy, desc, hideSolved, solved]);
 
   const titleInputRef = useRef<HTMLInputElement>(null);
   const topicInputRef = useRef<HTMLInputElement>(null);
+  const companyInputRef = useRef<HTMLInputElement>(null);
 
   const [copied, setCopied] = useState(false);
   const copyShareLink = useCallback(async () => {
@@ -282,6 +319,13 @@ export default function ProblemTable({
         e.preventDefault();
         topicInputRef.current?.focus();
         topicInputRef.current?.select();
+        return;
+      }
+      if (e.key === "c" || e.key === "C") {
+        e.preventDefault();
+        companyInputRef.current?.focus();
+        companyInputRef.current?.select();
+        return;
       }
     };
 
@@ -351,6 +395,29 @@ export default function ProblemTable({
                 aria-label="Search by topic or tag"
               />
               {!categoryQuery && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">T</kbd>}
+            </div>
+            <div className="input-wrap">
+              <svg className="input-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="3" />
+                <circle cx="8" cy="8" r="1.5" />
+                <circle cx="16" cy="16" r="1.5" />
+                <circle cx="16" cy="8" r="1.5" />
+                <circle cx="8" cy="16" r="1.5" />
+              </svg>
+              <input
+                ref={companyInputRef}
+                placeholder="Company"
+                value={companyQuery}
+                onChange={(e) => setCompanyQuery(e.target.value)}
+                list="company-list"
+                aria-label="Search by company"
+              />
+              <datalist id="company-list">
+                {Object.values(companyNames).map((name) => (
+                  <option key={name} value={name} />
+                ))}
+              </datalist>
+              {!companyQuery && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">C</kbd>}
             </div>
           </div>
         </div>
@@ -475,6 +542,7 @@ export default function ProblemTable({
             <th>ID</th>
             <th>Title</th>
             <th>Topics</th>
+            <th>Companies</th>
             <th>Contest</th>
             <th>Index</th>
           </tr>
@@ -509,6 +577,15 @@ export default function ProblemTable({
                   {(tagsMap[p.id] || []).map((t) => (
                     <span className="tag" key={t}>
                       {t}
+                    </span>
+                  ))}
+                </div>
+              </td>
+              <td className="col-tags" data-label="Companies">
+                <div className="company-chips">
+                  {(companiesMap[p.id] || []).map((c) => (
+                    <span className="company-chip" key={c}>
+                      {companyNames[c] || c}
                     </span>
                   ))}
                 </div>
