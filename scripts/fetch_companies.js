@@ -13,6 +13,8 @@ const RAW_BASE =
   "https://raw.githubusercontent.com/ayush-that/codejeet/main/data/companies";
 const CONCURRENCY = 20;
 const BATCH_DELAY_MS = 100;
+const PROGRESS_LOG_INTERVAL = 100;
+const REQUEST_TIMEOUT_MS = 15000;
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -35,7 +37,7 @@ function readProblemIds(filePath) {
 
 function httpsGet(url) {
   return new Promise((resolve, reject) => {
-    https
+    const req = https
       .get(
         url,
         { headers: { "User-Agent": "LeetCode-ELO/1.0" } },
@@ -55,6 +57,9 @@ function httpsGet(url) {
         }
       )
       .on("error", reject);
+    req.setTimeout(REQUEST_TIMEOUT_MS, () => {
+      req.destroy(new Error(`Timeout after ${REQUEST_TIMEOUT_MS}ms for ${url}`));
+    });
   });
 }
 
@@ -67,7 +72,12 @@ function slugToDisplayName(slug) {
 
 async function fetchCompanyFilenames() {
   const json = await httpsGet(GITHUB_API_URL);
-  const items = JSON.parse(json);
+  let items;
+  try {
+    items = JSON.parse(json);
+  } catch (e) {
+    throw new Error(`Invalid JSON from GitHub API: ${String(e)}`);
+  }
   return items
     .filter((item) => item.type === "file" && item.name.endsWith(".csv"))
     .map((item) => item.name);
@@ -132,7 +142,7 @@ async function main() {
       }
     }
 
-    if ((i + CONCURRENCY) % 100 === 0 || i + CONCURRENCY >= filenames.length) {
+    if ((i + CONCURRENCY) % PROGRESS_LOG_INTERVAL === 0 || i + CONCURRENCY >= filenames.length) {
       process.stdout.write(
         `Progress: ${Math.min(i + CONCURRENCY, filenames.length)}/${filenames.length} files processed\n`
       );
