@@ -2,6 +2,7 @@ export type FilterState = {
   query: string;
   idQuery: string;
   categoryQuery: string;
+  companyQuery: string;
   minRating: number | "";
   maxRating: number | "";
   contestFilter: string;
@@ -14,6 +15,7 @@ const KEYS = {
   query: "q",
   idQuery: "id",
   categoryQuery: "t",
+  companyQuery: "co",
   minRating: "min",
   maxRating: "max",
   contestFilter: "c",
@@ -26,6 +28,7 @@ export const DEFAULT_STATE: FilterState = {
   query: "",
   idQuery: "",
   categoryQuery: "",
+  companyQuery: "",
   minRating: "",
   maxRating: "",
   contestFilter: "all",
@@ -46,6 +49,9 @@ export function readStateFromUrl(search: string): Partial<FilterState> {
 
   const t = params.get(KEYS.categoryQuery);
   if (t !== null) out.categoryQuery = t;
+
+  const co = params.get(KEYS.companyQuery);
+  if (co !== null) out.companyQuery = co;
 
   const min = params.get(KEYS.minRating);
   if (min !== null && min !== "") {
@@ -80,6 +86,7 @@ export function writeStateToUrl(state: FilterState): string {
   if (state.query) params.set(KEYS.query, state.query);
   if (state.idQuery) params.set(KEYS.idQuery, state.idQuery);
   if (state.categoryQuery) params.set(KEYS.categoryQuery, state.categoryQuery);
+  if (state.companyQuery) params.set(KEYS.companyQuery, state.companyQuery);
   if (state.minRating !== "") params.set(KEYS.minRating, String(state.minRating));
   if (state.maxRating !== "") params.set(KEYS.maxRating, String(state.maxRating));
   if (state.contestFilter && state.contestFilter !== "all") params.set(KEYS.contestFilter, state.contestFilter);
