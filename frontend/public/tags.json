@@ -13231,5 +13231,55 @@
     "Hash Table",
     "Greedy",
     "Queue"
+  ],
+  "3950": [
+    "Bit Manipulation"
+  ],
+  "3951": [
+    "Array",
+    "Sorting"
+  ],
+  "3952": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "3953": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Combinatorics",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "3954": [
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "3955": [
+    "String",
+    "Backtracking",
+    "Bit Manipulation",
+    "Enumeration"
+  ],
+  "3956": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "3957": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
   ]
 }

@@ -2499,5 +2499,13 @@
   "minimum-swaps-to-move-zeros-to-end": true,
   "password-strength": true,
   "limit-occurrences-in-sorted-array": true,
-  "digit-frequency-score": true
+  "digit-frequency-score": true,
+  "maximum-sum-of-m-non-overlapping-subarrays-ii": true,
+  "maximum-score-with-co-prime-element": true,
+  "maximum-sum-of-m-non-overlapping-subarrays-i": true,
+  "maximum-total-value-of-covered-indices": true,
+  "minimum-energy-to-maintain-brightness": true,
+  "valid-binary-strings-with-cost-limit": true,
+  "exactly-one-consecutive-set-bits-pair": true,
+  "sum-of-compatible-numbers-in-range-i": true
 }
