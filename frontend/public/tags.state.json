@@ -2507,5 +2507,13 @@
   "minimum-energy-to-maintain-brightness": true,
   "valid-binary-strings-with-cost-limit": true,
   "exactly-one-consecutive-set-bits-pair": true,
-  "sum-of-compatible-numbers-in-range-i": true
+  "sum-of-compatible-numbers-in-range-i": true,
+  "maximum-total-value": true,
+  "minimum-time-to-reach-target-with-limited-power": true,
+  "maximum-subarray-sum-after-multiplier": true,
+  "shortest-path-with-at-most-k-consecutive-identical-characters": true,
+  "filter-occupied-intervals": true,
+  "valid-subarrays-with-matching-sum-digits-i": true,
+  "maximum-manhattan-distance-after-all-moves": true,
+  "maximum-total-sum-of-k-selected-elements": true
 }

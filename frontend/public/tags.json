@@ -13290,8 +13290,48 @@
   "3964": [],
   "3965": [],
   "3966": [],
-  "3968": [],
-  "3969": [],
-  "3970": [],
-  "3971": []
+  "3968": [
+    "Math",
+    "String",
+    "Counting"
+  ],
+  "3969": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "3970": [
+    "String",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ],
+  "3971": [
+    "Array",
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ],
+  "3974": [
+    "Array",
+    "Greedy",
+    "Sorting"
+  ],
+  "3975": [
+    "Array",
+    "Sorting"
+  ],
+  "3976": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "3977": [
+    "Array",
+    "Dynamic Programming",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Shortest Path"
+  ]
 }
