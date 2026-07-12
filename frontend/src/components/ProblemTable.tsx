@@ -60,12 +60,15 @@ export default function ProblemTable({
   const [categoryQuery, setCategoryQuery] = useState(
     INITIAL_URL_STATE.categoryQuery ?? DEFAULT_STATE.categoryQuery
   );
-  const [companyQuery, setCompanyQuery] = useState(
+  const [companyQuery, setCompanyQuery] = useState<string[]>(
     INITIAL_URL_STATE.companyQuery ?? DEFAULT_STATE.companyQuery
   );
+  const [companyInput, setCompanyInput] = useState("");
   const [tagsMap, setTagsMap] = useState<Record<string, string[]>>({});
   const [companiesMap, setCompaniesMap] = useState<Record<string, string[]>>({});
   const [companyNames, setCompanyNames] = useState<Record<string, string>>({});
+  const [showCompanyDropdown, setShowCompanyDropdown] = useState(false);
+  const [expandedCompanies, setExpandedCompanies] = useState<Set<string>>(new Set());
   const [solvedDates, setSolvedDates] = useState<SolvedDates>(() => loadSolvedDates());
   const solved = useMemo(() => new Set(Object.keys(solvedDates)), [solvedDates]);
 
@@ -136,6 +139,15 @@ export default function ProblemTable({
       window.history.replaceState(null, "", next);
     }
   }, [query, idQuery, categoryQuery, companyQuery, minRating, maxRating, contestFilter, sortBy, desc, hideSolved]);
+
+  const toggleCompanyExpand = useCallback((id: string) => {
+    setExpandedCompanies((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }, []);
 
   const toggleSolved = useCallback((id: string) => {
     setSolvedDates((prev) => {
@@ -226,6 +238,43 @@ export default function ProblemTable({
     })();
   }, []);
 
+  const getCompanyLogoUrl = (slug: string) => {
+    const domain = slug.replace(/-/g, '') + '.com';
+    return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+  };
+
+  const companyDropdownRef = useRef<HTMLDivElement>(null);
+  const [filteredCompanies, setFilteredCompanies] = useState<string[]>([]);
+
+  useEffect(() => {
+    const entries = Object.entries(companyNames);
+    if (!companyInput) {
+      setFilteredCompanies([]);
+      return;
+    }
+    const q = companyInput.toLowerCase();
+    const matches = entries
+      .filter(([slug]) => !companyQuery.includes(slug))
+      .filter(([, name]) => name.toLowerCase().includes(q))
+      .map(([slug]) => slug);
+    setFilteredCompanies(matches);
+  }, [companyInput, companyQuery, companyNames]);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (
+        companyDropdownRef.current &&
+        !companyDropdownRef.current.contains(e.target as Node) &&
+        companyInputRef.current &&
+        !companyInputRef.current.contains(e.target as Node)
+      ) {
+        setShowCompanyDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
+
   const filtered = useMemo(() => {
     setPage(1); // reset to first page on filter change
     return problems
@@ -242,12 +291,10 @@ export default function ProblemTable({
           if (!matchesTopicQuery(hay, categoryQuery)) return false;
         }
         // company filter
-        if (companyQuery) {
-          const companies = companiesMap[p.id] || [];
-          const hay = companies
-            .map((c) => (companyNames[c] || c).toLowerCase())
-            .join(" ");
-          if (!hay.includes(companyQuery.toLowerCase())) return false;
+        if (companyQuery.length > 0) {
+          const problemSlugs = companiesMap[p.id] || [];
+          const hasAll = companyQuery.every((slug) => problemSlugs.includes(slug));
+          if (!hasAll) return false;
         }
         if (contestFilter !== "all" && p.contest !== contestFilter) return false;
         const min = minRating === "" ? -Infinity : Number(minRating);
@@ -396,7 +443,7 @@ export default function ProblemTable({
               />
               {!categoryQuery && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">T</kbd>}
             </div>
-            <div className="input-wrap">
+            <div className="input-wrap company-input-wrap">
               <svg className="input-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="3" />
                 <circle cx="8" cy="8" r="1.5" />
@@ -404,20 +451,90 @@ export default function ProblemTable({
                 <circle cx="16" cy="8" r="1.5" />
                 <circle cx="8" cy="16" r="1.5" />
               </svg>
-              <input
-                ref={companyInputRef}
-                placeholder="Company"
-                value={companyQuery}
-                onChange={(e) => setCompanyQuery(e.target.value)}
-                list="company-list"
-                aria-label="Search by company"
-              />
-              <datalist id="company-list">
-                {Object.values(companyNames).map((name) => (
-                  <option key={name} value={name} />
+              <div className="company-token-wrap" onClick={() => companyInputRef.current?.focus()}>
+                {companyQuery.map((slug) => (
+                  <span className="company-token" key={slug}>
+                    <img
+                      src={getCompanyLogoUrl(slug)}
+                      alt=""
+                      className="company-token-logo"
+                      loading="lazy"
+                      onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                    />
+                    {companyNames[slug] || slug}
+                    <button
+                      type="button"
+                      className="company-token-remove"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCompanyQuery((prev) => prev.filter((s) => s !== slug));
+                      }}
+                      aria-label={`Remove ${companyNames[slug] || slug}`}
+                    >
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                      </svg>
+                    </button>
+                  </span>
                 ))}
-              </datalist>
-              {!companyQuery && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">C</kbd>}
+                <input
+                  ref={companyInputRef}
+                  className="company-token-input"
+                  placeholder={companyQuery.length === 0 ? "Company" : ""}
+                  value={companyInput}
+                  onChange={(e) => {
+                    setCompanyInput(e.target.value);
+                    setShowCompanyDropdown(true);
+                  }}
+                  onFocus={() => {
+                    if (companyInput && filteredCompanies.length > 0) {
+                      setShowCompanyDropdown(true);
+                    }
+                  }}
+                  onBlur={() => setTimeout(() => setShowCompanyDropdown(false), 150)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Backspace" && !companyInput && companyQuery.length > 0) {
+                      setCompanyQuery((prev) => prev.slice(0, -1));
+                    }
+                    if (e.key === "Enter" && filteredCompanies.length > 0) {
+                      const slug = filteredCompanies[0];
+                      setCompanyQuery((prev) => [...prev, slug]);
+                      setCompanyInput("");
+                      setShowCompanyDropdown(false);
+                    }
+                  }}
+                  aria-label="Search by company"
+                  autoComplete="off"
+                />
+              </div>
+              {showCompanyDropdown && filteredCompanies.length > 0 && (
+                <div className="company-autocomplete" ref={companyDropdownRef}>
+                  {filteredCompanies.map((slug) => (
+                    <button
+                      type="button"
+                      key={slug}
+                      className="company-autocomplete-item"
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        setCompanyQuery((prev) => [...prev, slug]);
+                        setCompanyInput("");
+                        setShowCompanyDropdown(false);
+                      }}
+                    >
+                      <img
+                        src={getCompanyLogoUrl(slug)}
+                        alt=""
+                        className="company-logo-dropdown"
+                        loading="lazy"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                      />
+                      {companyNames[slug]}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {companyQuery.length === 0 && !companyInput && <kbd className="kbd-hint kbd-in-input" aria-hidden="true">C</kbd>}
             </div>
           </div>
         </div>
@@ -583,11 +700,53 @@ export default function ProblemTable({
               </td>
               <td className="col-tags" data-label="Companies">
                 <div className="company-chips">
-                  {(companiesMap[p.id] || []).map((c) => (
-                    <span className="company-chip" key={c}>
-                      {companyNames[c] || c}
-                    </span>
-                  ))}
+                  {(() => {
+                    const all = (companiesMap[p.id] || []).filter((c) => {
+                      if (companyQuery.length === 0) return true;
+                      return companyQuery.includes(c);
+                    });
+                    if (!all.length) return null;
+                    const isExpanded = expandedCompanies.has(p.id);
+                    const MAX_VISIBLE = 3;
+                    const visible = isExpanded ? all : all.slice(0, MAX_VISIBLE);
+                    const hidden = all.length - MAX_VISIBLE;
+                    return (
+                      <>
+                        {visible.map((c) => (
+                          <span className="company-chip" key={c}>
+                            <img
+                              src={getCompanyLogoUrl(c)}
+                              alt=""
+                              className="company-logo-chip"
+                              loading="lazy"
+                              onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                            />
+                            {companyNames[c] || c}
+                          </span>
+                        ))}
+                        {!isExpanded && hidden > 0 && (
+                          <button
+                            type="button"
+                            className="company-more-btn"
+                            onClick={() => toggleCompanyExpand(p.id)}
+                            aria-label={`Show ${hidden} more companies`}
+                          >
+                            +{hidden}
+                          </button>
+                        )}
+                        {isExpanded && hidden > 0 && (
+                          <button
+                            type="button"
+                            className="company-more-btn"
+                            onClick={() => toggleCompanyExpand(p.id)}
+                            aria-label="Show fewer companies"
+                          >
+                            less
+                          </button>
+                        )}
+                      </>
+                    );
+                  })()}
                 </div>
               </td>
               <td className="col-contest" data-label="Contest">{p.contest}</td>
