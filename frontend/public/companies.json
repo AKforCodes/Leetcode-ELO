@@ -4,8 +4,8 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft"
+      "squarepoint-capital",
+      "tcs"
     ],
     "747": [
       "bloomberg",
@@ -20,9 +20,6 @@
       "flipkart",
       "google"
     ],
-    "750": [
-      "meta"
-    ],
     "751": [
       "airbnb",
       "databricks",
@@ -32,17 +29,15 @@
     "752": [
       "amazon",
       "bloomberg",
-      "bytedance",
-      "cars24",
+      "citadel",
       "coupang",
       "de-shaw",
       "ebay",
       "goldman-sachs",
       "google",
-      "linkedin",
-      "meta",
-      "microsoft",
+      "j-p-morgan",
       "oracle",
+      "snap",
       "snapchat",
       "tiktok",
       "uber",
@@ -54,12 +49,9 @@
     "754": [
       "amazon",
       "bloomberg",
+      "commvault",
       "google",
-      "ibm",
-      "inmobi",
-      "meesho",
-      "meta",
-      "microsoft"
+      "inmobi"
     ],
     "755": [
       "airbnb",
@@ -74,9 +66,7 @@
       "amazon",
       "dp-world",
       "drawbridge",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "758": [
       "google"
@@ -87,11 +77,8 @@
       "apple",
       "bloomberg",
       "citadel",
-      "doordash",
       "google",
       "intuit",
-      "meta",
-      "microsoft",
       "pinterest",
       "roblox",
       "tiktok"
@@ -102,32 +89,31 @@
     "761": [
       "adobe",
       "amazon",
+      "bloomberg",
       "bnp-paribas",
       "coursera",
       "google",
       "grammarly",
-      "microsoft",
       "nvidia",
       "rubrik",
       "ukg"
     ],
     "762": [
-      "amazon"
+      "amazon",
+      "google"
     ],
     "763": [
       "amazon",
+      "barclays",
       "bloomberg",
       "google",
-      "ibm",
       "inmobi",
-      "linkedin",
-      "meta",
-      "microsoft",
-      "yandex"
+      "linkedin"
     ],
     "764": [
-      "meta",
-      "twitter"
+      "intuit",
+      "twitter",
+      "x"
     ],
     "765": [
       "bloomberg",
@@ -136,14 +122,12 @@
       "squarepoint-capital"
     ],
     "766": [
-      "bloomberg",
       "google",
       "meta",
       "tcs",
       "wipro"
     ],
     "767": [
-      "adobe",
       "agoda",
       "amazon",
       "audible",
@@ -155,11 +139,8 @@
       "expedia",
       "goldman-sachs",
       "google",
-      "ibm",
-      "infosys",
-      "meta",
+      "intuit",
       "micro1",
-      "microsoft",
       "oracle",
       "pinterest",
       "roblox",
@@ -170,7 +151,6 @@
     ],
     "768": [
       "amazon",
-      "apple",
       "bloomberg",
       "google",
       "salesforce"
@@ -180,8 +160,6 @@
       "apple",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "poshmark"
     ],
     "770": [
@@ -190,21 +168,15 @@
       "roblox"
     ],
     "771": [
-      "adobe",
       "amazon",
-      "apple",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "yandex"
     ],
     "773": [
       "airbnb",
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "nvidia",
       "uber"
     ],
@@ -220,16 +192,16 @@
       "coupang"
     ],
     "777": [
+      "bloomberg",
       "google",
       "lg-electronics"
     ],
     "778": [
       "amazon",
-      "de-shaw",
       "doordash",
       "google",
       "meta",
-      "microsoft",
+      "phonepe",
       "uber",
       "weride"
     ],
@@ -238,9 +210,7 @@
       "bloomberg",
       "de-shaw",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "780": [
       "amazon",
@@ -249,11 +219,12 @@
       "coursera",
       "goldman-sachs",
       "google",
+      "j-p-morgan",
       "jpmorgan",
       "kla",
       "kla-tencor",
-      "microsoft",
       "paypal",
+      "snap",
       "snapchat",
       "wayfair"
     ],
@@ -261,12 +232,10 @@
       "amazon",
       "bloomberg",
       "cars24",
+      "cleartrip",
       "dp-world",
       "google",
-      "meta",
-      "microsoft",
-      "wish",
-      "zepto"
+      "wish"
     ],
     "782": [
       "citadel",
@@ -275,15 +244,12 @@
     "783": [
       "amazon",
       "google",
-      "meta",
       "wix"
     ],
     "784": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiktok",
       "yelp"
     ],
@@ -292,16 +258,13 @@
       "bloomberg",
       "google",
       "lime",
-      "linkedin",
-      "meta",
-      "microsoft",
+      "pinterest",
       "samsung",
       "tiktok",
       "uber"
     ],
     "786": [
-      "amazon",
-      "bloomberg",
+      "pony-ai",
       "ponyai"
     ],
     "787": [
@@ -309,27 +272,25 @@
       "amazon",
       "apple",
       "bloomberg",
+      "cloudera",
       "coupang",
-      "de-shaw",
       "expedia",
       "flipkart",
       "google",
       "htc",
-      "intuit",
       "makemytrip",
-      "meta",
-      "microsoft",
+      "snap",
       "snapchat",
       "snowflake",
       "stripe",
-      "uber"
+      "tiktok",
+      "uber",
+      "walmart-labs"
     ],
     "788": [
       "amazon",
       "arista-networks",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "789": [
@@ -339,28 +300,20 @@
     "790": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "791": [
-      "adobe",
       "amazon",
-      "apple",
       "bloomberg",
       "google",
       "meta",
-      "microsoft",
-      "snapchat",
-      "uber"
+      "snapchat"
     ],
     "792": [
       "amazon",
-      "apple",
       "blend",
       "bloomberg",
       "google",
-      "meta",
       "spinny",
       "uber",
       "visa"
@@ -370,14 +323,12 @@
     ],
     "794": [
       "amazon",
-      "microsoft",
       "tiktok"
     ],
     "795": [
       "adobe",
       "amazon",
       "google",
-      "quora",
       "uber"
     ],
     "796": [
@@ -385,31 +336,23 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "morgan-stanley",
       "natwest",
       "oracle",
       "rivian",
-      "visa",
+      "tcs",
       "wells-fargo",
       "zoho"
     ],
     "797": [
       "amazon",
-      "apple",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "netflix"
     ],
     "799": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiktok"
     ],
     "800": [
@@ -417,34 +360,28 @@
     ],
     "801": [
       "amazon",
-      "meta",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "802": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "803": [
       "google",
-      "phonepe",
+      "snap",
       "snapchat"
     ],
     "804": [
       "amazon",
-      "bloomberg",
-      "google",
       "wix"
     ],
     "805": [
       "amazon",
       "deutsche-bank",
       "google",
-      "meesho",
-      "microsoft",
       "tcs"
     ],
     "806": [
@@ -471,7 +408,7 @@
     ],
     "811": [
       "google",
-      "microsoft",
+      "karat",
       "peloton",
       "roblox",
       "wix"
@@ -487,28 +424,28 @@
     ],
     "814": [
       "amazon",
-      "hulu",
-      "meta",
-      "microsoft"
+      "hulu"
     ],
     "815": [
       "amazon",
       "bitgo",
       "bloomberg",
+      "citadel",
+      "coupang",
       "deltax",
       "goldman-sachs",
       "google",
       "info-edge",
-      "meta",
-      "microsoft",
       "oracle",
       "phonepe",
       "pinterest",
       "salesforce",
+      "shopee",
+      "snap",
       "snapchat",
       "tiktok",
       "uber",
-      "zomato"
+      "walmart-labs"
     ],
     "816": [
       "google"
@@ -517,22 +454,17 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "uber"
     ],
     "818": [
-      "amazon",
       "anduril",
       "google",
-      "meta",
       "turing"
     ],
     "819": [
       "amazon",
       "datadog",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "820": [
       "apple"
@@ -540,33 +472,28 @@
     "821": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "822": [
       "google"
     ],
     "823": [
+      "amazon",
       "google"
     ],
     "824": [
       "apple",
       "meta",
-      "microsoft"
+      "uber"
     ],
     "825": [
-      "amazon",
-      "meta",
-      "microsoft"
+      "amazon"
     ],
     "826": [
       "amazon",
       "doordash",
       "google",
-      "meta",
-      "microsoft",
-      "netease",
-      "tiktok"
+      "netease"
     ],
     "827": [
       "airbnb",
@@ -575,12 +502,11 @@
       "bloomberg",
       "doordash",
       "google",
-      "linkedin",
       "medianet",
+      "meesho",
       "meta",
-      "microsoft",
       "moloco",
-      "oracle",
+      "snap",
       "snapchat",
       "snowflake",
       "tiktok",
@@ -589,14 +515,13 @@
     ],
     "828": [
       "amazon",
-      "forusall",
-      "microsoft"
+      "forusall"
     ],
     "829": [
-      "amazon",
+      "airbnb",
+      "citadel",
       "de-shaw",
       "google",
-      "microsoft",
       "oracle",
       "tiktok",
       "zoho"
@@ -605,16 +530,16 @@
       "google"
     ],
     "831": [
+      "google",
       "salesforce",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "832": [
       "amazon",
       "bloomberg",
       "google",
-      "ibm",
-      "meta",
-      "tcs"
+      "ibm"
     ],
     "833": [
       "bloomberg",
@@ -623,61 +548,47 @@
     "834": [
       "amazon",
       "google",
-      "microsoft",
-      "phonepe",
-      "uber"
+      "mathworks",
+      "media-net",
+      "phonepe"
     ],
     "835": [
       "google"
     ],
     "836": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft",
       "qualcomm"
     ],
     "837": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "838": [
       "amazon",
       "anduril",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "839": [
       "amazon",
       "apple",
       "doordash",
-      "google",
-      "meta"
+      "google"
     ],
     "840": [
       "amazon",
       "bloomberg",
-      "google",
-      "infosys",
-      "microsoft"
+      "google"
     ],
     "841": [
       "amazon",
       "apple",
+      "cadence",
       "google",
       "graviton",
-      "meta",
-      "microsoft",
-      "nvidia",
       "oracle",
-      "snowflake",
-      "tinkoff",
-      "walmart-labs"
+      "snowflake"
     ],
     "842": [
       "amazon",
@@ -688,9 +599,8 @@
       "apple",
       "bloomberg",
       "dropbox",
+      "general-motors",
       "google",
-      "meta",
-      "microsoft",
       "verily",
       "verkada"
     ],
@@ -698,16 +608,14 @@
       "agoda",
       "amazon",
       "bloomberg",
+      "chewy",
       "goldman-sachs",
       "google",
       "ibm",
-      "meta",
-      "microsoft",
       "microstrategy",
       "oracle",
       "roku",
       "salesforce",
-      "tinkoff",
       "wayfair",
       "wells-fargo"
     ],
@@ -715,34 +623,25 @@
       "amazon",
       "databricks",
       "faire",
-      "goldman-sachs",
       "google",
       "ibm",
-      "meta",
-      "microsoft",
       "oracle",
       "sofi",
       "tiktok"
     ],
     "846": [
       "amazon",
-      "apple",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft"
+      "visa"
     ],
     "847": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "848": [
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "849": [
       "amazon",
@@ -761,10 +660,7 @@
     "851": [
       "amazon",
       "de-shaw",
-      "meta",
-      "microsoft",
-      "paypal",
-      "phonepe"
+      "paypal"
     ],
     "852": [
       "accenture",
@@ -772,30 +668,27 @@
       "bloomberg",
       "de-shaw",
       "google",
-      "meta",
-      "microsoft",
+      "qualcomm",
       "tcs"
     ],
     "853": [
       "amazon",
       "bloomberg",
       "bny-mellon",
-      "ge-healthcare",
       "goldman-sachs",
       "google",
       "infosys",
-      "meta",
-      "microsoft",
       "nutanix",
-      "phonepe",
       "ripple",
-      "snapchat"
+      "snapchat",
+      "waymo"
     ],
     "854": [
-      "doordash",
+      "amazon",
       "google"
     ],
     "855": [
+      "amazon",
       "apple",
       "google",
       "quora",
@@ -803,24 +696,22 @@
       "uber"
     ],
     "856": [
+      "amazon",
       "bloomberg",
       "google",
-      "meta",
       "snapchat",
       "tiktok"
     ],
     "857": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "858": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "859": [
+      "amazon",
       "doordash",
       "google",
       "zoho"
@@ -829,13 +720,11 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "zalando"
+      "zalando",
+      "zoho"
     ],
     "861": [
       "amazon",
-      "bloomberg",
       "google",
       "iit-bombay"
     ],
@@ -843,19 +732,18 @@
       "amazon",
       "bloomberg",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "863": [
       "amazon",
+      "apple",
       "bloomberg",
       "flipkart",
       "google",
       "meta",
-      "microsoft",
-      "nutanix",
+      "nvidia",
       "okta",
+      "ola-cabs",
       "oracle",
       "salesforce",
       "tiktok",
@@ -865,47 +753,45 @@
       "adobe",
       "airbnb",
       "google",
-      "phonepe",
+      "pinterest",
       "roku",
       "uber"
     ],
     "865": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "866": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "867": [
       "amazon",
       "apple",
       "bloomberg",
+      "consultadd",
       "google",
-      "meta",
-      "microsoft",
       "verkada"
     ],
     "868": [
+      "amazon",
       "bloomberg",
       "ebay",
       "google",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "869": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "870": [
       "amazon",
-      "microsoft",
-      "palo-alto-networks"
+      "palo-alto-networks",
+      "point72",
+      "walmart-labs"
     ],
     "871": [
       "amazon",
@@ -913,16 +799,12 @@
       "de-shaw",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
+      "uber",
       "waymo"
     ],
     "872": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
-      "oracle",
       "snowflake"
     ],
     "873": [
@@ -930,25 +812,20 @@
       "baidu",
       "bloomberg",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "874": [
       "amazon",
       "apple",
-      "bloomberg",
-      "goldman-sachs",
       "google",
       "jane-street",
-      "meta",
-      "microsoft",
       "phonepe",
       "shopify"
     ],
     "875": [
       "accenture",
       "adobe",
+      "agoda",
       "amazon",
       "apple",
       "atlassian",
@@ -957,6 +834,7 @@
       "citadel",
       "de-shaw",
       "doordash",
+      "expedia",
       "flipkart",
       "goldman-sachs",
       "google",
@@ -967,8 +845,7 @@
       "meta",
       "microsoft",
       "netflix",
-      "nykaa",
-      "okta",
+      "nvidia",
       "oracle",
       "oyo",
       "palo-alto-networks",
@@ -978,6 +855,7 @@
       "quince",
       "ripple",
       "salesforce",
+      "snap",
       "snapchat",
       "swiggy",
       "tcs",
@@ -986,37 +864,30 @@
       "turing",
       "uber",
       "vmware",
-      "walmart-labs",
       "zepto"
     ],
     "876": [
       "accenture",
       "amazon",
+      "amd",
       "apple",
       "bloomberg",
-      "goldman-sachs",
       "google",
-      "ibm",
       "intuit",
-      "meta",
-      "microsoft",
       "nvidia",
       "qualcomm",
       "tcs",
       "walmart-labs"
     ],
     "877": [
+      "amazon",
       "bloomberg",
       "cisco",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "878": [
       "amazon",
-      "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "879": [
       "amazon",
@@ -1025,28 +896,22 @@
     "880": [
       "amazon",
       "bloomberg",
-      "meta",
       "national-instruments",
       "phonepe"
     ],
     "881": [
       "amazon",
-      "apple",
       "atlassian",
       "bloomberg",
       "flipkart",
       "google",
-      "ibm",
-      "meta",
-      "microsoft",
       "sigmoid",
       "snowflake",
-      "uipath",
-      "walmart-labs",
-      "yandex"
+      "uipath"
     ],
     "882": [
       "amazon",
+      "google",
       "phonepe",
       "yugabyte"
     ],
@@ -1063,29 +928,25 @@
       "bloomberg",
       "dataminr",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "886": [
       "amazon",
+      "coupang",
       "google",
       "linkedin",
-      "meesho",
-      "meta",
-      "microsoft",
       "pinterest",
       "samsung",
+      "snap",
       "snapchat",
+      "snowflake",
       "tiktok",
       "uber"
     ],
     "887": [
       "amazon",
       "bloomberg",
-      "goldman-sachs",
       "google",
-      "microsoft",
       "tiktok"
     ],
     "888": [
@@ -1093,34 +954,24 @@
       "bloomberg",
       "fidessa",
       "google",
-      "meta",
-      "microsoft",
       "swiggy"
     ],
     "889": [
       "amazon",
+      "apple",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "890": [
       "amazon",
-      "google",
-      "meta",
-      "zomato"
+      "google"
     ],
     "892": [
       "amazon"
     ],
-    "893": [
-      "meta"
-    ],
     "894": [
       "amazon",
-      "bloomberg",
       "google",
-      "microsoft",
       "nvidia",
       "salesforce"
     ],
@@ -1128,22 +979,18 @@
       "amazon",
       "apple",
       "bloomberg",
+      "expedia",
       "flipkart",
       "glovo",
       "google",
-      "meta",
-      "microsoft",
       "nutanix",
       "salesforce",
-      "tiktok",
       "uber"
     ],
     "896": [
       "amazon",
       "bloomberg",
-      "capital-one",
       "google",
-      "meta",
       "ozon",
       "yandex"
     ],
@@ -1156,8 +1003,6 @@
       "bloomberg",
       "bny-mellon",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "899": [
@@ -1166,22 +1011,18 @@
     ],
     "900": [
       "databricks",
-      "google",
-      "meta"
+      "google"
     ],
     "901": [
-      "adobe",
       "amazon",
-      "apple",
       "bloomberg",
       "google",
-      "ibm",
-      "meta",
+      "indmoney",
       "microsoft"
     ],
     "902": [
       "amazon",
-      "microsoft",
+      "google",
       "tiktok"
     ],
     "904": [
@@ -1189,25 +1030,21 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "netflix",
       "servicenow",
+      "tiktok",
       "zoho"
     ],
     "905": [
       "amazon",
-      "apple",
       "bloomberg",
       "couchbase",
       "ebay",
       "google",
-      "meta",
-      "microsoft"
+      "tcs"
     ],
     "906": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "907": [
       "accenture",
@@ -1217,10 +1054,11 @@
       "bloomberg",
       "flipkart",
       "google",
-      "meta",
-      "microsoft",
+      "morgan-stanley",
+      "phonepe",
       "sprinklr",
-      "tiktok"
+      "tiktok",
+      "zs-associates"
     ],
     "908": [
       "adobe",
@@ -1235,72 +1073,56 @@
       "cisco",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
+      "phonepe",
+      "pinterest",
+      "tesla",
       "tiktok",
       "zomato"
     ],
     "910": [
       "adobe",
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "911": [
-      "atlassian",
       "bloomberg",
-      "cars24",
+      "flipkart",
       "google"
     ],
     "913": [
-      "amazon",
-      "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "914": [
-      "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "915": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "916": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "zoho"
     ],
     "917": [
+      "amazon",
       "google",
-      "meta",
-      "microsoft",
-      "nvidia",
       "snowflake",
-      "turing",
-      "zoho"
+      "tanium"
     ],
     "918": [
       "amazon",
+      "apple",
       "bloomberg",
       "goldman-sachs",
       "google",
-      "infosys",
-      "makemytrip",
-      "meta",
-      "microsoft",
       "sprinklr",
+      "tiktok",
       "two-sigma"
     ],
     "919": [
       "amazon",
       "google",
-      "meta",
-      "phonepe",
-      "uber"
+      "phonepe"
     ],
     "920": [
       "coursera",
@@ -1310,24 +1132,18 @@
       "amazon",
       "bloomberg",
       "google",
-      "ibm",
-      "linkedin",
       "meta",
-      "microsoft",
-      "siemens",
-      "tcs"
+      "siemens"
     ],
     "922": [
       "amazon",
       "bloomberg",
       "couchbase",
-      "google",
-      "microsoft"
+      "google"
     ],
     "923": [
       "amazon",
       "google",
-      "meta",
       "quora"
     ],
     "924": [
@@ -1336,7 +1152,6 @@
       "doordash",
       "dropbox",
       "google",
-      "microsoft",
       "ncr",
       "salesforce",
       "tiktok",
@@ -1345,21 +1160,17 @@
     "925": [
       "bloomberg",
       "google",
-      "linkedin",
-      "meta",
-      "microsoft",
       "zoho"
     ],
     "926": [
       "amazon",
       "expedia",
       "google",
-      "ibm",
-      "meta",
-      "tiktok"
+      "ibm"
     ],
     "927": [
-      "hotstar"
+      "hotstar",
+      "roku"
     ],
     "928": [
       "dropbox",
@@ -1369,93 +1180,81 @@
       "amazon",
       "google",
       "intuit",
+      "josh-technology",
       "wix"
     ],
     "930": [
-      "adobe",
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft"
+      "nvidia",
+      "tcs"
     ],
     "931": [
       "amazon",
+      "apple",
       "bloomberg",
       "dream11",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
-      "visa"
+      "intuit"
     ],
     "932": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "933": [
-      "affirm",
       "amazon",
       "apple",
       "bloomberg",
       "databricks",
       "google",
-      "meta",
-      "microsoft",
       "roblox",
       "yandex"
     ],
     "934": [
       "amazon",
-      "apple",
-      "bloomberg",
       "bytedance",
       "coupang",
       "docusign",
       "flipkart",
+      "goldman-sachs",
       "google",
       "mckinsey",
-      "meta",
-      "microsoft",
       "salesforce",
       "tesla",
       "tiktok",
       "tower-research",
+      "tower-research-capital",
       "uber"
     ],
     "935": [
       "amazon",
       "bloomberg",
-      "box",
       "bridgewater-associates",
-      "de-shaw",
       "google",
-      "meta",
-      "microsoft"
+      "whatnot"
     ],
     "936": [
       "morgan-stanley"
     ],
     "937": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "938": [
       "amazon",
       "bloomberg",
       "google",
       "meta",
-      "microsoft",
       "yandex"
     ],
     "939": [
       "bytedance",
       "flipkart",
       "google",
-      "meta",
+      "snap",
       "snapchat",
       "verily",
       "waymo"
@@ -1466,10 +1265,9 @@
     ],
     "941": [
       "amazon",
+      "bloomberg",
       "checkpoint",
       "google",
-      "meta",
-      "microsoft",
       "tiktok"
     ],
     "942": [
@@ -1479,23 +1277,18 @@
     ],
     "943": [
       "de-shaw",
-      "google",
-      "meta"
+      "google"
     ],
     "944": [
       "amazon",
       "garmin",
-      "google",
-      "meta"
+      "google"
     ],
     "945": [
       "amazon",
-      "bloomberg",
       "coursera",
       "goldman-sachs",
       "google",
-      "infosys",
-      "microsoft",
       "paypal",
       "tiktok",
       "zscaler"
@@ -1503,9 +1296,6 @@
     "946": [
       "amazon",
       "google",
-      "linkedin",
-      "meta",
-      "microsoft",
       "sprinklr"
     ],
     "947": [
@@ -1513,40 +1303,32 @@
       "bloomberg",
       "google",
       "medianet",
-      "meta",
-      "microsoft",
       "phonepe",
+      "snap",
       "snowflake",
-      "tekion",
-      "tiktok"
+      "tekion"
     ],
     "948": [
-      "adobe",
       "amazon",
       "flexport",
-      "google",
-      "microsoft"
+      "google"
     ],
     "949": [
       "liveramp",
-      "microsoft",
       "zoho"
     ],
     "950": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "951": [
       "amazon",
       "anduril",
-      "google",
-      "microsoft"
+      "google"
     ],
     "952": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "953": [
       "amazon",
@@ -1554,9 +1336,6 @@
       "apple",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "tiktok",
       "uber",
       "wix"
     ],
@@ -1569,9 +1348,9 @@
       "google"
     ],
     "956": [
+      "amazon",
+      "atlassian",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "957": [
@@ -1579,18 +1358,13 @@
     ],
     "958": [
       "amazon",
-      "bloomberg",
       "google",
-      "lyft",
-      "meta",
-      "microsoft"
+      "lyft"
     ],
     "959": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiktok",
       "uber"
     ],
@@ -1603,7 +1377,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "zoho"
     ],
     "962": [
@@ -1612,10 +1385,7 @@
       "bloomberg",
       "de-shaw",
       "google",
-      "meta",
-      "microsoft",
       "tiktok",
-      "uber",
       "zepto"
     ],
     "963": [
@@ -1623,6 +1393,7 @@
       "verily"
     ],
     "964": [
+      "snap",
       "snapchat"
     ],
     "965": [
@@ -1635,19 +1406,17 @@
       "bloomberg",
       "google",
       "grammarly",
-      "meta",
-      "microsoft",
       "thumbtack"
     ],
     "967": [
       "amazon",
       "bloomberg",
       "flipkart",
-      "google"
+      "google",
+      "tekion"
     ],
     "968": [
       "6sense",
-      "adobe",
       "amazon",
       "bloomberg",
       "de-shaw",
@@ -1657,23 +1426,19 @@
       "google",
       "graviton",
       "mathworks",
-      "meta",
-      "microsoft",
-      "oracle",
+      "nutanix",
+      "phonepe",
       "zeta"
     ],
     "969": [
+      "amazon",
       "darwinbox",
-      "microsoft",
-      "oracle",
       "square"
     ],
     "972": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "973": [
-      "adobe",
       "amazon",
       "apple",
       "asana",
@@ -1683,23 +1448,21 @@
       "google",
       "linkedin",
       "meta",
-      "microsoft",
       "oracle",
       "plaid",
       "salesforce",
+      "snap",
       "snapchat",
       "swiggy",
+      "whatnot",
       "wix"
     ],
     "974": [
-      "adobe",
       "amazon",
       "bloomberg",
+      "citadel",
       "google",
-      "hashedin",
       "jpmorgan",
-      "meta",
-      "microsoft",
       "tiktok",
       "uber",
       "visa",
@@ -1714,41 +1477,35 @@
       "amazon",
       "bloomberg",
       "c3-ai",
-      "google",
-      "meta"
+      "google"
     ],
     "977": [
       "accenture",
       "adobe",
       "agoda",
       "amazon",
-      "apple",
       "bloomberg",
       "crowdstrike",
       "deutsche-bank",
       "google",
-      "infosys",
       "instacart",
       "meta",
-      "microsoft",
       "ozon",
       "tcs",
       "uber",
       "whatnot",
-      "yahoo",
       "yandex"
     ],
     "978": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "979": [
       "amazon",
       "bloomberg",
       "goldman-sachs",
       "google",
-      "microsoft",
+      "phonepe",
       "tcs",
       "zeta"
     ],
@@ -1758,8 +1515,6 @@
       "databricks",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "pinterest"
     ],
     "981": [
@@ -1769,8 +1524,6 @@
       "apple",
       "axon",
       "bloomberg",
-      "cars24",
-      "citadel",
       "cockroach-labs",
       "coinbase",
       "compass",
@@ -1779,36 +1532,33 @@
       "databricks",
       "ebay",
       "flexport",
-      "goldman-sachs",
       "google",
       "gusto",
       "instacart",
       "lyft",
-      "meta",
-      "microsoft",
+      "mongodb",
       "netflix",
       "openai",
       "oracle",
-      "palantir-technologies",
       "ramp-2",
+      "salesforce",
       "snowflake",
       "tiktok",
       "uber",
-      "verkada"
+      "verkada",
+      "vmware"
     ],
     "982": [
       "flipkart",
-      "microsoft",
       "philips"
     ],
     "983": [
+      "adobe",
       "amazon",
       "bloomberg",
       "google",
       "grab",
       "intuit",
-      "meta",
-      "microsoft",
       "roku",
       "tiktok",
       "turing",
@@ -1827,11 +1577,9 @@
       "amazon",
       "apple",
       "bloomberg",
-      "cisco",
       "doordash",
       "google",
       "meta",
-      "microsoft",
       "mixpanel",
       "nuro",
       "uber",
@@ -1846,10 +1594,12 @@
       "doordash",
       "google",
       "meta",
-      "microsoft",
       "oracle",
+      "roku",
+      "salesforce",
       "samsung",
-      "tiktok"
+      "uber",
+      "walmart-labs"
     ],
     "988": [
       "amazon",
@@ -1858,52 +1608,42 @@
     "989": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft",
-      "zoho"
+      "google"
     ],
     "990": [
+      "amazon",
       "clevertap",
       "google",
-      "meta",
+      "sumo-logic",
       "sumologic",
       "uipath"
     ],
     "991": [
       "bloomberg",
       "google",
-      "microsoft",
       "millennium",
       "nutanix",
       "zopsmart"
     ],
     "992": [
-      "adobe",
       "amazon",
       "bloomberg",
-      "capital-one",
       "google",
-      "hashedin",
-      "infosys",
-      "meta",
-      "microsoft",
       "morgan-stanley",
       "oracle",
       "roblox",
       "salesforce",
       "servicenow",
+      "squarepoint-capital",
       "tiktok",
       "uber",
-      "yahoo"
+      "yandex"
     ],
     "993": [
       "adobe",
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiktok"
     ],
     "994": [
@@ -1914,25 +1654,21 @@
       "bloomberg",
       "bytedance",
       "c3-ai",
-      "commvault",
+      "citadel",
       "databricks",
       "de-shaw",
-      "docusign",
       "doordash",
-      "dp-world",
       "dream11",
       "ebay",
       "expedia",
       "flipkart",
       "goldman-sachs",
       "google",
-      "ibm",
       "informatica",
-      "infosys",
       "intuit",
       "lyft",
-      "meta",
       "microsoft",
+      "moloco",
       "myntra",
       "nvidia",
       "openai",
@@ -1944,10 +1680,10 @@
       "salesforce",
       "samsung",
       "servicenow",
+      "sigmoid",
       "snowflake",
       "tcs",
       "tekion",
-      "tesla",
       "tiktok",
       "twitter",
       "uber",
@@ -1963,28 +1699,18 @@
     ],
     "995": [
       "amazon",
-      "bloomberg",
-      "google",
-      "meta",
-      "microsoft",
-      "thoughtspot"
+      "google"
     ],
     "996": [
       "apple",
-      "google",
-      "microsoft"
+      "google"
     ],
     "997": [
       "amazon",
       "arista-networks",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "turing"
-    ],
-    "998": [
-      "meta"
     ],
     "999": [
       "google",
@@ -1993,8 +1719,7 @@
     "1000": [
       "amazon",
       "de-shaw",
-      "google",
-      "uber"
+      "google"
     ],
     "1001": [
       "dropbox"
@@ -2004,9 +1729,6 @@
       "bloomberg",
       "google",
       "jpmorgan",
-      "meta",
-      "microsoft",
-      "oracle",
       "tripadvisor"
     ],
     "1003": [
@@ -2015,13 +1737,10 @@
     "1004": [
       "adobe",
       "amazon",
-      "apple",
       "bloomberg",
-      "citadel",
       "expedia",
       "goldman-sachs",
       "google",
-      "ibm",
       "keeptruckin",
       "linkedin",
       "meta",
@@ -2030,49 +1749,41 @@
       "oracle",
       "roku",
       "salesforce",
-      "sigmoid",
+      "tekion",
       "tiktok",
       "yandex"
     ],
     "1005": [
+      "amazon",
       "druva",
       "google",
       "uber"
     ],
     "1006": [
       "amazon",
-      "bloomberg",
-      "microsoft"
+      "bloomberg"
     ],
     "1007": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1008": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1009": [
+      "amazon",
       "bloomberg",
       "cloudera",
-      "google",
-      "meta"
+      "google"
     ],
     "1010": [
       "amazon",
-      "apple",
       "atlassian",
-      "citadel",
       "citrix",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
       "paypal",
       "tiktok"
@@ -2080,44 +1791,43 @@
     "1011": [
       "agoda",
       "amazon",
+      "apollo-io",
       "apolloio",
       "apple",
       "bloomberg",
       "chalo",
-      "cloudera",
       "dp-world",
+      "expedia",
       "flipkart",
       "goldman-sachs",
       "google",
       "meta",
-      "microsoft",
       "mindtickle",
+      "myntra",
       "oracle",
       "spinny",
       "tiktok",
       "uber",
+      "visa",
       "walmart-labs",
       "zeta"
     ],
     "1012": [
-      "goldman-sachs",
       "google",
-      "jpmorgan",
-      "microsoft"
+      "ibm",
+      "j-p-morgan",
+      "jpmorgan"
     ],
     "1013": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "turing"
     ],
     "1014": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "nutanix",
       "wayfair"
     ],
@@ -2125,8 +1835,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "1016": [
@@ -2135,37 +1843,34 @@
     ],
     "1017": [
       "airbnb",
-      "boeing"
+      "boeing",
+      "google"
     ],
     "1018": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1019": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1020": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1021": [
       "amazon",
       "bloomberg",
-      "flipkart",
       "google",
-      "meta",
-      "microsoft"
+      "tcs"
     ],
     "1022": [
       "amazon",
-      "lime",
-      "meta"
+      "bloomberg",
+      "google",
+      "lime"
     ],
     "1023": [
       "compass",
@@ -2180,8 +1885,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tcs",
       "visa"
     ],
@@ -2189,15 +1892,12 @@
       "amazon",
       "bloomberg",
       "epam-systems",
-      "josh-technology",
-      "meta"
+      "josh-technology"
     ],
     "1027": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "snapdeal",
       "turing"
     ],
@@ -2205,45 +1905,34 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft"
+      "grammarly"
     ],
     "1029": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "oracle",
       "swiggy",
       "syfe"
     ],
     "1030": [
-      "bloomberg",
       "yahoo"
     ],
     "1031": [
-      "amazon",
-      "google"
+      "amazon"
     ],
     "1032": [
       "amazon",
       "google",
-      "jane-street",
-      "meta"
-    ],
-    "1033": [
-      "meta"
+      "jane-street"
     ],
     "1034": [
+      "booking-com",
       "bookingcom",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1035": [
       "amazon",
-      "google",
-      "microsoft",
-      "phonepe"
+      "google"
     ],
     "1036": [
       "amazon",
@@ -2251,25 +1940,17 @@
       "uipath"
     ],
     "1037": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "1038": [
       "amazon",
-      "datadog",
       "google",
-      "microsoft",
       "sap"
     ],
     "1039": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "uber"
-    ],
-    "1040": [
-      "meta"
     ],
     "1041": [
       "airbnb",
@@ -2277,11 +1958,10 @@
       "apple",
       "bloomberg",
       "blue-origin",
+      "chewy",
       "goldman-sachs",
       "google",
       "linkedin",
-      "microsoft",
-      "nvidia",
       "tiktok",
       "zscaler"
     ],
@@ -2292,9 +1972,7 @@
     "1043": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1044": [
       "amazon",
@@ -2302,18 +1980,13 @@
       "coupang",
       "goldman-sachs",
       "google",
-      "meta",
       "tiktok"
     ],
     "1046": [
       "amazon",
       "bloomberg",
-      "flipkart",
       "google",
-      "ibm",
       "jpmorgan",
-      "meta",
-      "microsoft",
       "nvidia",
       "oracle",
       "paypal",
@@ -2324,20 +1997,16 @@
     "1047": [
       "amazon",
       "apple",
-      "audible",
       "bloomberg",
-      "cisco",
+      "deloitte",
       "fynd",
       "geico",
       "google",
       "grammarly",
-      "meta",
-      "microsoft",
       "oracle",
       "paytm",
       "ripple",
-      "whatnot",
-      "zoho"
+      "whatnot"
     ],
     "1048": [
       "agoda",
@@ -2346,15 +2015,11 @@
       "bloomberg",
       "citadel",
       "de-shaw",
-      "flipkart",
       "google",
-      "linkedin",
-      "meta",
-      "microsoft",
+      "mathworks",
       "moloco",
       "paypal",
       "tekion",
-      "tiktok",
       "two-sigma",
       "verily",
       "wix"
@@ -2362,35 +2027,25 @@
     "1049": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1051": [
       "amazon",
       "bloomberg",
       "google",
       "ibm",
-      "meta",
-      "microsoft",
       "salesforce"
     ],
     "1052": [
       "amazon",
       "bloomberg",
-      "capital-one",
-      "google",
-      "ibm",
-      "meta",
-      "microsoft",
       "nutanix"
     ],
     "1053": [
-      "microsoft"
+      "nvidia"
     ],
     "1054": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "1064": [
       "uber"
@@ -2405,20 +2060,17 @@
       "amazon"
     ],
     "1071": [
-      "agoda",
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
+      "infosys",
       "oracle",
       "tiktok"
     ],
     "1072": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1073": [
       "grab"
@@ -2426,18 +2078,16 @@
     "1074": [
       "amazon",
       "google",
-      "meta",
+      "media-net",
+      "snap",
       "snapchat"
     ],
     "1078": [
       "google"
     ],
     "1079": [
-      "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "1080": [
@@ -2457,6 +2107,7 @@
       "goldman-sachs"
     ],
     "1087": [
+      "anduril",
       "apple",
       "doordash",
       "google",
@@ -2469,11 +2120,9 @@
     "1089": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1090": [
-      "amazon",
       "google"
     ],
     "1091": [
@@ -2488,8 +2137,7 @@
       "google",
       "intuit",
       "meta",
-      "microsoft",
-      "palo-alto-networks",
+      "snap",
       "snapchat",
       "tiktok",
       "uber",
@@ -2497,35 +2145,25 @@
     ],
     "1092": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
-    ],
-    "1093": [
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "1094": [
       "amazon",
       "bloomberg",
-      "careem",
       "flipkart",
       "goldman-sachs",
       "google",
-      "infosys",
       "lyft",
+      "meesho",
       "meta",
-      "microsoft",
       "paytm",
-      "tiktok",
-      "uber",
       "zepto"
     ],
     "1095": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "1096": [
@@ -2547,9 +2185,6 @@
       "geico",
       "google"
     ],
-    "1103": [
-      "amazon"
-    ],
     "1104": [
       "bloomberg"
     ],
@@ -2566,32 +2201,22 @@
       "bloomberg",
       "goldman-sachs",
       "google",
-      "hilabs",
-      "meta",
-      "microsoft"
+      "hilabs"
     ],
     "1108": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "robinhood",
       "zoho"
     ],
     "1109": [
-      "amazon",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1110": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft",
-      "pinterest"
+      "google"
     ],
     "1111": [
       "bloomreach",
@@ -2614,20 +2239,18 @@
       "bloomberg",
       "de-shaw",
       "google",
-      "meta",
       "walmart-labs"
     ],
     "1123": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1124": [
-      "infosys"
+      "infosys",
+      "netapp"
     ],
     "1125": [
-      "google",
       "tcs"
     ],
     "1128": [
@@ -2637,8 +2260,7 @@
     ],
     "1129": [
       "amazon",
-      "meta",
-      "microsoft",
+      "google",
       "sprinklr"
     ],
     "1130": [
@@ -2648,8 +2270,7 @@
       "phonepe"
     ],
     "1131": [
-      "amazon",
-      "microsoft"
+      "google"
     ],
     "1133": [
       "amazon"
@@ -2663,20 +2284,17 @@
     "1136": [
       "amazon",
       "google",
-      "meta",
       "netflix",
       "snowflake",
       "tiktok",
       "uber"
     ],
     "1137": [
+      "accenture",
       "amazon",
       "bloomberg",
       "coursera",
-      "google",
-      "meta",
-      "microsoft",
-      "tcs"
+      "google"
     ],
     "1138": [
       "google"
@@ -2691,7 +2309,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "uber"
     ],
     "1144": [
@@ -2704,17 +2321,18 @@
     "1146": [
       "amazon",
       "apple",
+      "aurora",
       "coupang",
       "databricks",
       "deepmind",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "mongodb",
+      "netflix",
       "nutanix",
-      "nvidia",
+      "openai",
       "rubrik",
+      "snap",
       "snapchat",
       "snowflake",
       "stackadapt",
@@ -2728,15 +2346,13 @@
       "salesforce"
     ],
     "1151": [
+      "amazon",
       "expedia",
-      "microsoft",
       "tiktok"
     ],
     "1152": [
       "amazon",
-      "doordash",
       "google",
-      "meta",
       "spotify",
       "uber",
       "whatnot"
@@ -2745,21 +2361,16 @@
       "google"
     ],
     "1154": [
-      "amazon",
       "google",
       "zscaler"
     ],
     "1155": [
-      "adobe",
       "amazon",
-      "citadel",
       "coindcx",
-      "google",
-      "meta"
+      "google"
     ],
     "1156": [
       "google",
-      "microsoft",
       "nutanix"
     ],
     "1157": [
@@ -2770,28 +2381,21 @@
       "bloomberg",
       "google",
       "karat",
-      "meta",
       "paypal"
     ],
     "1161": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1162": [
       "amazon",
       "google",
-      "hive",
-      "microsoft",
       "uipath",
       "wix"
     ],
     "1163": [
       "amazon",
-      "ibm",
       "mathworks",
-      "microsoft",
       "qualcomm"
     ],
     "1165": [
@@ -2805,8 +2409,6 @@
       "coinbase",
       "doordash",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
       "snowflake",
       "uber"
@@ -2814,10 +2416,10 @@
     "1167": [
       "amazon",
       "google",
-      "ibm",
+      "j-p-morgan",
       "jpmorgan",
-      "mathworks",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1168": [
       "apple",
@@ -2827,7 +2429,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "oracle",
       "stripe",
       "wix"
@@ -2837,13 +2438,10 @@
     ],
     "1171": [
       "amazon",
-      "apple",
       "bloomberg",
       "bytedance",
       "google",
-      "josh-technology",
-      "meta",
-      "microsoft",
+      "palo-alto-networks",
       "uber"
     ],
     "1172": [
@@ -2863,7 +2461,8 @@
       "dropbox"
     ],
     "1180": [
-      "virtu"
+      "virtu",
+      "virtu-financial"
     ],
     "1181": [
       "clutter"
@@ -2879,17 +2478,17 @@
     ],
     "1185": [
       "google",
-      "microsoft"
+      "zoho"
     ],
     "1186": [
       "amazon",
       "google",
-      "microsoft",
       "two-sigma"
     ],
     "1189": [
       "amazon",
-      "microsoft",
+      "bloomberg",
+      "google",
       "wayfair"
     ],
     "1190": [
@@ -2899,45 +2498,42 @@
       "bloomberg",
       "flipkart",
       "google",
-      "microsoft",
       "okta",
       "oracle"
     ],
     "1191": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "1192": [
       "akuna-capital",
       "amazon",
       "bloomberg",
-      "citadel",
       "flipkart",
       "google",
       "kla-tencor",
-      "microsoft",
       "servicenow"
     ],
     "1196": [
-      "virtu"
+      "virtu",
+      "virtu-financial"
     ],
     "1197": [
       "amazon",
       "apple",
+      "bloomberg",
       "citadel",
       "databricks",
       "google",
+      "imc",
       "linkedin",
-      "meta",
-      "microsoft",
       "nvidia",
       "oracle",
+      "uber",
       "verily",
       "waymo"
     ],
     "1198": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "1199": [
       "google"
@@ -2947,12 +2543,10 @@
       "amazon",
       "audible",
       "bloomberg",
-      "cognizant",
       "google",
       "ibm",
+      "j-p-morgan",
       "jpmorgan",
-      "meta",
-      "microsoft",
       "nvidia",
       "oracle",
       "paycom",
@@ -2961,36 +2555,31 @@
     ],
     "1201": [
       "amazon",
-      "american-express",
-      "meta"
+      "american-express"
     ],
     "1202": [
       "bloomberg",
       "google",
-      "microsoft",
-      "palantir-technologies",
       "paypal",
       "phonepe",
+      "rubrik",
       "uber"
     ],
     "1203": [
       "amazon",
       "bloomberg",
       "citadel",
-      "google",
-      "meta"
+      "google"
     ],
     "1207": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1208": [
+      "bloomberg",
       "ibm",
-      "jpmorgan",
-      "microsoft"
+      "jpmorgan"
     ],
     "1209": [
       "agoda",
@@ -3004,7 +2593,6 @@
       "google",
       "grammarly",
       "meta",
-      "microsoft",
       "morgan-stanley",
       "oracle",
       "paypal",
@@ -3016,8 +2604,7 @@
       "kakao"
     ],
     "1213": [
-      "apple",
-      "meta"
+      "apple"
     ],
     "1214": [
       "amazon"
@@ -3033,53 +2620,48 @@
     "1217": [
       "amazon",
       "bloomberg",
-      "microsoft",
       "morgan-stanley"
     ],
     "1218": [
-      "google",
-      "meta"
+      "google"
     ],
     "1219": [
       "amazon",
-      "geico",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "salesforce"
-    ],
-    "1220": [
-      "mathworks"
     ],
     "1221": [
       "amazon",
       "google",
-      "meta",
       "salesforce"
     ],
     "1222": [
-      "medianet",
-      "microsoft"
+      "google",
+      "media-net",
+      "medianet"
     ],
     "1223": [
-      "akuna-capital"
+      "akuna-capital",
+      "google"
     ],
     "1224": [
       "american-express"
     ],
     "1228": [
+      "amazon",
       "audible"
     ],
     "1229": [
       "amazon",
+      "apple",
       "citadel",
       "datadog",
       "google",
-      "meta",
-      "microsoft",
       "paypal",
-      "uber"
+      "sofi",
+      "uber",
+      "yandex"
     ],
     "1230": [
       "twitch"
@@ -3089,40 +2671,33 @@
     ],
     "1232": [
       "amazon",
-      "datadog",
-      "palantir-technologies"
+      "datadog"
     ],
     "1233": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "nuro",
       "snowflake",
+      "uber",
       "verkada"
     ],
     "1234": [
-      "accolite",
-      "amazon"
+      "accolite"
     ],
     "1235": [
       "airbnb",
       "amazon",
       "bloomberg",
-      "bytedance",
-      "citadel",
+      "docusign",
       "doordash",
-      "flipkart",
       "goldman-sachs",
       "google",
-      "infosys",
-      "meesho",
-      "meta",
-      "microsoft",
+      "linkedin",
       "oracle",
-      "paypal",
+      "palo-alto-networks",
       "phonepe",
       "pinterest",
+      "pony-ai",
       "ponyai",
       "snowflake",
       "swiggy",
@@ -3142,8 +2717,7 @@
       "google",
       "groww",
       "honey",
-      "meta",
-      "microsoft"
+      "palo-alto-networks"
     ],
     "1240": [
       "amazon",
@@ -3151,102 +2725,83 @@
       "google"
     ],
     "1243": [
-      "virtu"
+      "virtu",
+      "virtu-financial"
     ],
     "1244": [
       "amazon",
       "bloomberg",
-      "citadel",
       "de-shaw",
       "google",
-      "microsoft",
-      "pinterest",
       "uber",
       "wayfair"
     ],
     "1245": [
       "amazon",
-      "apple",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "salesforce",
       "tiktok"
-    ],
-    "1246": [
-      "microsoft"
     ],
     "1247": [
       "goldman-sachs",
       "google",
-      "jpmorgan",
-      "microsoft"
+      "j-p-morgan",
+      "jpmorgan"
     ],
     "1248": [
       "amazon",
       "bloomberg",
       "deliveroo",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
       "roblox",
       "tiktok"
     ],
     "1249": [
-      "adobe",
       "amazon",
       "apple",
       "bloomberg",
       "ge-digital",
       "google",
       "meta",
-      "microsoft",
       "oracle",
+      "snap",
       "snapchat",
-      "tencent",
       "tiktok",
       "walmart-labs"
     ],
     "1250": [
-      "bloomberg",
       "dropbox",
       "google",
-      "microsoft",
+      "jump-trading",
       "nokia"
     ],
     "1252": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "1253": [
       "grab"
     ],
     "1254": [
       "amazon",
-      "bloomberg",
-      "doordash",
       "google",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "1255": [
       "amazon",
       "bloomberg",
       "google",
-      "infosys",
-      "meta"
+      "infosys"
     ],
     "1256": [
       "quora"
     ],
     "1257": [
-      "airbnb",
-      "tiktok"
+      "airbnb"
     ],
     "1258": [
+      "cruise",
       "cruise-automation",
       "moveworks",
       "rippling"
@@ -3263,11 +2818,10 @@
     ],
     "1262": [
       "amazon",
+      "bloomberg",
       "de-shaw",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1263": [
       "google"
@@ -3276,39 +2830,35 @@
       "amazon",
       "bloomberg",
       "google",
-      "medianet",
-      "meta",
-      "microsoft"
+      "media-net",
+      "medianet"
     ],
     "1267": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "1268": [
       "adobe",
       "amazon",
       "anduril",
-      "apple",
       "bloomberg",
       "citadel",
-      "deliveroo",
+      "coursera",
       "docusign",
       "doordash",
       "google",
+      "j-p-morgan",
       "meesho",
-      "meta",
-      "microsoft",
-      "nuro",
       "oracle",
       "paypal",
       "salesforce",
       "snapchat",
       "squarepoint-capital",
       "tiktok",
+      "twilio",
+      "uber",
       "ubs",
       "wix"
     ],
@@ -3316,15 +2866,14 @@
       "google"
     ],
     "1271": [
-      "virtu"
+      "virtu",
+      "virtu-financial"
     ],
     "1272": [
       "google"
     ],
-    "1273": [
-      "microsoft"
-    ],
     "1274": [
+      "applied-intuition",
       "bloomberg"
     ],
     "1275": [
@@ -3332,30 +2881,25 @@
       "apple",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "zoho"
     ],
     "1277": [
       "amazon",
+      "bloomberg",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft",
-      "tinkoff"
+      "google"
     ],
     "1281": [
+      "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "quora"
+      "quora",
+      "tcs"
     ],
     "1282": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "roblox"
     ],
     "1283": [
@@ -3367,11 +2911,9 @@
       "expedia",
       "google",
       "ibm",
-      "meta",
-      "microsoft",
+      "millennium",
       "oracle",
-      "paypal",
-      "zscaler"
+      "paypal"
     ],
     "1284": [
       "airbnb"
@@ -3381,41 +2923,30 @@
     ],
     "1287": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft",
-      "oracle"
+      "google"
     ],
     "1288": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "1289": [
-      "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1290": [
       "amazon",
       "bloomberg",
-      "cisco",
       "google",
       "mathworks",
-      "meta",
-      "microsoft",
       "nutanix",
       "oracle",
       "roblox"
     ],
     "1291": [
       "f5-networks",
-      "google",
-      "meta"
+      "google"
     ],
     "1292": [
       "amazon",
-      "de-shaw",
       "fractal-analytics",
       "google",
       "imc"
@@ -3428,10 +2959,9 @@
       "databricks",
       "google",
       "imc",
-      "meta",
       "nuro",
-      "oracle",
       "pinterest",
+      "snap",
       "snapchat",
       "tiktok",
       "uber"
@@ -3439,11 +2969,9 @@
     "1295": [
       "amazon",
       "bloomberg",
-      "cognizant",
       "google",
-      "meta",
-      "microsoft",
-      "quora"
+      "quora",
+      "tcs"
     ],
     "1296": [
       "google",
@@ -3451,12 +2979,10 @@
     ],
     "1297": [
       "amazon",
+      "google",
       "hubspot",
-      "meta",
-      "microsoft",
       "roblox",
-      "salesforce",
-      "yahoo"
+      "salesforce"
     ],
     "1298": [
       "airbnb",
@@ -3467,7 +2993,6 @@
     "1299": [
       "amazon",
       "google",
-      "meta",
       "zoho"
     ],
     "1300": [
@@ -3475,11 +3000,9 @@
       "google"
     ],
     "1301": [
-      "amazon",
       "samsung"
     ],
     "1302": [
-      "amazon",
       "google",
       "myntra",
       "tiktok"
@@ -3488,17 +3011,14 @@
       "amazon",
       "american-express",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1305": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "1306": [
       "amazon",
-      "microsoft",
+      "pinterest",
       "tanium"
     ],
     "1307": [
@@ -3508,31 +3028,27 @@
     ],
     "1309": [
       "bloomberg",
-      "meta",
-      "microsoft",
+      "google",
       "oracle"
     ],
     "1310": [
       "airtel",
       "amazon",
-      "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1311": [
       "amazon",
+      "bolt",
       "guidewire"
     ],
     "1312": [
       "accenture",
       "amazon",
+      "goldman-sachs",
       "google",
-      "ibm",
-      "meta",
       "oracle"
     ],
     "1313": [
-      "amazon",
       "google"
     ],
     "1314": [
@@ -3542,8 +3058,6 @@
     "1315": [
       "amazon",
       "josh-technology",
-      "meta",
-      "microsoft",
       "salesforce"
     ],
     "1316": [
@@ -3553,10 +3067,10 @@
       "amazon",
       "google",
       "hrt",
-      "microsoft"
+      "hudson-river-trading"
     ],
     "1318": [
-      "microsoft"
+      "google"
     ],
     "1319": [
       "akuna-capital",
@@ -3565,9 +3079,7 @@
       "google",
       "ibm",
       "intuit",
-      "meta",
-      "microsoft",
-      "phonepe",
+      "mckinsey",
       "salesforce"
     ],
     "1320": [
@@ -3579,35 +3091,34 @@
       "google",
       "hrt",
       "hsbc",
-      "meta",
-      "microsoft"
+      "hudson-river-trading"
     ],
     "1324": [
-      "guidewire",
-      "microsoft"
+      "guidewire"
     ],
     "1325": [
       "amazon",
       "google",
-      "josh-technology",
-      "microsoft"
+      "josh-technology"
     ],
     "1326": [
+      "adobe",
       "akuna-capital",
       "amazon",
       "de-shaw",
       "google",
+      "intuit",
       "meesho",
-      "meta",
-      "microsoft",
       "morgan-stanley",
       "rippling",
       "salesforce",
+      "squarepoint-capital",
       "uber"
     ],
     "1328": [
       "dell",
       "expedia",
+      "j-p-morgan",
       "mathworks",
       "nvidia",
       "vmware",
@@ -3623,9 +3134,7 @@
       "agoda",
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1332": [
       "amazon"
@@ -3635,40 +3144,31 @@
     ],
     "1334": [
       "amazon",
-      "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "1335": [
       "amazon",
       "google",
-      "mathworks",
-      "microsoft",
       "salesforce",
       "tiktok",
       "turvo"
     ],
     "1337": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "1338": [
-      "akuna-capital",
-      "meta"
+      "akuna-capital"
     ],
     "1339": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1340": [
-      "bloomberg",
+      "amazon",
       "google"
     ],
     "1342": [
@@ -3676,33 +3176,31 @@
       "bloomberg",
       "google",
       "hrt",
-      "microsoft"
+      "hudson-river-trading"
     ],
     "1343": [
       "amazon",
       "goldman-sachs",
+      "google",
       "linkedin"
     ],
     "1344": [
       "amazon",
-      "apple",
+      "aurora",
       "bloomberg",
       "epic-systems",
-      "meta",
-      "microsoft",
-      "siemens"
+      "google",
+      "siemens",
+      "zoho"
     ],
     "1345": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "1346": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1347": [
       "amazon",
@@ -3711,16 +3209,16 @@
       "google",
       "ixl",
       "jpmorgan",
-      "microsoft",
       "oracle",
       "sofi",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1348": [
       "google",
       "intercom",
-      "microsoft",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1349": [
       "google",
@@ -3728,10 +3226,9 @@
     ],
     "1351": [
       "amazon",
+      "arista-networks",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1352": [
       "amazon",
@@ -3739,20 +3236,19 @@
       "bloomberg",
       "bytedance",
       "google",
-      "meta",
-      "microsoft",
       "starbucks",
       "target",
-      "tekion"
+      "tekion",
+      "tiktok"
     ],
     "1353": [
       "amazon",
       "bloomberg",
+      "expedia",
+      "goldman-sachs",
       "google",
       "gopuff",
       "instacart",
-      "meta",
-      "microsoft",
       "nvidia",
       "oracle",
       "paypal",
@@ -3768,19 +3264,14 @@
     "1356": [
       "amazon",
       "google",
+      "j-p-morgan",
       "mapbox"
-    ],
-    "1357": [
-      "meta"
     ],
     "1358": [
       "amazon",
       "bloomberg",
       "de-shaw",
-      "google",
-      "meta",
-      "microsoft",
-      "paypal"
+      "google"
     ],
     "1359": [
       "acko",
@@ -3790,28 +3281,21 @@
     "1360": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "optiver"
     ],
     "1361": [
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1362": [
       "amazon"
     ],
     "1363": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "1365": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "1366": [
@@ -3820,14 +3304,13 @@
       "bloomberg",
       "coursera",
       "google",
-      "microsoft",
-      "tekion"
+      "tekion",
+      "ziprecruiter"
     ],
     "1367": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "soundhound"
     ],
     "1368": [
@@ -3836,7 +3319,6 @@
       "de-shaw",
       "docusign",
       "google",
-      "meta",
       "tcs",
       "uber"
     ],
@@ -3848,42 +3330,31 @@
     "1371": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "goldman-sachs",
+      "google"
     ],
     "1372": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "1373": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft",
-      "zepto"
+      "google"
     ],
     "1374": [
       "google"
     ],
-    "1375": [
-      "microsoft"
-    ],
     "1376": [
       "amazon",
       "google",
-      "medianet",
-      "microsoft"
+      "medianet"
     ],
     "1377": [
-      "google",
-      "inmobi"
+      "google"
     ],
     "1380": [
       "amazon",
       "cisco",
-      "google",
       "oracle"
     ],
     "1381": [
@@ -3892,32 +3363,25 @@
       "ebay",
       "google",
       "imc",
-      "microsoft",
       "moloco"
     ],
     "1382": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1383": [
       "amazon",
       "citrix",
       "de-shaw",
-      "doordash",
       "flipkart",
       "google",
-      "meta",
       "phonepe",
       "tiktok"
     ],
     "1385": [
-      "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "uber",
       "zepto"
     ],
@@ -3925,10 +3389,7 @@
       "bloomberg",
       "geico",
       "linkedin",
-      "meta",
-      "microsoft",
-      "yandex",
-      "zoho"
+      "yandex"
     ],
     "1387": [
       "bloomberg",
@@ -3942,42 +3403,36 @@
       "amazon",
       "bloomberg",
       "google",
-      "uber",
       "visa"
     ],
     "1390": [
       "amazon",
       "bloomberg",
       "capital-one",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1391": [
-      "robinhood"
+      "google",
+      "robinhood",
+      "samsung"
     ],
     "1392": [
       "amazon",
+      "apple",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1394": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "zoho"
     ],
     "1395": [
       "amazon",
-      "bloomberg",
       "goldman-sachs",
       "google",
-      "ibm",
-      "meta"
+      "ibm"
     ],
     "1396": [
       "amazon",
@@ -3995,25 +3450,19 @@
       "amazon",
       "bloomberg",
       "google",
-      "mercari",
-      "meta"
+      "mercari"
     ],
     "1400": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "1401": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "1402": [
-      "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1403": [
       "amazon",
@@ -4024,8 +3473,7 @@
       "geico",
       "general-motors",
       "google",
-      "grab",
-      "microsoft"
+      "grab"
     ],
     "1405": [
       "amazon",
@@ -4033,22 +3481,16 @@
       "capgemini",
       "geico",
       "google",
-      "microsoft",
-      "rakuten",
       "tiktok",
       "wayfair"
     ],
     "1406": [
-      "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1408": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1409": [
       "amazon"
@@ -4056,17 +3498,13 @@
     "1410": [
       "amazon",
       "google",
-      "meta",
       "oracle"
     ],
     "1411": [
       "amazon",
       "bloomberg",
       "fortinet",
-      "google",
-      "intuit",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1413": [
       "amazon",
@@ -4074,8 +3512,6 @@
       "expedia",
       "goldman-sachs",
       "google",
-      "ibm",
-      "microsoft",
       "swiggy"
     ],
     "1414": [
@@ -4084,18 +3520,14 @@
     "1415": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1416": [
       "google",
       "postman"
     ],
-    "1417": [
-      "microsoft"
-    ],
     "1418": [
+      "j-p-morgan",
       "jpmorgan",
       "nordstrom"
     ],
@@ -4109,8 +3541,7 @@
     ],
     "1422": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "1423": [
       "amazon",
@@ -4120,8 +3551,7 @@
       "factwise",
       "flipkart",
       "google",
-      "meta",
-      "microsoft",
+      "sprinklr",
       "tiktok",
       "uber"
     ],
@@ -4129,8 +3559,7 @@
       "amazon",
       "bp",
       "google",
-      "liftoff",
-      "meta"
+      "liftoff"
     ],
     "1425": [
       "akuna-capital",
@@ -4141,15 +3570,13 @@
       "bloomberg",
       "google",
       "infosys",
-      "meta",
-      "microsoft"
+      "wipro"
     ],
     "1432": [
       "amazon",
       "bloomberg",
       "google",
       "mercari",
-      "meta",
       "trexquant"
     ],
     "1434": [
@@ -4159,14 +3586,12 @@
     ],
     "1436": [
       "amazon",
-      "meta",
       "yandex",
       "yelp"
     ],
     "1437": [
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1438": [
       "amazon",
@@ -4174,34 +3599,28 @@
       "capital-one",
       "ebay",
       "google",
-      "meta",
-      "microsoft",
       "moloco",
       "nvidia",
       "phonepe",
       "salesforce",
+      "sumo-logic",
       "uber",
       "visa",
       "yandex"
     ],
     "1439": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "1441": [
-      "google",
-      "microsoft"
+      "amazon",
+      "bloomberg",
+      "google"
     ],
     "1442": [
       "google"
     ],
     "1443": [
-      "amazon",
-      "cisco",
-      "google",
-      "meta",
-      "microsoft",
-      "myntra"
+      "amazon"
     ],
     "1444": [
       "google"
@@ -4209,8 +3628,7 @@
     "1446": [
       "amazon",
       "bloomberg",
-      "goldman-sachs",
-      "meta"
+      "goldman-sachs"
     ],
     "1447": [
       "google"
@@ -4220,39 +3638,27 @@
       "docusign",
       "goldman-sachs",
       "google",
-      "josh-technology",
-      "meta",
-      "microsoft"
+      "josh-technology"
     ],
     "1449": [
       "google"
     ],
     "1451": [
-      "expedia",
-      "microsoft"
+      "expedia"
     ],
     "1452": [
       "datadog",
       "google"
     ],
-    "1453": [
-      "meta"
-    ],
     "1455": [
       "amazon",
-      "bloomberg",
       "google",
-      "microsoft",
-      "tcs",
       "yelp"
     ],
     "1456": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft",
-      "tcs",
-      "wayfair"
+      "google"
     ],
     "1457": [
       "amazon",
@@ -4261,27 +3667,20 @@
     "1458": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1460": [
       "amazon",
-      "bloomberg",
-      "meta",
-      "microsoft"
+      "bloomberg"
     ],
     "1461": [
+      "amazon",
       "google",
-      "grammarly",
-      "meta",
-      "microsoft"
+      "grammarly"
     ],
     "1462": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "tiktok",
       "uber"
     ],
@@ -4289,40 +3688,35 @@
       "amazon",
       "flipkart",
       "google",
-      "meta",
-      "microsoft",
       "rubrik",
-      "salesforce",
-      "sprinklr",
-      "uber"
+      "sprinklr"
     ],
     "1464": [
       "amazon",
       "bloomberg",
+      "cisco",
       "google",
+      "j-p-morgan",
       "jpmorgan",
-      "meta",
-      "samsung"
+      "samsung",
+      "yandex"
     ],
     "1465": [
       "bny-mellon",
+      "expedia",
       "google",
       "ixl"
     ],
     "1466": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "tiktok"
     ],
     "1470": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "zoho"
+      "morgan-stanley"
     ],
     "1471": [
       "google"
@@ -4331,19 +3725,19 @@
       "amazon",
       "apple",
       "bloomberg",
-      "chime",
+      "cisco",
       "doordash",
+      "goldman-sachs",
       "google",
-      "microsoft",
       "roblox",
       "rokt",
+      "snap",
       "snapchat",
-      "splunk",
+      "snowflake",
       "uber"
     ],
     "1473": [
       "google",
-      "linkedin",
       "paypal"
     ],
     "1475": [
@@ -4351,8 +3745,6 @@
       "bloomberg",
       "dream11",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "1476": [
@@ -4370,37 +3762,33 @@
       "google"
     ],
     "1480": [
-      "adobe",
       "amazon",
       "bloomberg",
-      "epam-systems",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "1481": [
       "amazon",
-      "expedia",
       "fivetran",
       "google",
+      "ibm",
+      "j-p-morgan",
       "morgan-stanley",
       "oracle",
-      "salesforce"
+      "salesforce",
+      "wayfair"
     ],
     "1482": [
+      "adobe",
       "amazon",
       "barclays",
       "bloomberg",
       "flipkart",
-      "google",
-      "meta",
-      "microsoft",
-      "navi",
-      "phonepe"
+      "google"
     ],
     "1483": [
       "amazon",
+      "goldman-sachs",
       "google"
     ],
     "1486": [
@@ -4414,7 +3802,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "oracle",
       "trend-micro"
     ],
@@ -4431,28 +3818,23 @@
       "amazon",
       "bloomberg",
       "expedia",
-      "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
+      "ibm",
       "oracle",
-      "salesforce",
       "tcs"
     ],
     "1493": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tcs",
       "vk",
       "yandex"
     ],
     "1494": [
+      "amazon",
       "google",
-      "snowflake",
-      "tiktok"
+      "snowflake"
     ],
     "1496": [
       "amazon",
@@ -4462,19 +3844,16 @@
     "1497": [
       "6sense",
       "amazon",
+      "bloomberg",
       "devrev",
       "google",
-      "meta",
-      "microsoft",
       "tcs",
       "visa"
     ],
     "1498": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1499": [
       "google"
@@ -4482,9 +3861,7 @@
     "1502": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1503": [
       "google"
@@ -4492,13 +3869,13 @@
     "1504": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1507": [
       "adobe",
+      "celigo",
+      "expedia",
       "oracle",
-      "tiktok",
       "twilio"
     ],
     "1508": [
@@ -4510,33 +3887,24 @@
       "amazon",
       "google"
     ],
-    "1510": [
-      "microsoft"
-    ],
     "1512": [
       "accenture",
       "amazon",
       "bloomberg",
       "google",
       "htc",
-      "meta",
-      "microsoft",
       "sony",
       "tcs",
       "zoho"
     ],
     "1513": [
       "amazon",
-      "google",
-      "ibm"
+      "google"
     ],
     "1514": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
-      "samsung",
-      "tcs"
+      "samsung"
     ],
     "1515": [
       "citadel"
@@ -4547,9 +3915,6 @@
       "bloomberg",
       "google",
       "hilabs",
-      "ibm",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "1519": [
@@ -4564,17 +3929,13 @@
     ],
     "1523": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1524": [
       "amazon",
       "bloomberg",
       "directi",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1525": [
       "amazon",
@@ -4584,21 +3945,18 @@
       "amazon",
       "dream11",
       "google",
-      "ibm",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "1528": [
-      "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1529": [
       "amazon",
+      "ibm",
+      "j-p-morgan",
       "jpmorgan",
-      "microsoft",
-      "morgan-stanley"
+      "morgan-stanley",
+      "visa"
     ],
     "1530": [
       "bytedance",
@@ -4609,7 +3967,6 @@
       "amazon",
       "github",
       "google",
-      "microsoft",
       "toptal"
     ],
     "1534": [
@@ -4620,16 +3977,13 @@
     ],
     "1535": [
       "directi",
-      "jpmorgan",
-      "microsoft",
-      "nvidia"
+      "goldman-sachs",
+      "jpmorgan"
     ],
     "1537": [
       "google",
       "intuit",
-      "microsoft",
-      "mindtickle",
-      "oracle"
+      "mindtickle"
     ],
     "1539": [
       "amazon",
@@ -4637,11 +3991,9 @@
       "google",
       "ibm",
       "meta",
-      "microsoft",
       "morgan-stanley",
       "oracle",
-      "tiktok",
-      "uber"
+      "tiktok"
     ],
     "1540": [
       "infosys"
@@ -4649,27 +4001,21 @@
     "1541": [
       "amazon",
       "google",
-      "meta",
-      "tiktok"
+      "j-p-morgan"
     ],
     "1542": [
-      "directi",
-      "google"
+      "directi"
     ],
     "1544": [
       "amazon",
       "blackstone",
       "bloomberg",
-      "google",
-      "meta",
-      "yahoo"
+      "google"
     ],
     "1545": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1546": [
       "google"
@@ -4680,16 +4026,14 @@
       "cyware",
       "google",
       "line",
-      "meta",
-      "microsoft",
-      "oracle"
+      "oracle",
+      "phonepe"
     ],
     "1550": [
       "amazon",
       "bloomberg",
       "dji",
-      "google",
-      "meta"
+      "google"
     ],
     "1551": [
       "amazon",
@@ -4697,12 +4041,10 @@
     ],
     "1552": [
       "amazon",
-      "apple",
       "flipkart",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
+      "phonepe",
       "roblox",
       "salesforce",
       "uber"
@@ -4712,10 +4054,7 @@
     ],
     "1557": [
       "airbnb",
-      "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1558": [
       "amazon"
@@ -4723,7 +4062,6 @@
     "1559": [
       "amazon",
       "google",
-      "meta",
       "nutanix",
       "weride"
     ],
@@ -4741,7 +4079,8 @@
       "google"
     ],
     "1566": [
-      "hrt"
+      "hrt",
+      "hudson-river-trading"
     ],
     "1567": [
       "amazon",
@@ -4759,14 +4098,8 @@
     ],
     "1572": [
       "amazon",
-      "bloomberg",
       "google",
-      "microsoft",
-      "tcs",
       "yandex"
-    ],
-    "1573": [
-      "microsoft"
     ],
     "1574": [
       "amazon",
@@ -4774,40 +4107,32 @@
       "de-shaw",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "razorpay",
+      "tekion",
       "tiktok"
-    ],
-    "1576": [
-      "microsoft"
     ],
     "1578": [
       "amazon",
-      "bloomberg",
-      "microsoft"
+      "bloomberg"
     ],
     "1579": [
-      "de-shaw",
       "google",
-      "meta",
       "uber"
     ],
     "1582": [
+      "amazon",
       "etsy",
-      "google",
-      "meta"
+      "google"
     ],
     "1583": [
-      "bloomberg"
+      "bloomberg",
+      "google"
     ],
     "1584": [
       "amazon",
       "directi",
       "flipkart",
       "google",
-      "meta",
-      "microsoft",
       "nutanix",
       "paypay",
       "tiktok",
@@ -4822,19 +4147,17 @@
       "linkedin"
     ],
     "1589": [
+      "google",
       "paypal"
     ],
     "1590": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "phonepe",
       "samsung"
     ],
     "1591": [
-      "amazon",
       "google"
     ],
     "1592": [
@@ -4843,21 +4166,17 @@
     "1593": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1594": [
+      "amazon",
       "google"
     ],
     "1595": [
       "google"
     ],
     "1598": [
-      "amazon",
-      "flipkart",
-      "mercari",
-      "meta"
+      "mercari"
     ],
     "1599": [
       "peak6"
@@ -4872,15 +4191,14 @@
     "1603": [
       "amazon",
       "google",
-      "meta",
       "tesla",
       "uber",
       "valve"
     ],
     "1604": [
-      "ibm",
       "karat",
       "snowflake",
+      "stripe",
       "wayfair"
     ],
     "1605": [
@@ -4890,6 +4208,7 @@
     "1606": [
       "amazon",
       "apple",
+      "capital-one",
       "cisco",
       "citadel",
       "google",
@@ -4898,14 +4217,11 @@
     "1608": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1609": [
       "amazon",
-      "bloomberg",
-      "meta"
+      "bloomberg"
     ],
     "1610": [
       "amazon",
@@ -4919,6 +4235,7 @@
       "bloomberg",
       "expedia",
       "google",
+      "mckinsey",
       "oracle",
       "servicenow"
     ],
@@ -4927,12 +4244,7 @@
       "bloomberg",
       "google",
       "intel",
-      "meta",
-      "microsoft",
       "tcs"
-    ],
-    "1615": [
-      "microsoft"
     ],
     "1616": [
       "google"
@@ -4948,14 +4260,13 @@
       "amazon"
     ],
     "1622": [
+      "amazon",
+      "bloomberg",
       "google"
-    ],
-    "1624": [
-      "microsoft",
-      "zoho"
     ],
     "1625": [
       "amazon",
+      "j-p-morgan",
       "jpmorgan"
     ],
     "1626": [
@@ -4974,18 +4285,16 @@
     "1631": [
       "amazon",
       "bloomberg",
+      "cohesity",
       "google",
-      "meta",
-      "microsoft",
       "nutanix",
       "snowflake",
-      "tiktok",
+      "visa",
       "waymo"
     ],
     "1632": [
       "citadel",
-      "google",
-      "meta"
+      "google"
     ],
     "1636": [
       "accenture",
@@ -4993,23 +4302,14 @@
       "agoda",
       "amazon",
       "bloomberg",
-      "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
-      "sap",
-      "tcs",
       "zoho"
     ],
     "1637": [
       "amazon",
       "general-motors",
-      "google",
-      "microsoft"
-    ],
-    "1638": [
-      "microsoft"
+      "google"
     ],
     "1639": [
       "amazon",
@@ -5017,9 +4317,10 @@
       "dunzo",
       "google",
       "meesho",
-      "meta",
+      "snap",
       "snapchat",
-      "snowflake"
+      "snowflake",
+      "uber"
     ],
     "1641": [
       "google"
@@ -5029,13 +4330,10 @@
       "bloomberg",
       "de-shaw",
       "dream11",
-      "flipkart",
       "google",
+      "media-net",
       "medianet",
-      "meta",
-      "microsoft",
       "oyo",
-      "phonepe",
       "tiktok",
       "twilio",
       "uber",
@@ -5047,14 +4345,14 @@
     ],
     "1646": [
       "amazon",
+      "google",
       "verizon"
     ],
     "1647": [
       "amazon",
       "american-express",
+      "consultadd",
       "google",
-      "intuit",
-      "microsoft",
       "smartnews"
     ],
     "1648": [
@@ -5071,31 +4369,24 @@
     "1652": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1653": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "redbus",
       "urban-company"
     ],
     "1654": [
       "accolite",
-      "amazon",
-      "microsoft"
+      "bloomberg"
     ],
     "1655": [
       "google"
     ],
     "1656": [
       "bloomberg",
-      "google",
-      "meta",
       "yandex"
     ],
     "1657": [
@@ -5103,14 +4394,11 @@
       "apple",
       "bloomberg",
       "google",
-      "microsoft",
-      "phonepe",
       "postmates"
     ],
     "1658": [
       "amazon",
       "google",
-      "meta",
       "morgan-stanley"
     ],
     "1659": [
@@ -5118,23 +4406,24 @@
     ],
     "1662": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "1663": [
-      "lendingkart"
+      "lendingkart",
+      "lendingkart-technologies"
     ],
     "1664": [
       "doordash",
       "dunzo",
       "flatiron-health",
-      "microsoft",
       "phonepe",
       "twilio"
     ],
     "1665": [
       "akuna-capital",
-      "microsoft"
+      "amazon",
+      "goldman-sachs",
+      "google"
     ],
     "1668": [
       "amazon",
@@ -5147,9 +4436,8 @@
     "1669": [
       "amazon",
       "arista-networks",
+      "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "nvidia",
       "oracle",
       "paypal",
@@ -5165,46 +4453,38 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "paypal"
     ],
     "1672": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1673": [
       "google",
       "uber"
     ],
     "1674": [
-      "curefit"
+      "amazon",
+      "curefit",
+      "google"
     ],
     "1675": [
-      "apple",
       "samsung"
     ],
     "1678": [
-      "google",
-      "zoho"
+      "google"
     ],
     "1679": [
       "amazon",
       "bloomberg",
       "de-shaw",
-      "google",
-      "meta",
-      "microsoft",
-      "yandex"
+      "google"
     ],
     "1680": [
-      "amazon"
-    ],
-    "1681": [
-      "microsoft"
+      "amazon",
+      "bloomberg",
+      "google"
     ],
     "1684": [
       "bloomberg",
@@ -5213,23 +4493,20 @@
     ],
     "1685": [
       "amazon",
-      "bloomberg",
-      "google",
-      "ibm",
-      "meta"
+      "google"
     ],
     "1687": [
       "nutanix"
     ],
     "1688": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1689": [
       "amazon",
-      "nutanix"
+      "google",
+      "nutanix",
+      "zoho"
     ],
     "1690": [
       "dunzo",
@@ -5238,7 +4515,6 @@
     "1691": [
       "amazon",
       "google",
-      "meta",
       "samsung"
     ],
     "1694": [
@@ -5249,34 +4525,29 @@
       "at-t",
       "bloomberg",
       "cashfree",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1696": [
+      "amazon",
+      "aqr-capital-management",
       "aqr-capital-management-llc",
       "google",
-      "meta",
-      "microsoft"
+      "visa"
     ],
     "1697": [
-      "google"
+      "google",
+      "uber"
     ],
     "1700": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft",
-      "oracle",
-      "yahoo"
+      "google"
     ],
     "1701": [
       "amazon",
       "de-shaw",
       "google",
       "instacart",
-      "meta",
       "salesforce"
     ],
     "1702": [
@@ -5284,11 +4555,9 @@
     ],
     "1703": [
       "google",
-      "microsoft",
       "turing"
     ],
     "1704": [
-      "amazon",
       "google"
     ],
     "1705": [
@@ -5306,10 +4575,12 @@
       "bloomberg",
       "google",
       "ibm",
-      "meta",
+      "j-p-morgan",
       "salesforce"
     ],
     "1711": [
+      "amazon",
+      "google",
       "robinhood",
       "swiggy"
     ],
@@ -5320,51 +4591,43 @@
     ],
     "1713": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1716": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1717": [
       "amazon",
       "bloomberg",
       "google",
-      "juspay",
-      "meta",
-      "microsoft",
       "swiggy"
     ],
     "1718": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "1719": [
       "uber"
     ],
     "1721": [
-      "adobe",
       "amazon",
+      "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "1722": [
+      "bloomberg",
       "google",
+      "sumo-logic",
       "sumologic"
     ],
     "1723": [
       "amazon",
       "google",
       "lyft",
-      "meta",
-      "microsoft",
+      "phonepe",
       "pinterest"
     ],
     "1725": [
@@ -5373,11 +4636,11 @@
     "1726": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1727": [
+      "amazon",
+      "bloomberg",
       "directi",
       "google"
     ],
@@ -5385,14 +4648,9 @@
       "google"
     ],
     "1732": [
-      "accenture",
       "amazon",
       "bloomberg",
-      "cognizant",
       "google",
-      "meta",
-      "microsoft",
-      "tcs",
       "zoho"
     ],
     "1733": [
@@ -5423,10 +4681,8 @@
     ],
     "1743": [
       "amazon",
-      "capital-one",
       "ebay",
       "google",
-      "meta",
       "robinhood",
       "roblox",
       "sig",
@@ -5441,40 +4697,29 @@
     "1748": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "tcs"
+      "google"
     ],
     "1749": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1750": [
       "amazon",
-      "goldman-sachs",
-      "meta"
+      "goldman-sachs"
     ],
     "1751": [
       "amazon",
       "bloomberg",
       "general-electric",
       "google",
-      "microsoft",
-      "phonepe",
       "snowflake",
       "tcs"
     ],
     "1752": [
       "amazon",
       "bloomberg",
-      "goldman-sachs",
       "google",
-      "ibm",
-      "meta",
-      "microsoft",
       "soundhound",
       "tcs",
       "visa"
@@ -5483,6 +4728,7 @@
       "google"
     ],
     "1754": [
+      "snap",
       "snapchat"
     ],
     "1755": [
@@ -5491,30 +4737,31 @@
       "sprinklr"
     ],
     "1758": [
+      "amazon",
+      "bloomberg",
       "tesla"
     ],
     "1759": [
       "google",
-      "virtu"
+      "virtu",
+      "virtu-financial"
     ],
     "1760": [
       "amazon",
       "bloomberg",
       "flipkart",
       "google",
-      "intuit",
-      "meta",
-      "microsoft"
+      "intuit"
     ],
     "1761": [
       "amazon",
-      "godaddy"
+      "godaddy",
+      "meesho"
     ],
     "1763": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1764": [
       "amazon"
@@ -5528,9 +4775,7 @@
       "google"
     ],
     "1768": [
-      "adobe",
       "amazon",
-      "apple",
       "bloomberg",
       "google",
       "ibm",
@@ -5545,8 +4790,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiktok"
     ],
     "1770": [
@@ -5557,8 +4800,7 @@
     ],
     "1773": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "1774": [
       "google"
@@ -5568,8 +4810,7 @@
     ],
     "1776": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1779": [
       "amazon",
@@ -5579,61 +4820,54 @@
     "1780": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1781": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "zoho"
     ],
     "1782": [
       "amazon"
     ],
     "1784": [
-      "cisco"
+      "amazon",
+      "cisco",
+      "google"
     ],
     "1785": [
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1786": [
       "google"
     ],
     "1787": [
       "google",
+      "media-net",
       "medianet"
     ],
     "1790": [
       "amazon",
       "doordash",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1791": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1792": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1793": [
-      "amazon",
       "google"
     ],
     "1796": [
       "google",
-      "microsoft",
       "softwire"
     ],
     "1797": [
@@ -5642,13 +4876,13 @@
       "deliveroo",
       "docusign",
       "linkedin",
-      "microsoft",
       "ncr",
+      "openai",
       "oracle",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1798": [
-      "amazon",
       "infosys"
     ],
     "1799": [
@@ -5656,20 +4890,18 @@
     ],
     "1800": [
       "amazon",
+      "bloomberg",
       "google",
-      "microsoft",
       "tcs"
     ],
     "1801": [
-      "citadel",
+      "coinbase",
       "google",
       "jane-street",
       "robinhood"
     ],
     "1802": [
       "google",
-      "ibm",
-      "microsoft",
       "tiktok"
     ],
     "1803": [
@@ -5682,23 +4914,18 @@
       "google",
       "remitly"
     ],
-    "1808": [
-      "microsoft"
-    ],
     "1812": [
+      "j-p-morgan",
       "jpmorgan"
     ],
     "1813": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "tiktok"
     ],
     "1814": [
-      "capital-one",
       "google",
-      "meta",
       "roblox",
       "square",
       "uber"
@@ -5712,44 +4939,38 @@
     ],
     "1817": [
       "amazon",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1818": [
       "uber"
     ],
     "1819": [
-      "akuna-capital",
-      "infosys"
+      "akuna-capital"
     ],
     "1822": [
-      "amazon",
-      "meta",
-      "microsoft"
+      "amazon"
     ],
     "1823": [
       "accenture",
       "amazon",
-      "arista-networks",
       "bloomberg",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
+      "nutanix",
       "oracle",
-      "sofi",
+      "tcs",
       "walmart-labs",
       "zoho"
     ],
     "1824": [
       "google",
-      "microsoft",
       "oracle",
+      "pony-ai",
       "ponyai",
-      "publicis-sapient",
       "squarepoint-capital"
     ],
     "1825": [
-      "amazon",
       "google"
     ],
     "1827": [
@@ -5763,7 +4984,6 @@
       "google"
     ],
     "1829": [
-      "amazon",
       "bloomberg",
       "uber"
     ],
@@ -5774,12 +4994,13 @@
       "amazon",
       "bloomberg",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1833": [
-      "amazon"
+      "amazon",
+      "bloomberg",
+      "google",
+      "tcs"
     ],
     "1834": [
       "amazon",
@@ -5787,14 +5008,12 @@
       "goldman-sachs",
       "google",
       "ibm",
-      "meta",
       "microsoft"
     ],
     "1835": [
       "mobisy"
     ],
     "1837": [
-      "amazon",
       "google"
     ],
     "1838": [
@@ -5802,32 +5021,32 @@
       "bloomberg",
       "goldman-sachs",
       "google",
-      "infosys",
       "meta",
       "microsoft",
       "phonepe",
+      "pony-ai",
       "ponyai",
-      "uber"
+      "uber",
+      "urban-company"
     ],
     "1839": [
-      "amazon",
-      "microsoft",
-      "oracle",
+      "google",
       "paypal",
       "salesforce",
       "thomson-reuters"
     ],
     "1840": [
-      "dataminr"
+      "amazon",
+      "bloomberg",
+      "dataminr",
+      "google"
     ],
     "1844": [
       "google"
     ],
     "1845": [
       "dropbox",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1846": [
       "amazon"
@@ -5837,11 +5056,12 @@
     ],
     "1848": [
       "amazon",
+      "bloomberg",
+      "google",
       "honeywell"
     ],
     "1850": [
-      "google",
-      "meta"
+      "google"
     ],
     "1851": [
       "amazon",
@@ -5852,12 +5072,8 @@
       "amazon",
       "apple",
       "bloomberg",
-      "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
-      "paypal",
-      "zoho"
+      "paypal"
     ],
     "1855": [
       "google"
@@ -5868,16 +5084,14 @@
       "uber"
     ],
     "1857": [
+      "amazon",
       "google",
       "juspay",
-      "linkedin",
-      "meta"
+      "linkedin"
     ],
     "1859": [
       "amazon",
-      "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1860": [
       "tiktok"
@@ -5885,9 +5099,8 @@
     "1861": [
       "amazon",
       "capital-one",
+      "commvault",
       "google",
-      "meta",
-      "microsoft",
       "roblox",
       "sig",
       "square",
@@ -5899,7 +5112,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "microsoft"
     ],
     "1864": [
@@ -5911,21 +5123,18 @@
       "bloomberg",
       "databricks",
       "google",
-      "meta",
-      "microsoft",
       "quora"
     ],
     "1866": [
       "google"
     ],
     "1870": [
-      "amazon",
       "apple",
       "google"
     ],
     "1871": [
       "amazon",
-      "apple",
+      "bloomberg",
       "google"
     ],
     "1872": [
@@ -5933,23 +5142,24 @@
     ],
     "1876": [
       "amazon",
-      "meta",
+      "bloomberg",
       "quora",
       "visa"
     ],
     "1877": [
       "amazon",
-      "capgemini",
       "ebay",
-      "google",
-      "ibm",
-      "meta"
+      "google"
     ],
     "1878": [
+      "amazon",
+      "capital-one",
+      "google",
       "quora",
       "uber"
     ],
     "1879": [
+      "media-net",
       "medianet"
     ],
     "1881": [
@@ -5959,28 +5169,25 @@
       "amazon",
       "google",
       "linkedin",
+      "lyft",
       "tiktok",
-      "twitter"
+      "twitter",
+      "x"
     ],
     "1883": [
       "google"
     ],
     "1886": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
-    ],
-    "1887": [
-      "microsoft"
+      "google"
     ],
     "1888": [
+      "amazon",
       "google",
       "ibm"
     ],
     "1889": [
       "amazon",
-      "imc",
       "two-sigma"
     ],
     "1893": [
@@ -5990,7 +5197,6 @@
     ],
     "1894": [
       "6sense",
-      "bloomberg",
       "google"
     ],
     "1895": [
@@ -6015,26 +5221,19 @@
     "1900": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "1903": [
       "accenture",
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
-    ],
-    "1904": [
-      "microsoft"
+      "google"
     ],
     "1905": [
-      "amazon",
       "doordash",
       "google",
-      "meta",
       "twitter",
+      "x",
       "zepto"
     ],
     "1906": [
@@ -6049,33 +5248,26 @@
       "amazon",
       "arista-networks",
       "bloomberg",
+      "geico",
       "goldman-sachs",
       "google",
-      "ibm",
-      "infosys",
-      "meta",
-      "microsoft",
       "tcs",
       "twitter",
+      "x",
       "zoho"
     ],
     "1911": [
       "bloomberg",
       "google",
-      "meta",
       "quince"
     ],
     "1912": [
-      "flipkart",
-      "google"
-    ],
-    "1913": [
-      "google"
+      "amazon",
+      "flipkart"
     ],
     "1915": [
-      "amazon",
       "google",
-      "meta"
+      "uber"
     ],
     "1916": [
       "adobe"
@@ -6083,22 +5275,17 @@
     "1920": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1921": [
       "agoda",
-      "google",
-      "meta"
+      "google"
     ],
     "1922": [
       "amazon",
       "bloomberg",
       "google",
-      "infosys",
-      "meta",
-      "microsoft"
+      "visa"
     ],
     "1923": [
       "amazon"
@@ -6106,7 +5293,6 @@
     "1925": [
       "bloomberg",
       "google",
-      "meta",
       "qualtrics",
       "turing"
     ],
@@ -6115,8 +5301,6 @@
       "bloomberg",
       "ebay",
       "google",
-      "meta",
-      "microsoft",
       "paypal",
       "uber",
       "walmart-labs"
@@ -6125,55 +5309,44 @@
       "de-shaw"
     ],
     "1928": [
+      "airbnb",
       "amazon",
       "databricks",
-      "google",
-      "meta"
+      "google"
     ],
     "1929": [
       "amazon",
       "bloomberg",
       "ge-healthcare",
-      "google",
-      "infosys",
-      "meta",
-      "microsoft",
-      "yahoo"
+      "google"
     ],
     "1930": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1931": [
       "amazon",
       "bloomberg",
       "google",
-      "intuit",
-      "meta",
-      "microsoft"
+      "uber"
     ],
     "1932": [
-      "bloomberg",
-      "google",
-      "microsoft"
+      "amazon",
+      "google"
     ],
     "1935": [
       "amazon",
       "google",
-      "microsoft",
       "quora"
     ],
     "1937": [
       "amazon",
       "bloomberg",
-      "de-shaw",
-      "google",
-      "microsoft"
+      "google"
     ],
     "1938": [
+      "media-net",
       "medianet"
     ],
     "1941": [
@@ -6186,7 +5359,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "otterai",
       "spinny"
     ],
@@ -6198,13 +5370,12 @@
     "1944": [
       "amazon",
       "bloomberg",
+      "citigroup",
       "doordash",
       "expedia",
       "google",
       "linkedin",
-      "meesho",
-      "meta",
-      "microsoft",
+      "nvidia",
       "oracle",
       "rippling",
       "salesforce",
@@ -6213,32 +5384,28 @@
       "waymo"
     ],
     "1945": [
+      "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1946": [
       "infosys"
     ],
-    "1947": [
-      "meta"
-    ],
     "1948": [
       "amazon",
       "bloomberg",
+      "booking-com",
       "bookingcom",
       "google",
-      "microsoft",
       "nvidia"
     ],
     "1952": [
-      "google",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "1953": [
+      "amazon",
       "natwest",
-      "sap",
       "wells-fargo"
     ],
     "1954": [
@@ -6251,14 +5418,13 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "wayfair"
     ],
     "1958": [
       "amazon"
     ],
     "1959": [
+      "media-net",
       "medianet"
     ],
     "1961": [
@@ -6267,7 +5433,8 @@
     "1962": [
       "amazon",
       "expedia",
-      "nvidia"
+      "nvidia",
+      "salesforce"
     ],
     "1963": [
       "adobe",
@@ -6275,12 +5442,10 @@
       "bloomberg",
       "expedia",
       "google",
-      "ibm",
-      "meta",
-      "microsoft",
       "microstrategy",
       "paypal",
       "servicenow",
+      "visa",
       "zoho"
     ],
     "1964": [
@@ -6300,31 +5465,25 @@
     "1970": [
       "amazon",
       "atlassian",
-      "google",
-      "meta"
+      "google"
     ],
     "1974": [
-      "ibm",
       "jpmorgan",
+      "linkedin",
       "thomson-reuters"
     ],
     "1975": [
       "amazon",
       "bloomberg",
       "google",
-      "honeywell",
-      "meta",
-      "microsoft"
+      "honeywell"
     ],
     "1976": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1977": [
-      "amazon",
       "walmart-labs"
     ],
     "1979": [
@@ -6334,23 +5493,20 @@
       "tiaa"
     ],
     "1980": [
+      "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1981": [
-      "amazon"
+      "amazon",
+      "google"
     ],
     "1982": [
       "mindtickle"
     ],
     "1984": [
       "amazon",
-      "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tinkoff"
     ],
     "1985": [
@@ -6361,6 +5517,7 @@
       "swiggy"
     ],
     "1987": [
+      "amazon",
       "google"
     ],
     "1991": [
@@ -6371,8 +5528,7 @@
     ],
     "1992": [
       "citrix",
-      "google",
-      "meta"
+      "google"
     ],
     "1993": [
       "amazon",
@@ -6381,12 +5537,12 @@
     ],
     "1994": [
       "lowe",
+      "lowe-s",
+      "media-net",
       "medianet"
     ],
     "1995": [
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "1996": [
       "google",
@@ -6402,11 +5558,11 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "optum"
     ],
     "2001": [
-      "amazon"
+      "amazon",
+      "google"
     ],
     "2002": [
       "ascend",
@@ -6414,42 +5570,35 @@
     ],
     "2006": [
       "amazon",
-      "expedia",
-      "goldman-sachs",
       "google",
-      "microsoft",
-      "tcs",
-      "yandex"
+      "tcs"
     ],
     "2007": [
       "amazon",
       "bloomberg",
       "goldman-sachs",
       "google",
-      "meta",
       "verily"
     ],
     "2008": [
       "coindcx",
-      "meta",
       "myntra",
       "oracle",
       "salesforce",
       "uber",
+      "waymo",
       "wells-fargo"
     ],
     "2009": [
       "bloomberg",
       "google",
-      "microsoft",
       "uber"
     ],
     "2011": [
+      "accenture",
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2012": [
       "amazon"
@@ -6457,49 +5606,42 @@
     "2013": [
       "amazon",
       "google",
-      "meta"
+      "pure-storage"
     ],
     "2014": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2016": [
       "amazon",
       "bloomberg",
       "cisco",
       "google",
-      "mathworks",
-      "meta"
+      "mathworks"
     ],
     "2017": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2018": [
       "google"
     ],
     "2019": [
-      "flipkart",
-      "meta"
+      "flipkart"
     ],
     "2022": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2023": [
-      "apple",
-      "capital-one"
+      "apple"
     ],
     "2024": [
+      "amazon",
       "arcesium",
-      "google",
-      "meta"
+      "google"
     ],
     "2025": [
       "google",
@@ -6513,63 +5655,53 @@
     "2028": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2029": [
-      "google",
       "samsung"
     ],
     "2030": [
       "deutsche-bank"
     ],
     "2032": [
-      "amazon",
+      "booking-com",
       "bookingcom",
       "info-edge"
     ],
     "2033": [
+      "amazon",
       "epam-systems",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2034": [
       "amazon",
       "atlassian",
+      "bloomberg",
       "google",
-      "linkedin",
-      "meta",
-      "microsoft",
-      "mongodb",
-      "ripple"
+      "mongodb"
     ],
     "2035": [
       "amazon",
       "arcesium",
       "bloomberg",
       "google",
-      "infosys",
-      "meta",
-      "microsoft",
+      "millennium",
+      "phonepe",
       "salesforce",
       "samsung",
       "texas-instruments"
     ],
     "2037": [
-      "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "amazon"
     ],
     "2038": [
-      "ibm",
+      "j-p-morgan",
       "mathworks",
       "unity",
       "yelp"
     ],
     "2039": [
+      "amazon",
       "atlassian",
       "deutsche-bank"
     ],
@@ -6577,8 +5709,7 @@
       "amazon",
       "bloomberg",
       "google",
-      "linkedin",
-      "microsoft"
+      "linkedin"
     ],
     "2043": [
       "airbnb",
@@ -6590,41 +5721,32 @@
       "dropbox",
       "goldman-sachs",
       "google",
-      "hubspot",
-      "instacart",
-      "meta",
       "okta",
+      "oracle",
       "phonepe",
       "ramp-2",
       "revolut",
       "stripe",
       "the-trade-desk",
-      "uber",
-      "yandex"
+      "uber"
     ],
     "2044": [
       "amazon",
       "bloomberg",
       "bny-mellon",
       "citadel",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2045": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "2047": [
       "cisco",
-      "meta",
       "oracle"
     ],
     "2048": [
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "sprinklr"
     ],
     "2049": [
@@ -6649,11 +5771,9 @@
     "2054": [
       "amazon",
       "google",
+      "grammarly",
       "jpmorgan",
-      "meta",
-      "microsoft",
-      "razorpay",
-      "tcs"
+      "razorpay"
     ],
     "2055": [
       "adobe",
@@ -6666,22 +5786,20 @@
       "paypal"
     ],
     "2057": [
+      "amazon",
       "google"
     ],
     "2058": [
       "amazon",
       "bloomberg",
       "google",
-      "info-edge",
-      "meta",
-      "microsoft"
+      "info-edge"
     ],
     "2059": [
       "google"
     ],
     "2060": [
-      "bitgo",
-      "meta"
+      "bitgo"
     ],
     "2062": [
       "amazon",
@@ -6689,7 +5807,6 @@
       "commvault",
       "expedia",
       "google",
-      "microsoft",
       "noon",
       "oracle",
       "paypal",
@@ -6704,7 +5821,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "siemens"
     ],
     "2065": [
@@ -6715,6 +5831,7 @@
       "sap"
     ],
     "2068": [
+      "j-p-morgan",
       "salesforce"
     ],
     "2069": [
@@ -6730,8 +5847,9 @@
     "2071": [
       "amazon",
       "bloomberg",
+      "coupang",
       "google",
-      "meta",
+      "ibm",
       "walmart-labs"
     ],
     "2073": [
@@ -6739,21 +5857,22 @@
       "bloomberg",
       "google",
       "innovaccer",
-      "meta",
-      "microsoft",
+      "komprise",
       "twitter",
-      "uber"
+      "uber",
+      "x"
     ],
     "2074": [
       "amazon",
       "bloomberg",
+      "google",
       "josh-technology",
-      "meta",
       "nutanix",
       "zopsmart"
     ],
     "2075": [
       "amazon",
+      "google",
       "grammarly"
     ],
     "2076": [
@@ -6761,8 +5880,9 @@
       "uber"
     ],
     "2078": [
+      "amazon",
+      "bloomberg",
       "google",
-      "meta",
       "visa"
     ],
     "2079": [
@@ -6777,9 +5897,7 @@
     "2081": [
       "bloomberg",
       "cisco",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2085": [
       "jane-street"
@@ -6787,7 +5905,6 @@
     "2086": [
       "geico",
       "grab",
-      "microsoft",
       "palo-alto-networks"
     ],
     "2087": [
@@ -6803,13 +5920,9 @@
       "google"
     ],
     "2090": [
-      "amazon",
       "bloomberg",
       "duolingo",
-      "meta"
-    ],
-    "2091": [
-      "amazon"
+      "google"
     ],
     "2092": [
       "amazon",
@@ -6819,32 +5932,26 @@
     "2094": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2095": [
       "amazon",
       "bloomberg",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "2096": [
       "amazon",
       "databricks",
       "google",
-      "meta",
-      "oracle",
       "snowflake",
       "tiktok"
     ],
     "2097": [
       "amazon",
       "goldman-sachs",
-      "meta",
+      "google",
       "snapchat"
     ],
     "2099": [
@@ -6852,7 +5959,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "tcs"
     ],
     "2100": [
@@ -6860,10 +5966,10 @@
       "google"
     ],
     "2101": [
+      "airbnb",
       "amazon",
       "chime",
       "google",
-      "microsoft",
       "uber"
     ],
     "2102": [
@@ -6879,10 +5985,7 @@
       "chubb",
       "de-shaw",
       "google",
-      "meta",
-      "microsoft",
-      "phonepe",
-      "tiktok"
+      "j-p-morgan"
     ],
     "2105": [
       "google"
@@ -6890,24 +5993,16 @@
     "2106": [
       "amazon",
       "google",
-      "kla",
-      "microsoft",
       "mishipay"
-    ],
-    "2108": [
-      "google"
     ],
     "2109": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2110": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2111": [
       "amazon"
@@ -6915,16 +6010,15 @@
     "2114": [
       "amazon",
       "google",
-      "microsoft"
+      "zoho"
     ],
     "2115": [
       "amazon",
       "bloomberg",
       "docusign",
       "google",
-      "meta",
-      "microsoft",
       "phonepe",
+      "tesla",
       "tiktok",
       "uber",
       "verily",
@@ -6934,7 +6028,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "moloco",
       "servicenow"
     ],
@@ -6944,8 +6037,7 @@
     "2119": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2121": [
       "tusimple",
@@ -6955,21 +6047,17 @@
       "google"
     ],
     "2124": [
-      "bloomberg",
-      "microsoft"
+      "bloomberg"
     ],
     "2125": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "2126": [
-      "amazon",
       "google"
     ],
     "2127": [
       "amazon",
       "google",
-      "microsoft",
       "nutanix",
       "oracle"
     ],
@@ -6977,19 +6065,15 @@
       "amazon",
       "bloomberg",
       "google",
-      "josh-technology",
-      "meta",
-      "microsoft"
+      "josh-technology"
     ],
     "2131": [
+      "amazon",
       "bloomberg",
       "databricks",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2132": [
-      "google",
       "rubrik"
     ],
     "2133": [
@@ -7007,14 +6091,12 @@
       "google",
       "ibm",
       "josh-technology",
-      "microsoft",
       "tiktok"
     ],
     "2135": [
       "google"
     ],
     "2136": [
-      "ebay",
       "visa"
     ],
     "2138": [
@@ -7024,43 +6106,38 @@
     ],
     "2139": [
       "amazon",
-      "meta",
       "wayfair"
     ],
     "2140": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2141": [
       "amazon",
       "bloomberg",
-      "capital-one",
       "deutsche-bank",
-      "google",
-      "meta"
+      "google"
     ],
     "2144": [
+      "amazon",
+      "bloomberg",
       "garmin",
-      "meta",
       "nokia"
     ],
     "2145": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "tiktok",
       "zomato"
     ],
     "2146": [
+      "booking-com",
       "bookingcom"
     ],
     "2147": [
       "bloomberg",
-      "microsoft",
       "zomato"
     ],
     "2148": [
@@ -7068,12 +6145,9 @@
     ],
     "2149": [
       "amazon",
-      "apple",
       "bloomberg",
       "google",
-      "infosys",
-      "meta",
-      "microsoft"
+      "infosys"
     ],
     "2150": [
       "apple",
@@ -7086,8 +6160,7 @@
     "2154": [
       "bloomberg",
       "goldman-sachs",
-      "google",
-      "meta"
+      "google"
     ],
     "2155": [
       "google"
@@ -7096,17 +6169,16 @@
       "google"
     ],
     "2157": [
-      "lowe"
+      "lowe",
+      "lowe-s"
     ],
     "2160": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "2161": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2162": [
       "ge-digital",
@@ -7116,20 +6188,14 @@
       "amazon",
       "bloomberg",
       "google",
-      "infosys",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "2164": [
       "google",
-      "microsoft",
       "zoho"
     ],
     "2165": [
-      "cognizant",
-      "meta",
-      "microsoft"
+      "cognizant"
     ],
     "2167": [
       "google"
@@ -7153,8 +6219,6 @@
     "2176": [
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "zeta-suite"
     ],
     "2177": [
@@ -7175,16 +6239,13 @@
       "amazon",
       "google",
       "josh-technology",
-      "microsoft",
       "oracle"
     ],
     "2182": [
       "arista-networks",
       "fortinet",
       "google",
-      "jpmorgan",
-      "meta",
-      "microsoft"
+      "jpmorgan"
     ],
     "2183": [
       "paypal",
@@ -7192,9 +6253,7 @@
     ],
     "2185": [
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2186": [
       "wealthfront"
@@ -7203,7 +6262,6 @@
       "amazon",
       "google",
       "meesho",
-      "meta",
       "uber"
     ],
     "2188": [
@@ -7215,20 +6273,16 @@
     "2191": [
       "amazon",
       "bloomberg",
-      "goldman-sachs",
-      "google"
+      "goldman-sachs"
     ],
     "2192": [
       "amazon",
       "google",
-      "meta",
       "oracle"
     ],
     "2193": [
       "amazon",
       "goldman-sachs",
-      "ibm",
-      "microsoft",
       "rubrik"
     ],
     "2195": [
@@ -7237,6 +6291,7 @@
     ],
     "2196": [
       "amazon",
+      "bloomberg",
       "clari",
       "google",
       "linkedin",
@@ -7246,14 +6301,12 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "uber"
     ],
     "2200": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2202": [
       "american-express"
@@ -7264,15 +6317,12 @@
     "2206": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2207": [
       "amazon"
     ],
     "2208": [
-      "microsoft",
       "oracle"
     ],
     "2209": [
@@ -7281,9 +6331,7 @@
     "2210": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2211": [
       "amazon",
@@ -7298,15 +6346,11 @@
     ],
     "2215": [
       "accenture",
+      "adobe",
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "yandex"
-    ],
-    "2216": [
-      "microsoft"
     ],
     "2217": [
       "vmware"
@@ -7318,17 +6362,12 @@
       "amazon",
       "bloomberg",
       "google",
-      "ibm",
-      "meta",
-      "microsoft",
       "persistent-systems"
     ],
     "2221": [
       "amazon",
       "de-shaw",
-      "google",
-      "microsoft",
-      "zoho"
+      "google"
     ],
     "2222": [
       "amazon",
@@ -7343,16 +6382,12 @@
     ],
     "2225": [
       "google",
-      "indeed",
-      "karat",
-      "palantir-technologies"
+      "indeed"
     ],
     "2226": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "oracle"
     ],
     "2227": [
@@ -7381,8 +6416,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiger-analytics"
     ],
     "2240": [
@@ -7390,7 +6423,6 @@
     ],
     "2241": [
       "google",
-      "microsoft",
       "yandex"
     ],
     "2242": [
@@ -7406,28 +6438,23 @@
     "2246": [
       "amazon",
       "hrt",
-      "microsoft",
+      "hudson-river-trading",
       "target",
       "uber"
     ],
     "2248": [
-      "meta",
       "uber"
     ],
     "2249": [
       "rubrik"
     ],
     "2250": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "2251": [
-      "amazon",
       "capital-one",
-      "cohesity",
       "databricks",
       "google",
-      "oracle",
       "phonepe",
       "roblox",
       "uber"
@@ -7436,34 +6463,28 @@
       "google"
     ],
     "2256": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "2257": [
       "amazon",
+      "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "poshmark"
     ],
     "2258": [
       "amazon",
       "google",
+      "snap",
       "snapchat",
       "uber"
     ],
     "2259": [
       "amazon",
       "bloomberg",
-      "google",
-      "infosys",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2260": [
-      "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2261": [
       "amazon",
@@ -7483,14 +6504,12 @@
     "2265": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
+      "indmoney",
       "snowflake"
     ],
     "2266": [
       "amazon",
-      "goldman-sachs",
-      "microsoft"
+      "goldman-sachs"
     ],
     "2267": [
       "google"
@@ -7505,8 +6524,6 @@
       "bloomberg",
       "google",
       "jpmorgan",
-      "meta",
-      "microsoft",
       "nvidia"
     ],
     "2271": [
@@ -7520,10 +6537,8 @@
       "amazon",
       "bloomberg",
       "google",
-      "ibm",
+      "j-p-morgan",
       "jpmorgan",
-      "meta",
-      "microsoft",
       "nextjump"
     ],
     "2274": [
@@ -7533,8 +6548,7 @@
       "adobe",
       "amazon",
       "google",
-      "jump-trading",
-      "microsoft"
+      "jump-trading"
     ],
     "2276": [
       "databricks",
@@ -7552,11 +6566,11 @@
       "google"
     ],
     "2281": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "2283": [
       "google",
+      "j-p-morgan",
       "jpmorgan",
       "pornhub"
     ],
@@ -7564,9 +6578,8 @@
       "google"
     ],
     "2285": [
-      "amazon",
       "hrt",
-      "microsoft"
+      "hudson-river-trading"
     ],
     "2286": [
       "google"
@@ -7577,17 +6590,9 @@
     "2288": [
       "amazon"
     ],
-    "2289": [
-      "meta"
-    ],
     "2290": [
       "amazon",
-      "bloomberg",
-      "google",
-      "tiktok"
-    ],
-    "2293": [
-      "bloomberg"
+      "google"
     ],
     "2294": [
       "amazon",
@@ -7602,11 +6607,7 @@
       "google",
       "jane-street",
       "liberty-mutual",
-      "meta",
-      "microsoft",
-      "oracle",
-      "rubrik",
-      "salesforce",
+      "rippling",
       "shopify",
       "snapchat",
       "uber"
@@ -7616,8 +6617,6 @@
       "bloomberg",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "paypay"
     ],
     "2301": [
@@ -7626,14 +6625,11 @@
     "2302": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "pinterest"
     ],
     "2303": [
       "bloomberg",
       "interactive-brokers",
-      "meta",
       "oracle",
       "snowflake",
       "stripe"
@@ -7645,27 +6641,19 @@
       "amazon",
       "zoho"
     ],
-    "2306": [
-      "google"
-    ],
-    "2309": [
-      "microsoft"
-    ],
     "2311": [
       "amazon",
       "bloomberg",
       "google"
-    ],
-    "2312": [
-      "palantir-technologies"
     ],
     "2315": [
       "google"
     ],
     "2316": [
       "amazon",
+      "commvault",
       "google",
-      "microsoft",
+      "snap",
       "snapchat"
     ],
     "2317": [
@@ -7682,55 +6670,39 @@
     "2320": [
       "amazon",
       "google",
-      "microsoft",
       "nagarro"
-    ],
-    "2321": [
-      "microsoft"
     ],
     "2322": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2325": [
       "amazon",
       "coinbase",
-      "google",
-      "meta",
-      "tesla"
+      "google"
     ],
     "2326": [
       "docusign",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2327": [
       "amazon",
       "arcesium",
       "bloomberg",
       "google",
-      "microsoft",
       "ncr"
     ],
     "2328": [
-      "adobe",
-      "microsoft"
+      "adobe"
     ],
     "2331": [
-      "amazon",
       "google"
     ],
     "2332": [
-      "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2333": [
       "amazon",
-      "microsoft",
       "uber"
     ],
     "2334": [
@@ -7744,22 +6716,18 @@
     ],
     "2336": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "2337": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2338": [
       "amazon",
       "google",
-      "infosys",
-      "microsoft"
+      "infosys"
     ],
     "2341": [
       "altimetrik"
@@ -7768,14 +6736,14 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "nvidia"
     ],
     "2343": [
       "de-shaw"
     ],
     "2344": [
+      "amazon",
+      "google",
       "linkedin"
     ],
     "2347": [
@@ -7784,9 +6752,7 @@
     ],
     "2348": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2349": [
       "google"
@@ -7802,22 +6768,18 @@
       "amazon",
       "bloomberg",
       "de-shaw",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2353": [
       "amazon",
       "atlassian",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2354": [
       "epifi"
     ],
     "2357": [
-      "amazon",
-      "google"
+      "amazon"
     ],
     "2359": [
       "amazon",
@@ -7829,7 +6791,7 @@
       "amazon",
       "google",
       "juspay",
-      "phonepe"
+      "nvidia"
     ],
     "2363": [
       "google"
@@ -7837,47 +6799,40 @@
     "2364": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2365": [
       "amazon",
-      "doordash",
       "duolingo",
       "google",
-      "meta",
       "nvidia",
-      "rubrik",
-      "uber"
+      "rubrik"
     ],
     "2366": [
       "expedia",
       "google",
       "moveworks",
       "paypal",
+      "salesforce",
       "zscaler"
     ],
     "2367": [
-      "google",
-      "meta"
+      "google"
     ],
     "2368": [
+      "google",
       "makemytrip"
     ],
     "2369": [
+      "coinbase",
       "google"
     ],
     "2370": [
-      "amazon",
-      "google",
-      "makemytrip",
-      "microsoft"
+      "makemytrip"
     ],
     "2373": [
-      "amazon",
       "bloomberg",
       "google",
-      "meta",
       "openai"
     ],
     "2374": [
@@ -7886,20 +6841,16 @@
     "2375": [
       "amazon",
       "goldman-sachs",
-      "google",
-      "josh-technology",
-      "meta"
+      "google"
     ],
     "2379": [
       "amazon",
       "dailyhunt",
       "google",
-      "hp",
-      "meta"
+      "hp"
     ],
     "2380": [
       "amazon",
-      "google",
       "paypal",
       "salesforce",
       "servicenow",
@@ -7908,7 +6859,6 @@
     "2381": [
       "amazon",
       "google",
-      "meta",
       "veritas",
       "zeta"
     ],
@@ -7920,8 +6870,8 @@
       "amazon"
     ],
     "2384": [
-      "geico",
-      "microsoft"
+      "amazon",
+      "geico"
     ],
     "2385": [
       "adobe",
@@ -7931,7 +6881,7 @@
       "flipkart",
       "goldman-sachs",
       "google",
-      "microsoft",
+      "phonepe",
       "servicenow",
       "sharechat",
       "snapchat",
@@ -7945,25 +6895,22 @@
     "2389": [
       "amazon",
       "google",
-      "meta"
+      "uber"
     ],
     "2390": [
       "amazon",
-      "goldman-sachs",
       "google",
-      "ibm",
-      "microsoft"
+      "ibm"
     ],
     "2391": [
-      "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2392": [
       "google"
     ],
     "2395": [
       "bloomberg",
+      "google",
       "morgan-stanley"
     ],
     "2396": [
@@ -7981,8 +6928,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "paytm"
     ],
     "2402": [
@@ -7990,8 +6935,6 @@
       "bloomberg",
       "goldman-sachs",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
       "pinterest",
       "tiktok",
@@ -8004,9 +6947,7 @@
     ],
     "2405": [
       "amazon",
-      "google",
-      "ibm",
-      "microsoft"
+      "google"
     ],
     "2406": [
       "adobe",
@@ -8014,8 +6955,6 @@
       "bloomberg",
       "google",
       "ibm",
-      "meta",
-      "microsoft",
       "walmart-labs"
     ],
     "2407": [
@@ -8023,15 +6962,12 @@
     ],
     "2410": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2411": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2412": [
       "amazon"
@@ -8046,8 +6982,8 @@
       "tiktok"
     ],
     "2415": [
-      "amazon",
       "google",
+      "j-p-morgan",
       "josh-technology",
       "jpmorgan"
     ],
@@ -8061,16 +6997,13 @@
       "amazon",
       "bloomberg",
       "google",
-      "infosys",
-      "meta"
+      "infosys"
     ],
     "2419": [
       "amazon",
       "bloomberg",
       "fourkites",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2420": [
       "goldman-sachs"
@@ -8091,18 +7024,15 @@
     ],
     "2425": [
       "google",
-      "meta",
       "trilogy"
     ],
     "2426": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2427": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2428": [
       "nutanix"
@@ -8111,9 +7041,7 @@
       "adobe",
       "amazon",
       "bloomberg",
-      "google",
-      "ibm",
-      "microsoft"
+      "google"
     ],
     "2430": [
       "de-shaw"
@@ -8123,24 +7051,23 @@
       "morgan-stanley"
     ],
     "2433": [
-      "amazon",
       "google",
-      "microsoft",
+      "ibm",
       "morgan-stanley",
       "nvidia"
     ],
     "2434": [
       "amazon",
       "de-shaw",
-      "meta",
+      "nagarro",
       "salesforce",
-      "tower-research"
+      "tower-research",
+      "tower-research-capital"
     ],
     "2435": [
       "amazon",
       "apple",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2437": [
       "google"
@@ -8150,13 +7077,14 @@
       "bloomberg",
       "goldman-sachs",
       "google",
+      "ibm",
       "trilogy"
     ],
     "2439": [
       "amazon",
-      "microsoft",
       "oracle",
-      "paytm"
+      "paytm",
+      "visa"
     ],
     "2440": [
       "sprinklr"
@@ -8164,9 +7092,7 @@
     "2441": [
       "amazon",
       "bloomberg",
-      "coupang",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2442": [
       "google"
@@ -8180,10 +7106,7 @@
       "google",
       "mathworks",
       "meesho",
-      "meta",
-      "microsoft",
       "morgan-stanley",
-      "okx",
       "uber"
     ],
     "2446": [
@@ -8191,11 +7114,12 @@
       "google"
     ],
     "2448": [
+      "amazon",
       "cisco",
       "google",
       "hashedin",
+      "j-p-morgan",
       "jpmorgan",
-      "microsoft",
       "oracle"
     ],
     "2449": [
@@ -8205,11 +7129,13 @@
     "2451": [
       "ibm",
       "salesforce",
-      "visa"
+      "visa",
+      "wise"
     ],
     "2452": [
-      "google",
-      "meta"
+      "amazon",
+      "bloomberg",
+      "google"
     ],
     "2453": [
       "intuit"
@@ -8222,76 +7148,69 @@
     ],
     "2457": [
       "amazon",
-      "infosys",
-      "meta"
+      "infosys"
     ],
     "2458": [
       "google",
-      "meta",
       "snowflake"
     ],
     "2460": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2461": [
       "amazon",
       "bloomberg",
       "google",
       "ibm",
-      "meta",
-      "microsoft",
       "nvidia",
       "tcs",
       "walmart-labs"
     ],
     "2462": [
+      "bloomberg",
       "gsa-capital",
-      "mathworks",
-      "microsoft"
+      "mathworks"
     ],
     "2463": [
+      "amazon",
       "bloomberg",
       "google",
-      "infosys",
-      "microsoft"
+      "infosys"
     ],
     "2465": [
       "amazon"
     ],
     "2466": [
       "amazon",
+      "citadel",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
-      "squarepoint-capital"
+      "squarepoint-capital",
+      "visa"
     ],
     "2467": [
       "amazon",
       "google",
       "intuit",
-      "meta",
       "snowflake",
       "uber"
     ],
     "2468": [
       "amazon",
+      "capital-one",
       "databricks",
       "faire",
-      "meta",
       "tiktok",
       "uber"
     ],
     "2469": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2470": [
+      "amazon",
       "google",
       "unity"
     ],
@@ -8302,7 +7221,6 @@
     ],
     "2472": [
       "linkedin",
-      "microsoft",
       "oracle",
       "salesforce",
       "sofi"
@@ -8316,8 +7234,7 @@
     "2477": [
       "amazon",
       "google",
-      "meta",
-      "microsoft"
+      "uber"
     ],
     "2478": [
       "google"
@@ -8326,7 +7243,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "tcs"
     ],
     "2482": [
@@ -8336,8 +7252,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "stripe"
     ],
     "2484": [
@@ -8347,45 +7261,37 @@
       "dialpad",
       "goldman-sachs",
       "google",
-      "microsoft",
-      "millennium",
-      "phonepe",
       "salesforce",
-      "uber"
+      "uber",
+      "visa"
     ],
     "2485": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2486": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2487": [
       "amazon",
-      "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2488": [
       "amazon",
+      "confluent",
       "google",
-      "salesforce",
-      "thoughtspot"
+      "salesforce"
     ],
     "2490": [
-      "amazon",
       "bloomberg"
     ],
     "2491": [
       "amazon",
       "bloomberg",
       "expedia",
+      "ibm",
       "jpmorgan",
-      "microsoft",
       "paypal",
       "visa"
     ],
@@ -8393,15 +7299,12 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "unbxd"
     ],
     "2493": [
       "accenture",
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "2496": [
@@ -8414,8 +7317,7 @@
     ],
     "2498": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2499": [
       "razorpay"
@@ -8426,23 +7328,19 @@
     ],
     "2501": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2502": [
       "amazon",
       "apple",
       "bytedance",
-      "capital-one",
-      "meta",
-      "microsoft",
       "nvidia",
       "openai",
       "qualcomm",
       "roblox",
       "rubrik",
       "sig",
+      "tesla",
       "tiktok",
       "two-sigma",
       "uber",
@@ -8452,8 +7350,8 @@
       "amazon",
       "bloomberg",
       "google",
+      "j-p-morgan",
       "jpmorgan",
-      "meta",
       "uber"
     ],
     "2506": [
@@ -8464,30 +7362,30 @@
     ],
     "2508": [
       "hrt",
-      "uber"
+      "hudson-river-trading"
     ],
     "2509": [
       "arcesium"
     ],
     "2512": [
+      "booking-com",
       "bookingcom"
     ],
     "2513": [
-      "amazon",
-      "goldman-sachs"
+      "amazon"
     ],
     "2514": [
       "mathworks"
     ],
     "2515": [
+      "amazon",
       "bloomberg",
       "salesforce"
     ],
     "2516": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2517": [
       "amazon",
@@ -8504,22 +7402,15 @@
       "tcs"
     ],
     "2521": [
-      "google",
-      "microsoft"
-    ],
-    "2522": [
       "google"
     ],
     "2523": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tiktok"
     ],
     "2525": [
-      "microsoft",
       "zendesk"
     ],
     "2526": [
@@ -8534,15 +7425,15 @@
     ],
     "2529": [
       "google",
-      "meta",
-      "microsoft",
       "sharechat"
     ],
     "2530": [
       "amazon",
+      "bloomberg",
       "google",
       "mckinsey",
-      "tiktok"
+      "tiktok",
+      "visa"
     ],
     "2531": [
       "google"
@@ -8558,26 +7449,23 @@
     ],
     "2536": [
       "adobe",
-      "google",
-      "meta"
+      "google"
     ],
     "2537": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "roblox",
       "tiktok",
       "uber"
     ],
     "2538": [
       "directi",
+      "media-net",
       "medianet"
     ],
     "2540": [
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2541": [
       "walmart-labs"
@@ -8586,15 +7474,13 @@
       "amazon",
       "bloomberg",
       "de-shaw",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2543": [
       "phonepe"
     ],
     "2544": [
       "amazon",
-      "capital-one",
       "ebay",
       "visa"
     ],
@@ -8614,16 +7500,13 @@
     ],
     "2550": [
       "amazon",
-      "goldman-sachs",
-      "microsoft"
+      "goldman-sachs"
     ],
     "2551": [
       "amazon",
       "bloomberg",
       "de-shaw",
       "google",
-      "meta",
-      "microsoft",
       "tiktok",
       "uber"
     ],
@@ -8632,11 +7515,9 @@
       "sap"
     ],
     "2553": [
-      "meta"
+      "google"
     ],
     "2554": [
-      "amazon",
-      "microsoft",
       "paypal"
     ],
     "2555": [
@@ -8647,10 +7528,8 @@
     ],
     "2558": [
       "amazon",
-      "bloomberg",
       "de-shaw",
-      "google",
-      "meta"
+      "google"
     ],
     "2559": [
       "amazon",
@@ -8658,8 +7537,6 @@
       "bloomberg",
       "google",
       "ibm",
-      "mathworks",
-      "microsoft",
       "paypal",
       "twilio"
     ],
@@ -8669,17 +7546,13 @@
       "bloomberg",
       "cashfree",
       "google",
-      "linkedin",
-      "meta",
-      "microsoft"
+      "linkedin"
     ],
     "2561": [
       "amazon",
       "atlassian",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "oracle",
       "tiktok",
       "uber"
@@ -8693,8 +7566,6 @@
       "bloomberg",
       "google",
       "mcdonalds",
-      "meta",
-      "microsoft",
       "qualcomm",
       "salesforce",
       "tcs"
@@ -8703,12 +7574,12 @@
       "trilogy"
     ],
     "2565": [
-      "doordash"
+      "doordash",
+      "meesho"
     ],
     "2566": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2569": [
       "trilogy"
@@ -8717,14 +7588,14 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "yandex"
     ],
     "2571": [
       "6sense",
       "amazon",
+      "bloomberg",
       "google",
+      "ibm",
       "microsoft",
       "nvidia",
       "salesforce",
@@ -8732,12 +7603,14 @@
     ],
     "2572": [
       "google",
+      "media-net",
       "medianet"
     ],
     "2573": [
       "google"
     ],
     "2574": [
+      "amazon",
       "bloomberg",
       "google"
     ],
@@ -8748,8 +7621,7 @@
     "2577": [
       "amazon",
       "atlassian",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2578": [
       "amazon",
@@ -8758,9 +7630,7 @@
     "2579": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2580": [
       "ibm",
@@ -8775,7 +7645,7 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft"
+      "visa"
     ],
     "2584": [
       "zomato"
@@ -8789,6 +7659,7 @@
     "2587": [
       "amazon",
       "ibm",
+      "j-p-morgan",
       "jpmorgan"
     ],
     "2589": [
@@ -8797,15 +7668,14 @@
     ],
     "2591": [
       "apple",
+      "google",
       "gusto",
       "zendesk"
     ],
     "2592": [
       "amazon",
-      "microsoft",
       "nvidia",
       "oracle",
-      "salesforce",
       "twilio",
       "ukg",
       "weride"
@@ -8814,27 +7684,20 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "visa"
     ],
     "2594": [
       "amazon",
       "deloitte",
       "google",
-      "hashedin",
-      "meta",
-      "microsoft"
+      "hashedin"
     ],
     "2595": [
-      "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2596": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2597": [
       "amazon",
@@ -8845,32 +7708,25 @@
     "2598": [
       "amazon",
       "atlassian",
-      "citadel",
       "ibm",
-      "mercari",
-      "microsoft"
+      "mercari"
     ],
     "2601": [
       "amazon",
-      "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2602": [
       "amazon",
       "ibm",
+      "j-p-morgan",
       "jpmorgan"
     ],
     "2603": [
-      "cisco",
+      "amazon",
       "google",
       "graviton",
       "lucid",
-      "meesho",
-      "meta",
-      "millennium",
       "oracle",
-      "phonepe",
       "salesforce",
       "uber",
       "uipath"
@@ -8887,12 +7743,10 @@
       "observeai"
     ],
     "2608": [
-      "meta",
-      "phonepe",
+      "google",
       "zomato"
     ],
     "2609": [
-      "amazon",
       "tinkoff"
     ],
     "2610": [
@@ -8900,25 +7754,24 @@
       "google"
     ],
     "2611": [
-      "doordash",
-      "meta"
+      "doordash"
     ],
     "2612": [
-      "amazon",
       "infosys"
     ],
     "2614": [
-      "google"
+      "google",
+      "ibm"
     ],
     "2615": [
+      "amazon",
       "bny-mellon",
       "google"
     ],
     "2616": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
+      "media-net",
       "navi",
       "zeta"
     ],
@@ -8936,8 +7789,7 @@
     ],
     "2641": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2642": [
       "nike",
@@ -8946,16 +7798,13 @@
     "2643": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2644": [
       "de-shaw"
     ],
     "2645": [
-      "amazon",
       "google",
-      "microsoft",
       "tokopedia"
     ],
     "2651": [
@@ -8966,7 +7815,6 @@
     ],
     "2654": [
       "amazon",
-      "bloomberg",
       "google"
     ],
     "2656": [
@@ -8976,15 +7824,11 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "yandex"
     ],
     "2658": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2659": [
       "google",
@@ -8994,6 +7838,7 @@
       "de-shaw"
     ],
     "2661": [
+      "amazon",
       "bloomberg",
       "citadel",
       "google"
@@ -9004,9 +7849,6 @@
     "2663": [
       "amazon",
       "google"
-    ],
-    "2671": [
-      "microsoft"
     ],
     "2672": [
       "amazon",
@@ -9020,12 +7862,11 @@
       "tiktok"
     ],
     "2678": [
-      "google",
-      "meta"
+      "google"
     ],
     "2680": [
       "de-shaw",
-      "microsoft"
+      "visa"
     ],
     "2683": [
       "amazon",
@@ -9033,37 +7874,29 @@
     ],
     "2684": [
       "accenture",
-      "amazon",
       "google"
     ],
     "2685": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2696": [
       "amazon",
       "bolt",
       "google",
-      "ibm",
+      "j-p-morgan",
       "jpmorgan",
       "wells-fargo"
     ],
     "2697": [
-      "amazon",
-      "google",
-      "mathworks",
-      "paypal",
-      "tiktok"
+      "paypal"
     ],
     "2698": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2699": [
-      "bloomberg",
       "google"
     ],
     "2706": [
@@ -9073,7 +7906,7 @@
     "2707": [
       "amazon",
       "google",
-      "meta"
+      "pornhub"
     ],
     "2712": [
       "nutanix"
@@ -9088,7 +7921,7 @@
     ],
     "2731": [
       "google",
-      "meta"
+      "oyo"
     ],
     "2734": [
       "agoda",
@@ -9101,34 +7934,28 @@
       "deutsche-bank"
     ],
     "2739": [
-      "bloomberg",
-      "compass",
-      "meta"
+      "compass"
     ],
     "2742": [
       "amazon",
-      "de-shaw",
       "google",
+      "media-net",
       "meesho",
-      "meta",
       "snowflake"
     ],
     "2745": [
-      "guidewire",
-      "microsoft"
+      "guidewire"
     ],
     "2747": [
       "amazon",
-      "dp-world",
-      "flexport",
       "honeywell",
-      "lti"
+      "lti",
+      "rubrik"
     ],
     "2749": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2750": [
       "flipkart"
@@ -9137,19 +7964,12 @@
       "amazon",
       "flipkart",
       "google",
-      "meesho"
-    ],
-    "2760": [
-      "bloomberg",
-      "meta"
+      "nokia"
     ],
     "2762": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft",
-      "uber"
+      "google"
     ],
     "2763": [
       "google"
@@ -9159,19 +7979,20 @@
     ],
     "2768": [
       "capital-one",
+      "google",
       "roblox",
       "sig",
       "square",
       "stripe",
       "twitter",
       "uber",
-      "visa"
+      "visa",
+      "x"
     ],
     "2769": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2771": [
       "amazon",
@@ -9179,11 +8000,12 @@
       "google",
       "meesho",
       "polar",
-      "squarepoint-capital"
+      "squarepoint-capital",
+      "visa"
     ],
     "2772": [
       "amazon",
-      "meta"
+      "google"
     ],
     "2778": [
       "google"
@@ -9194,30 +8016,27 @@
     ],
     "2780": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2781": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "2784": [
-      "bloomberg"
+      "bloomberg",
+      "google"
     ],
     "2785": [
-      "google",
-      "meta",
-      "microsoft"
+      "amazon",
+      "google"
     ],
     "2787": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2788": [
+      "amazon",
       "apple",
       "coupang"
     ],
@@ -9235,13 +8054,11 @@
       "weride"
     ],
     "2798": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "2799": [
       "amazon",
       "google",
-      "meta",
       "tiktok"
     ],
     "2800": [
@@ -9250,14 +8067,12 @@
       "google"
     ],
     "2801": [
-      "amazon"
+      "amazon",
+      "google"
     ],
     "2807": [
-      "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2808": [
       "amazon"
@@ -9266,7 +8081,6 @@
       "jane-street"
     ],
     "2810": [
-      "microsoft",
       "samsung"
     ],
     "2811": [
@@ -9279,38 +8093,29 @@
     ],
     "2815": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2816": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2817": [
-      "amazon",
       "capital-one",
       "google",
-      "meta",
-      "microsoft",
       "roblox",
       "sig",
+      "tiktok",
       "uber",
       "visa"
     ],
     "2818": [
-      "google",
-      "meta"
+      "google"
     ],
     "2824": [
       "amazon",
       "bloomberg",
       "google",
-      "josh-technology",
-      "meta",
-      "microsoft",
-      "zoho"
+      "josh-technology"
     ],
     "2825": [
       "amazon"
@@ -9322,7 +8127,6 @@
       "infosys"
     ],
     "2828": [
-      "amazon",
       "uber"
     ],
     "2829": [
@@ -9332,31 +8136,35 @@
       "amazon"
     ],
     "2831": [
-      "google",
-      "mathworks",
+      "meesho",
       "palo-alto-networks"
     ],
     "2833": [
-      "barclays"
+      "barclays",
+      "bloomberg",
+      "google"
     ],
     "2834": [
       "infosys"
     ],
     "2835": [
+      "media-net",
       "medianet"
     ],
     "2836": [
       "oracle"
     ],
     "2839": [
-      "citrix"
+      "citrix",
+      "google"
     ],
     "2840": [
-      "citrix"
+      "amazon",
+      "citrix",
+      "google"
     ],
     "2841": [
-      "amazon",
-      "yandex"
+      "amazon"
     ],
     "2842": [
       "google"
@@ -9364,15 +8172,11 @@
     "2843": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2845": [
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2846": [
       "sprinklr"
@@ -9385,11 +8189,9 @@
       "google"
     ],
     "2850": [
-      "amazon",
       "geico",
       "google",
       "guidewire",
-      "microsoft",
       "tiktok"
     ],
     "2851": [
@@ -9409,14 +8211,13 @@
     ],
     "2858": [
       "amazon",
-      "cashfree",
       "google",
       "mathworks",
       "meesho",
       "microsoft",
       "oracle",
       "paypal",
-      "phonepe",
+      "salesforce",
       "uber"
     ],
     "2859": [
@@ -9427,23 +8228,20 @@
     ],
     "2861": [
       "mathworks",
-      "microsoft"
+      "sofi",
+      "uber"
     ],
     "2862": [
       "purplle"
     ],
     "2864": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2865": [
-      "meta",
       "salesforce"
     ],
     "2866": [
-      "amazon",
       "salesforce"
     ],
     "2867": [
@@ -9453,25 +8251,23 @@
       "deutsche-bank"
     ],
     "2870": [
-      "amazon",
-      "meta"
+      "amazon"
     ],
     "2872": [
       "amazon",
-      "google",
-      "infosys",
-      "microsoft"
+      "google"
     ],
     "2873": [
       "amazon",
       "google",
-      "medianet",
-      "meta"
+      "media-net",
+      "medianet"
     ],
     "2874": [
       "amazon",
       "bloomberg",
       "google",
+      "media-net",
       "medianet",
       "microsoft"
     ],
@@ -9479,33 +8275,29 @@
       "de-shaw"
     ],
     "2876": [
-      "amazon",
       "bny-mellon"
     ],
     "2894": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "2895": [
       "adobe",
+      "google",
       "nutanix"
     ],
     "2896": [
-      "google",
       "zeta"
     ],
     "2897": [
       "sprinklr"
     ],
     "2900": [
-      "fourkites",
-      "zs-associates"
+      "fourkites"
     ],
     "2901": [
-      "fourkites",
-      "meta"
+      "fourkites"
     ],
     "2903": [
       "paytm"
@@ -9519,26 +8311,20 @@
       "paytm"
     ],
     "2906": [
-      "amazon"
-    ],
-    "2908": [
-      "microsoft"
+      "amazon",
+      "bloomberg",
+      "google"
     ],
     "2910": [
       "amazon"
     ],
     "2914": [
       "bloomberg",
-      "google",
-      "ibm",
-      "meta",
-      "microsoft",
-      "uber"
+      "google"
     ],
     "2915": [
       "amazon",
-      "intuit",
-      "meta"
+      "intuit"
     ],
     "2916": [
       "amazon"
@@ -9550,7 +8336,6 @@
       "amazon",
       "citadel",
       "google",
-      "mathworks",
       "salesforce",
       "squarepoint-capital"
     ],
@@ -9564,8 +8349,7 @@
       "google"
     ],
     "2924": [
-      "google",
-      "meta"
+      "google"
     ],
     "2925": [
       "google"
@@ -9580,10 +8364,7 @@
     "2929": [
       "amazon",
       "google",
-      "meta",
-      "phonepe",
-      "rubrik",
-      "zs-associates"
+      "rubrik"
     ],
     "2930": [
       "meesho"
@@ -9596,7 +8377,6 @@
       "zscaler"
     ],
     "2933": [
-      "amazon",
       "atlassian"
     ],
     "2935": [
@@ -9609,9 +8389,7 @@
       "1kosmos",
       "accenture",
       "amazon",
-      "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2939": [
       "atlassian",
@@ -9621,23 +8399,18 @@
     ],
     "2940": [
       "amazon",
-      "bloomberg",
       "google",
-      "infosys",
-      "meta"
+      "infosys"
     ],
     "2942": [
       "amazon",
       "bloomberg",
       "deliveroo",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2943": [
       "amazon",
       "google",
-      "meta",
       "swiggy"
     ],
     "2945": [
@@ -9647,7 +8420,8 @@
       "tiktok"
     ],
     "2946": [
-      "meta",
+      "amazon",
+      "google",
       "salesforce"
     ],
     "2947": [
@@ -9658,35 +8432,34 @@
       "atlassian",
       "google",
       "ibm",
-      "phonepe"
+      "phonepe",
+      "uber"
     ],
     "2949": [
       "amazon"
     ],
     "2951": [
       "accelya",
-      "meta"
+      "google"
     ],
     "2952": [
       "amazon",
+      "bloomberg",
       "flipkart"
     ],
     "2953": [
       "meesho"
     ],
     "2954": [
-      "meta",
-      "microsoft",
       "oracle",
-      "salesforce",
       "sap",
-      "tekion"
+      "tekion",
+      "uber"
     ],
     "2956": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "yandex"
     ],
     "2957": [
@@ -9694,13 +8467,9 @@
     ],
     "2958": [
       "amazon",
-      "apple",
       "citadel",
       "google",
-      "makemytrip",
-      "meta",
-      "tiktok",
-      "uber"
+      "makemytrip"
     ],
     "2959": [
       "atlassian",
@@ -9711,16 +8480,13 @@
       "accenture"
     ],
     "2961": [
-      "amazon",
       "barclays"
     ],
     "2962": [
       "adobe",
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2963": [
       "google"
@@ -9729,16 +8495,12 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "zoho"
     ],
     "2966": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "salesforce"
     ],
     "2967": [
@@ -9750,8 +8512,7 @@
       "phonepe"
     ],
     "2970": [
-      "apple",
-      "microsoft"
+      "apple"
     ],
     "2971": [
       "airtel"
@@ -9762,15 +8523,13 @@
       "ibm"
     ],
     "2973": [
-      "amazon",
-      "google"
+      "amazon"
     ],
     "2974": [
       "amazon",
       "bloomberg",
       "bt-group",
-      "google",
-      "meta"
+      "google"
     ],
     "2975": [
       "atlassian",
@@ -9780,8 +8539,7 @@
     "2976": [
       "amazon",
       "atlassian",
-      "google",
-      "microsoft"
+      "google"
     ],
     "2977": [
       "amazon",
@@ -9793,51 +8551,40 @@
     ],
     "2981": [
       "amazon",
-      "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2982": [
       "google",
       "rubrik"
     ],
     "2996": [
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "2997": [
       "amazon",
       "american-express",
-      "auriga",
-      "bloomberg",
-      "meta"
+      "auriga"
     ],
     "2998": [
-      "groww",
-      "microsoft"
+      "groww"
     ],
     "2999": [
       "google",
       "hashedin",
       "jd",
-      "meta",
       "sprinklr"
     ],
     "3000": [
       "accenture",
       "atlassian",
-      "google",
-      "meta"
+      "google"
     ],
     "3001": [
       "goldman-sachs",
       "wipro"
     ],
     "3002": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "3003": [
       "hilabs",
@@ -9849,40 +8596,31 @@
       "capgemini",
       "cred",
       "google",
-      "meta",
-      "microsoft",
       "walmart-labs"
     ],
     "3006": [
       "bloomberg",
       "google",
-      "microsoft",
-      "palantir-technologies",
       "samsara"
     ],
     "3007": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "3008": [
       "google",
-      "palantir-technologies",
       "phonepe"
     ],
     "3010": [
       "amazon",
       "american-express",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3011": [
       "amazon",
       "edelweiss",
-      "google",
-      "meta",
-      "microsoft"
+      "edelweiss-group",
+      "google"
     ],
     "3012": [
       "bny-mellon",
@@ -9900,6 +8638,7 @@
       "amazon",
       "elitmus",
       "google",
+      "snap",
       "snapchat"
     ],
     "3015": [
@@ -9907,16 +8646,15 @@
     ],
     "3016": [
       "amazon",
-      "de-shaw",
-      "meta"
+      "de-shaw"
     ],
     "3017": [
       "oracle"
     ],
     "3019": [
       "amazon",
+      "apple",
       "autodesk",
-      "capital-one",
       "visa"
     ],
     "3020": [
@@ -9927,7 +8665,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "rubrik"
     ],
     "3022": [
@@ -9936,25 +8673,22 @@
     "3024": [
       "bloomberg",
       "google",
-      "ibm",
-      "microsoft"
+      "ibm"
     ],
     "3025": [
       "amazon",
-      "google",
-      "meta"
+      "bloomberg",
+      "google"
     ],
     "3026": [
       "amazon",
       "atlassian",
-      "coupang",
       "google",
       "groww",
       "zepto"
     ],
     "3027": [
       "google",
-      "meta",
       "uber"
     ],
     "3028": [
@@ -9979,7 +8713,6 @@
       "amazon",
       "autodesk",
       "capital-one",
-      "google",
       "uber",
       "visa"
     ],
@@ -9988,24 +8721,16 @@
       "expedia",
       "grammarly",
       "mathworks",
-      "microsoft",
       "salesforce",
-      "squarepoint-capital"
+      "squarepoint-capital",
+      "visa"
     ],
     "3036": [
       "autodesk",
       "thoughtworks"
     ],
-    "3038": [
-      "google",
-      "microsoft"
-    ],
     "3039": [
       "virtusa"
-    ],
-    "3040": [
-      "apple",
-      "microsoft"
     ],
     "3041": [
       "google"
@@ -10015,8 +8740,7 @@
       "bloomberg",
       "capital-one",
       "fico",
-      "google",
-      "meta"
+      "google"
     ],
     "3043": [
       "amazon",
@@ -10026,9 +8750,6 @@
       "coinbase",
       "databricks",
       "google",
-      "instacart",
-      "meta",
-      "microsoft",
       "roblox",
       "sig",
       "the-trade-desk",
@@ -10054,9 +8775,7 @@
     "3047": [
       "bloomberg",
       "cisco",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3048": [
       "mathworks"
@@ -10071,7 +8790,6 @@
     "3066": [
       "amazon",
       "google",
-      "meta",
       "tcs"
     ],
     "3067": [
@@ -10081,15 +8799,15 @@
     "3068": [
       "blackrock",
       "deutsche-bank",
-      "google",
-      "meta"
+      "google"
     ],
     "3069": [
       "amazon",
       "autodesk"
     ],
     "3070": [
-      "barclays"
+      "barclays",
+      "google"
     ],
     "3071": [
       "amazon",
@@ -10098,7 +8816,6 @@
       "tiktok",
       "uber",
       "visa",
-      "zeta",
       "ziprecruiter"
     ],
     "3072": [
@@ -10111,13 +8828,11 @@
     ],
     "3075": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3076": [
       "affirm",
       "airbnb",
-      "amazon",
       "moveworks"
     ],
     "3077": [
@@ -10150,8 +8865,6 @@
       "tiktok"
     ],
     "3090": [
-      "amazon",
-      "microsoft",
       "walmart-labs"
     ],
     "3091": [
@@ -10160,9 +8873,10 @@
     ],
     "3092": [
       "amazon",
-      "bloomberg"
+      "snowflake"
     ],
     "3093": [
+      "amazon",
       "google"
     ],
     "3095": [
@@ -10172,38 +8886,24 @@
       "ibm"
     ],
     "3097": [
-      "amazon",
       "google",
-      "meta",
-      "microsoft",
       "mitsogo"
     ],
     "3098": [
       "rubrik"
     ],
-    "3099": [
-      "google",
-      "microsoft"
-    ],
     "3100": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "3101": [
-      "capital-one",
-      "meta"
-    ],
-    "3102": [
-      "amazon"
+      "capital-one"
     ],
     "3105": [
       "amazon",
       "bloomberg",
       "google",
       "larsen-toubro",
-      "meta",
-      "microsoft",
       "yandex"
     ],
     "3106": [
@@ -10216,22 +8916,15 @@
       "amazon",
       "de-shaw",
       "google",
-      "meta",
-      "microsoft"
+      "turing"
     ],
     "3110": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
-    ],
-    "3111": [
-      "microsoft"
+      "google"
     ],
     "3113": [
-      "amazon",
-      "linkedin"
+      "amazon"
     ],
     "3114": [
       "google"
@@ -10248,8 +8941,7 @@
     ],
     "3121": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3122": [
       "turing"
@@ -10263,33 +8955,28 @@
       "mitsogo"
     ],
     "3130": [
+      "amazon",
       "ibm"
     ],
     "3131": [
-      "bloomberg",
       "mitsogo"
     ],
     "3132": [
-      "meta",
       "mitsogo"
     ],
     "3133": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3134": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "3136": [
       "amazon",
       "bloomberg",
       "expedia",
       "google",
-      "meta",
-      "microsoft",
       "tcs",
       "ukg"
     ],
@@ -10302,16 +8989,13 @@
       "ukg"
     ],
     "3139": [
-      "amazon",
-      "google",
-      "microsoft"
+      "amazon"
     ],
     "3143": [
       "hashedin"
     ],
     "3144": [
-      "amazon",
-      "microsoft",
+      "grammarly",
       "mitsogo",
       "morgan-stanley"
     ],
@@ -10338,17 +9022,14 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "national-payments-coorperation-india"
+      "national-payments-coorperation-india",
+      "national-payments-corporation-of-india"
     ],
     "3152": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft",
-      "national-payments-coorperation-india"
+      "national-payments-coorperation-india",
+      "national-payments-corporation-of-india"
     ],
     "3153": [
       "google",
@@ -10358,12 +9039,12 @@
       "amazon"
     ],
     "3158": [
-      "google",
-      "meta"
+      "google"
     ],
     "3159": [
       "amazon",
       "ibm",
+      "j-p-morgan",
       "jpmorgan"
     ],
     "3160": [
@@ -10372,9 +9053,9 @@
       "google"
     ],
     "3161": [
-      "autodesk",
       "capital-one",
-      "meta",
+      "ebay",
+      "google",
       "paypay",
       "roblox",
       "sig",
@@ -10383,28 +9064,23 @@
     ],
     "3162": [
       "airbus",
-      "amazon",
-      "google"
+      "airbus-se"
     ],
     "3163": [
-      "affirm",
       "amazon",
       "apple",
       "google",
-      "meta",
-      "microsoft",
       "qualcomm",
       "tcs"
     ],
     "3164": [
       "airbus",
-      "amazon",
-      "meta"
+      "airbus-se",
+      "amazon"
     ],
     "3165": [
       "google",
-      "infosys",
-      "meta"
+      "infosys"
     ],
     "3168": [
       "amazon",
@@ -10414,7 +9090,6 @@
     "3169": [
       "amazon",
       "google",
-      "microsoft",
       "swiggy"
     ],
     "3170": [
@@ -10422,8 +9097,6 @@
       "bloomberg",
       "flexera",
       "google",
-      "meta",
-      "microsoft",
       "salesforce"
     ],
     "3171": [
@@ -10433,9 +9106,7 @@
       "amazon",
       "bloomberg",
       "flexera",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3175": [
       "ibm",
@@ -10459,12 +9130,7 @@
     "3181": [
       "mitsogo"
     ],
-    "3184": [
-      "google",
-      "infosys"
-    ],
     "3185": [
-      "bloomberg",
       "google"
     ],
     "3186": [
@@ -10472,7 +9138,6 @@
       "bloomberg",
       "citadel",
       "google",
-      "meta",
       "phonepe"
     ],
     "3187": [
@@ -10481,15 +9146,12 @@
     "3190": [
       "amazon",
       "bloomberg",
-      "google",
-      "tcs"
+      "google"
     ],
     "3191": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "3192": [
@@ -10497,20 +9159,18 @@
     ],
     "3193": [
       "amazon",
+      "bloomberg",
       "google",
-      "microsoft",
       "salesforce"
     ],
     "3194": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3195": [
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "salesforce"
     ],
     "3196": [
@@ -10519,7 +9179,6 @@
     "3197": [
       "amazon",
       "google",
-      "microsoft",
       "salesforce"
     ],
     "3200": [
@@ -10527,27 +9186,22 @@
     ],
     "3201": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3202": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "3203": [
       "google",
-      "microsoft",
+      "oracle",
       "servicenow"
     ],
     "3206": [
       "amazon",
       "google",
-      "meta",
       "samsara"
     ],
     "3207": [
@@ -10555,8 +9209,8 @@
     ],
     "3208": [
       "bloomberg",
+      "ebay",
       "google",
-      "microsoft",
       "samsara"
     ],
     "3209": [
@@ -10565,24 +9219,22 @@
     "3211": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3212": [
-      "microsoft"
+      "amazon"
     ],
     "3213": [
       "mitsogo"
     ],
     "3216": [
+      "j-p-morgan",
       "jpmorgan"
     ],
     "3217": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3222": [
       "bloomberg"
@@ -10594,42 +9246,39 @@
     ],
     "3224": [
       "airbus",
+      "airbus-se",
       "google"
     ],
     "3225": [
-      "hrt"
+      "amazon",
+      "google",
+      "hrt",
+      "hudson-river-trading"
     ],
     "3226": [
       "thoughtworks"
     ],
     "3227": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "3228": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3229": [
       "amazon",
-      "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3234": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3235": [
       "amazon",
-      "google",
-      "uber"
+      "google"
     ],
     "3238": [
       "google"
@@ -10639,8 +9288,7 @@
     ],
     "3243": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3248": [
       "google"
@@ -10653,16 +9301,11 @@
       "bny-mellon"
     ],
     "3254": [
-      "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3258": [
       "google"
-    ],
-    "3259": [
-      "microsoft"
     ],
     "3260": [
       "amazon",
@@ -10671,16 +9314,14 @@
     "3264": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3265": [
-      "info-edge",
-      "meta"
+      "info-edge"
     ],
     "3266": [
-      "google",
-      "meta"
+      "amazon",
+      "google"
     ],
     "3270": [
       "google"
@@ -10689,16 +9330,14 @@
       "google"
     ],
     "3272": [
-      "google",
-      "meta"
+      "google"
     ],
     "3273": [
       "amazon"
     ],
     "3274": [
       "amazon",
-      "bloomberg",
-      "meta"
+      "bloomberg"
     ],
     "3275": [
       "google"
@@ -10714,8 +9353,7 @@
       "de-shaw"
     ],
     "3282": [
-      "google",
-      "meta"
+      "google"
     ],
     "3283": [
       "google"
@@ -10732,26 +9370,20 @@
     ],
     "3289": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3291": [
       "medianet"
     ],
     "3295": [
-      "ibm",
       "salesforce"
     ],
     "3296": [
-      "meta"
+      "amazon",
+      "google"
     ],
     "3297": [
       "amazon"
-    ],
-    "3302": [
-      "bloomberg",
-      "google"
     ],
     "3303": [
       "google"
@@ -10759,14 +9391,11 @@
     "3304": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3306": [
       "amazon",
-      "bloomberg",
-      "microsoft"
+      "bloomberg"
     ],
     "3307": [
       "amazon",
@@ -10787,14 +9416,11 @@
       "amazon",
       "aon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3315": [
       "amazon",
-      "aon",
-      "meta",
-      "microsoft"
+      "aon"
     ],
     "3316": [
       "google"
@@ -10805,9 +9431,7 @@
     "3318": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3319": [
       "google"
@@ -10834,8 +9458,7 @@
       "bloomberg",
       "google",
       "lowe",
-      "meta",
-      "microsoft",
+      "lowe-s",
       "tcs"
     ],
     "3332": [
@@ -10844,9 +9467,7 @@
     "3333": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3334": [
       "info-edge"
@@ -10856,11 +9477,11 @@
       "google"
     ],
     "3336": [
+      "google",
       "infosys"
     ],
     "3337": [
-      "google",
-      "meta"
+      "google"
     ],
     "3340": [
       "amazon"
@@ -10868,7 +9489,6 @@
     "3341": [
       "bloomberg",
       "google",
-      "meta",
       "uber"
     ],
     "3342": [
@@ -10877,16 +9497,15 @@
       "uber"
     ],
     "3343": [
-      "google",
-      "meta"
+      "google"
     ],
     "3345": [
       "accenture"
     ],
     "3346": [
       "amazon",
-      "google",
-      "meta"
+      "bloomberg",
+      "google"
     ],
     "3347": [
       "amazon",
@@ -10895,14 +9514,12 @@
     ],
     "3348": [
       "accenture",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3349": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3350": [
       "google"
@@ -10916,22 +9533,19 @@
     "3354": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3355": [
       "amazon",
       "bloomberg",
       "chubb",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3356": [
       "amazon",
       "bloomberg",
       "google",
-      "meta"
+      "uber"
     ],
     "3357": [
       "amazon"
@@ -10950,12 +9564,8 @@
       "bloomberg",
       "google"
     ],
-    "3364": [
-      "amazon"
-    ],
     "3366": [
       "amazon",
-      "bloomberg",
       "google",
       "oracle",
       "salesforce"
@@ -10965,14 +9575,12 @@
     ],
     "3370": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3371": [
       "amazon",
       "goldman-sachs",
-      "google",
-      "meta"
+      "google"
     ],
     "3372": [
       "google",
@@ -10986,19 +9594,17 @@
       "bloomberg",
       "google",
       "lowe",
-      "microsoft"
+      "lowe-s"
     ],
     "3376": [
       "ivp"
     ],
     "3377": [
-      "microsoft"
+      "google"
     ],
     "3379": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3380": [
       "google",
@@ -11007,8 +9613,7 @@
     "3381": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3382": [
       "google",
@@ -11016,6 +9621,7 @@
     ],
     "3386": [
       "amazon",
+      "j-p-morgan",
       "jpmorgan"
     ],
     "3387": [
@@ -11034,12 +9640,7 @@
     "3392": [
       "amazon",
       "cognizant",
-      "google",
-      "meta",
-      "microsoft"
-    ],
-    "3393": [
-      "microsoft"
+      "google"
     ],
     "3394": [
       "amazon",
@@ -11049,15 +9650,12 @@
     "3396": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3397": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3398": [
       "google",
@@ -11072,9 +9670,7 @@
     "3403": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3404": [
       "bloomberg",
@@ -11084,7 +9680,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "meta",
       "phonepe"
     ],
     "3407": [
@@ -11092,9 +9687,9 @@
     ],
     "3408": [
       "amazon",
+      "apple",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3409": [
       "google",
@@ -11108,6 +9703,7 @@
       "google"
     ],
     "3412": [
+      "amazon",
       "carwale",
       "google"
     ],
@@ -11121,25 +9717,25 @@
     ],
     "3417": [
       "google",
-      "meta",
       "tcs"
     ],
     "3418": [
+      "amazon",
+      "bloomberg",
+      "google",
       "phonepe"
     ],
     "3419": [
-      "google"
+      "google",
+      "uber"
     ],
     "3420": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "3423": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3424": [
       "amazon",
@@ -11152,8 +9748,7 @@
     ],
     "3428": [
       "amazon",
-      "bloomberg",
-      "meta"
+      "bloomberg"
     ],
     "3429": [
       "amazon",
@@ -11164,19 +9759,17 @@
       "accenture",
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3433": [
       "bcg",
       "bloomberg",
-      "microsoft",
       "visa"
     ],
     "3434": [
       "amazon",
-      "google",
-      "microsoft"
+      "bloomberg",
+      "google"
     ],
     "3435": [
       "phonepe"
@@ -11190,14 +9783,12 @@
       "amazon",
       "bloomberg",
       "fivetran",
-      "google",
-      "meta"
+      "google"
     ],
     "3440": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3441": [
       "fractal-analytics",
@@ -11206,13 +9797,10 @@
     "3442": [
       "amazon",
       "google",
-      "meta",
       "microsoft"
     ],
     "3443": [
       "bloomberg",
-      "meta",
-      "microsoft",
       "uber"
     ],
     "3445": [
@@ -11220,14 +9808,11 @@
       "bloomberg",
       "fractal-analytics",
       "google",
-      "meta",
       "microsoft"
     ],
     "3446": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "verizon"
     ],
     "3447": [
@@ -11244,8 +9829,7 @@
     "3453": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3454": [
       "amazon",
@@ -11266,19 +9850,15 @@
     "3459": [
       "amazon",
       "google",
-      "microsoft",
       "roblox",
       "visa"
     ],
     "3461": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3462": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "3463": [
       "adp",
@@ -11292,25 +9872,27 @@
       "traveloka"
     ],
     "3469": [
+      "amazon",
       "bloomberg",
       "de-shaw",
       "google"
     ],
     "3471": [
+      "bloomberg",
       "google"
     ],
     "3472": [
       "google"
     ],
     "3474": [
+      "amazon",
       "barclays",
+      "google",
       "tiktok"
     ],
     "3477": [
       "amazon",
       "google",
-      "meta",
-      "microsoft",
       "udemy"
     ],
     "3478": [
@@ -11319,15 +9901,13 @@
     "3479": [
       "amazon",
       "bloomberg",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3480": [
       "amazon",
       "bloomberg",
       "google",
-      "linkedin",
-      "microsoft"
+      "linkedin"
     ],
     "3483": [
       "amazon",
@@ -11337,7 +9917,6 @@
       "amazon",
       "bloomberg",
       "google",
-      "microsoft",
       "openai",
       "rippling"
     ],
@@ -11347,11 +9926,12 @@
     "3487": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3488": [
+      "amazon",
+      "bloomberg",
+      "google",
       "salesforce"
     ],
     "3489": [
@@ -11364,15 +9944,12 @@
       "amazon",
       "bloomberg",
       "goldman-sachs",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3495": [
       "axis-bank",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3498": [
       "capgemini",
@@ -11382,8 +9959,7 @@
       "google"
     ],
     "3503": [
-      "google",
-      "meta"
+      "google"
     ],
     "3504": [
       "google"
@@ -11391,26 +9967,20 @@
     "3507": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3508": [
       "amazon",
       "cisco",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3510": [
       "amazon",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3512": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3513": [
       "meesho"
@@ -11424,12 +9994,10 @@
     "3516": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3517": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "3522": [
       "apple"
@@ -11442,9 +10010,6 @@
     ],
     "3525": [
       "rubrik"
-    ],
-    "3527": [
-      "meta"
     ],
     "3528": [
       "adobe"
@@ -11459,9 +10024,6 @@
     "3532": [
       "google"
     ],
-    "3533": [
-      "meta"
-    ],
     "3534": [
       "google"
     ],
@@ -11474,24 +10036,17 @@
     "3538": [
       "google"
     ],
-    "3539": [
-      "infosys",
-      "meta"
-    ],
     "3541": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "3542": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3545": [
-      "google",
-      "meta"
+      "google"
     ],
     "3547": [
       "bloomberg"
@@ -11503,7 +10058,7 @@
       "google"
     ],
     "3552": [
-      "meta",
+      "amazon",
       "visa"
     ],
     "3556": [
@@ -11512,15 +10067,8 @@
     "3557": [
       "bloomberg"
     ],
-    "3561": [
-      "meta"
-    ],
     "3562": [
-      "google",
-      "meta"
-    ],
-    "3566": [
-      "meta"
+      "google"
     ],
     "3568": [
       "bloomberg"
@@ -11530,8 +10078,7 @@
     ],
     "3573": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "3574": [
       "google"
@@ -11541,27 +10088,22 @@
     ],
     "3576": [
       "flipkart",
-      "meta",
       "microsoft"
     ],
     "3577": [
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "3578": [
       "amazon",
-      "google",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3582": [
       "bloomberg"
     ],
     "3583": [
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3584": [
       "kla"
@@ -11580,8 +10122,7 @@
       "google"
     ],
     "3593": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "3597": [
       "google"
@@ -11603,53 +10144,49 @@
     ],
     "3607": [
       "amazon",
-      "cisco",
       "google",
-      "meta",
-      "microsoft",
       "salesforce",
       "zeta"
     ],
     "3608": [
-      "amazon",
-      "phonepe"
+      "amazon"
     ],
     "3609": [
       "bloomberg"
     ],
     "3612": [
-      "amazon"
+      "amazon",
+      "bloomberg",
+      "google"
     ],
     "3613": [
       "apple",
       "google",
-      "microsoft",
       "salesforce"
     ],
     "3614": [
+      "amazon",
       "google"
     ],
     "3619": [
-      "google",
-      "intuit"
+      "google"
     ],
     "3623": [
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3625": [
-      "google",
-      "meta"
+      "google"
     ],
     "3627": [
-      "amazon",
-      "ibm"
+      "amazon"
     ],
     "3628": [
       "de-shaw"
     ],
     "3629": [
+      "amazon",
+      "google",
       "uber"
     ],
     "3630": [
@@ -11658,19 +10195,16 @@
     "3634": [
       "amazon",
       "google",
-      "meta"
+      "salesforce"
     ],
     "3636": [
       "adobe",
       "amazon",
-      "google",
-      "meta"
+      "google"
     ],
     "3637": [
       "amazon",
-      "google",
-      "infosys",
-      "meta"
+      "google"
     ],
     "3638": [
       "amazon"
@@ -11681,10 +10215,7 @@
     "3640": [
       "amazon",
       "bloomberg",
-      "google",
-      "infosys",
-      "meta",
-      "microsoft"
+      "google"
     ],
     "3644": [
       "amazon"
@@ -11698,58 +10229,54 @@
     ],
     "3648": [
       "amazon",
-      "cisco",
-      "google",
-      "microsoft"
+      "google"
     ],
     "3649": [
       "atlassian",
       "bloomberg",
       "goldman-sachs",
       "squarepoint-capital",
-      "visa"
+      "visa",
+      "wise"
     ],
     "3650": [
       "amazon",
       "asana",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
-      "oracle",
-      "palantir-technologies"
+      "oracle"
     ],
     "3651": [
       "amazon",
       "google",
-      "meta",
       "visa"
     ],
     "3652": [
       "amazon",
-      "meta",
-      "microsoft",
       "uber",
       "visa"
     ],
     "3653": [
-      "infosys"
+      "amazon"
     ],
     "3655": [
-      "infosys"
+      "amazon"
     ],
     "3658": [
       "bloomberg",
-      "microsoft"
+      "google"
     ],
     "3659": [
       "google"
     ],
     "3660": [
+      "amazon",
+      "bloomberg",
+      "google",
       "medianet"
     ],
     "3661": [
-      "infosys"
+      "amazon"
     ],
     "3663": [
       "flipkart"
@@ -11759,19 +10286,18 @@
       "google"
     ],
     "3665": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "3666": [
-      "amazon"
+      "amazon",
+      "google"
     ],
     "3669": [
       "amazon",
       "google"
     ],
     "3671": [
-      "google",
-      "infosys"
+      "google"
     ],
     "3676": [
       "amazon",
@@ -11783,18 +10309,8 @@
     "3686": [
       "google"
     ],
-    "3688": [
-      "meta",
-      "microsoft"
-    ],
-    "3690": [
-      "meta"
-    ],
     "3695": [
       "google"
-    ],
-    "3697": [
-      "meta"
     ],
     "3698": [
       "google"
@@ -11803,36 +10319,29 @@
       "bloomberg",
       "deloitte"
     ],
-    "3709": [
-      "meesho"
-    ],
     "3710": [
-      "gameskraft"
+      "gameskraft",
+      "google"
     ],
     "3713": [
       "amazon",
       "bloomberg",
-      "google",
-      "meta"
+      "google"
     ],
     "3714": [
       "amazon",
       "bloomberg",
       "google",
-      "meta",
-      "microsoft",
       "tcs"
     ],
     "3715": [
       "amazon",
-      "google",
-      "meesho"
+      "google"
     ],
     "3719": [
       "amazon",
       "bloomberg",
-      "google",
-      "intuit"
+      "google"
     ],
     "3720": [
       "amazon",
@@ -11843,15 +10352,14 @@
       "google"
     ],
     "3728": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "3731": [
       "bloomberg",
       "google"
     ],
     "3732": [
-      "meta"
+      "google"
     ],
     "3733": [
       "amazon",
@@ -11871,6 +10379,7 @@
       "google"
     ],
     "3751": [
+      "amazon",
       "google"
     ],
     "3752": [
@@ -11886,11 +10395,7 @@
       "amazon"
     ],
     "3770": [
-      "google",
-      "meta"
-    ],
-    "3772": [
-      "microsoft"
+      "google"
     ],
     "3776": [
       "bloomberg"
@@ -11917,15 +10422,11 @@
       "amazon",
       "samsung"
     ],
-    "3797": [
-      "microsoft"
-    ],
     "3799": [
       "oracle"
     ],
     "3803": [
-      "google",
-      "microsoft"
+      "google"
     ],
     "3805": [
       "google"
@@ -11934,8 +10435,7 @@
       "amazon"
     ],
     "3814": [
-      "amazon",
-      "microsoft"
+      "amazon"
     ],
     "3815": [
       "google"
@@ -11960,9 +10460,6 @@
     ],
     "3827": [
       "zoho"
-    ],
-    "3829": [
-      "meta"
     ]
   },
   "companyNames": {
@@ -11981,6 +10478,7 @@
     "affirm": "Affirm",
     "agoda": "Agoda",
     "airbnb": "Airbnb",
+    "airbus-se": "Airbus Se",
     "airbus": "Airbus",
     "airtel": "Airtel",
     "airwallex": "Airwallex",
@@ -12004,6 +10502,7 @@
     "anthropic": "Anthropic",
     "anyscale": "Anyscale",
     "aon": "Aon",
+    "apollo-io": "Apollo Io",
     "apolloio": "Apolloio",
     "appdynamics": "Appdynamics",
     "appfolio": "Appfolio",
@@ -12011,6 +10510,7 @@
     "applied-intuition": "Applied Intuition",
     "applovin": "Applovin",
     "aqr-capital-management-llc": "Aqr Capital Management Llc",
+    "aqr-capital-management": "Aqr Capital Management",
     "arcesium": "Arcesium",
     "argo-ai": "Argo Ai",
     "arista-networks": "Arista Networks",
@@ -12046,6 +10546,7 @@
     "bny-mellon": "Bny Mellon",
     "boeing": "Boeing",
     "bolt": "Bolt",
+    "booking-com": "Booking Com",
     "bookingcom": "Bookingcom",
     "box": "Box",
     "bp": "Bp",
@@ -12068,6 +10569,7 @@
     "carwale": "Carwale",
     "cashfree": "Cashfree",
     "caterpillar": "Caterpillar",
+    "celigo": "Celigo",
     "cerner": "Cerner",
     "chalo": "Chalo",
     "chargebee": "Chargebee",
@@ -12080,6 +10582,7 @@
     "cisco": "Cisco",
     "citadel": "Citadel",
     "citi": "Citi",
+    "citigroup": "Citigroup",
     "citrix": "Citrix",
     "clari": "Clari",
     "cleartrip": "Cleartrip",
@@ -12099,6 +10602,7 @@
     "commvault": "Commvault",
     "compass": "Compass",
     "confluent": "Confluent",
+    "consultadd": "Consultadd",
     "couchbase": "Couchbase",
     "coupa": "Coupa",
     "coupang": "Coupang",
@@ -12109,6 +10613,7 @@
     "criteo": "Criteo",
     "crowdstrike": "Crowdstrike",
     "cruise-automation": "Cruise Automation",
+    "cruise": "Cruise",
     "ctc": "Ctc",
     "curefit": "Curefit",
     "cvent": "Cvent",
@@ -12150,8 +10655,8 @@
     "duolingo": "Duolingo",
     "earnin": "Earnin",
     "ebay": "Ebay",
+    "edelweiss-group": "Edelweiss Group",
     "edelweiss": "Edelweiss",
-    "electronic-arts": "Electronic Arts",
     "elitmus": "Elitmus",
     "epam-systems": "Epam Systems",
     "epic-games": "Epic Games",
@@ -12200,7 +10705,6 @@
     "geico": "Geico",
     "general-electric": "General Electric",
     "general-motors": "General Motors",
-    "genpact": "Genpact",
     "gilt-groupe": "Gilt Groupe",
     "github": "Github",
     "glassdoor": "Glassdoor",
@@ -12232,6 +10736,7 @@
     "highspot": "Highspot",
     "hilabs": "Hilabs",
     "hive": "Hive",
+    "hiver": "Hiver",
     "honey": "Honey",
     "honeywell": "Honeywell",
     "hopper": "Hopper",
@@ -12244,6 +10749,7 @@
     "htc": "Htc",
     "huawei": "Huawei",
     "hubspot": "Hubspot",
+    "hudson-river-trading": "Hudson River Trading",
     "hulu": "Hulu",
     "ibm": "Ibm",
     "iit-bombay": "Iit Bombay",
@@ -12251,6 +10757,7 @@
     "impact-analytics": "Impact Analytics",
     "increff": "Increff",
     "indeed": "Indeed",
+    "indmoney": "Indmoney",
     "info-edge": "Info Edge",
     "informatica": "Informatica",
     "infosys": "Infosys",
@@ -12265,6 +10772,7 @@
     "ivp": "Ivp",
     "ixigo": "Ixigo",
     "ixl": "Ixl",
+    "j-p-morgan": "J P Morgan",
     "jane-street": "Jane Street",
     "jd": "Jd",
     "jeavio": "Jeavio",
@@ -12276,6 +10784,7 @@
     "jtg": "Jtg",
     "jump-trading": "Jump Trading",
     "junglee-games": "Junglee Games",
+    "juniper-networks": "Juniper Networks",
     "juspay": "Juspay",
     "justworks": "Justworks",
     "kakao": "Kakao",
@@ -12284,22 +10793,26 @@
     "kickdrum": "Kickdrum",
     "kla-tencor": "Kla Tencor",
     "kla": "Kla",
+    "komprise": "Komprise",
     "kotak-mahindra-bank": "Kotak Mahindra Bank",
     "kpit": "Kpit",
     "kpmg": "Kpmg",
     "lacework": "Lacework",
     "larsen-toubro": "Larsen Toubro",
     "leap-motion": "Leap Motion",
+    "lendingkart-technologies": "Lendingkart Technologies",
     "lendingkart": "Lendingkart",
     "lenskart": "Lenskart",
     "lg-electronics": "Lg Electronics",
     "liberty-mutual": "Liberty Mutual",
+    "licious": "Licious",
     "liftoff": "Liftoff",
     "lime": "Lime",
     "line": "Line",
     "linkedin": "Linkedin",
     "liveramp": "Liveramp",
     "livspace": "Livspace",
+    "lowe-s": "Lowe S",
     "lowe": "Lowe",
     "lti": "Lti",
     "lucid": "Lucid",
@@ -12317,6 +10830,7 @@
     "mcafee": "Mcafee",
     "mcdonalds": "Mcdonalds",
     "mckinsey": "Mckinsey",
+    "media-net": "Media Net",
     "medianet": "Medianet",
     "meesho": "Meesho",
     "meituan": "Meituan",
@@ -12328,6 +10842,7 @@
     "millennium": "Millennium",
     "mindtickle": "Mindtickle",
     "mindtree": "Mindtree",
+    "miro": "Miro",
     "mishipay": "Mishipay",
     "mitsogo": "Mitsogo",
     "mixpanel": "Mixpanel",
@@ -12347,6 +10862,7 @@
     "nasdaq": "Nasdaq",
     "national-instruments": "National Instruments",
     "national-payments-coorperation-india": "National Payments Coorperation India",
+    "national-payments-corporation-of-india": "National Payments Corporation Of India",
     "natwest": "Natwest",
     "navan": "Navan",
     "naver": "Naver",
@@ -12379,6 +10895,7 @@
     "odoo": "Odoo",
     "okta": "Okta",
     "okx": "Okx",
+    "ola-cabs": "Ola Cabs",
     "olx": "Olx",
     "openai": "Openai",
     "opentext": "Opentext",
@@ -12387,10 +10904,10 @@
     "optum": "Optum",
     "oracle": "Oracle",
     "oscar-health": "Oscar Health",
+    "otter-ai": "Otter Ai",
     "otterai": "Otterai",
     "oyo": "Oyo",
     "ozon": "Ozon",
-    "palantir-technologies": "Palantir Technologies",
     "palo-alto-networks": "Palo Alto Networks",
     "park": "Park",
     "patreon": "Patreon",
@@ -12412,6 +10929,7 @@
     "pocket-gems": "Pocket Gems",
     "point72": "Point72",
     "polar": "Polar",
+    "pony-ai": "Pony Ai",
     "ponyai": "Ponyai",
     "pornhub": "Pornhub",
     "porter": "Porter",
@@ -12479,7 +10997,7 @@
     "sixt": "Sixt",
     "slice": "Slice",
     "smartnews": "Smartnews",
-    "smartsheet": "Smartsheet",
+    "snap": "Snap",
     "snapchat": "Snapchat",
     "snapdeal": "Snapdeal",
     "snowflake": "Snowflake",
@@ -12504,6 +11022,7 @@
     "state-farm": "State Farm",
     "strava": "Strava",
     "stripe": "Stripe",
+    "sumo-logic": "Sumo Logic",
     "sumologic": "Sumologic",
     "swiggy": "Swiggy",
     "syfe": "Syfe",
@@ -12536,6 +11055,7 @@
     "tokopedia": "Tokopedia",
     "tomtom": "Tomtom",
     "toptal": "Toptal",
+    "tower-research-capital": "Tower Research Capital",
     "tower-research": "Tower Research",
     "tracxn": "Tracxn",
     "traveloka": "Traveloka",
@@ -12546,7 +11066,6 @@
     "tripadvisor": "Tripadvisor",
     "triplebyte": "Triplebyte",
     "turing": "Turing",
-    "turo": "Turo",
     "turvo": "Turvo",
     "tusimple": "Tusimple",
     "twilio": "Twilio",
@@ -12565,6 +11084,7 @@
     "urban-company": "Urban Company",
     "ust": "Ust",
     "valve": "Valve",
+    "veeva-systems": "Veeva Systems",
     "veeva": "Veeva",
     "verily": "Verily",
     "veritas": "Veritas",
@@ -12572,6 +11092,7 @@
     "verkada": "Verkada",
     "viasat": "Viasat",
     "vimeo": "Vimeo",
+    "virtu-financial": "Virtu Financial",
     "virtu": "Virtu",
     "virtusa": "Virtusa",
     "visa": "Visa",
@@ -12579,7 +11100,6 @@
     "vmware": "Vmware",
     "walmart-labs": "Walmart Labs",
     "warnermedia": "Warnermedia",
-    "watchguard": "Watchguard",
     "wayfair": "Wayfair",
     "waymo": "Waymo",
     "wayve": "Wayve",
@@ -12593,18 +11113,19 @@
     "wipro": "Wipro",
     "wise": "Wise",
     "wish": "Wish",
+    "wissen-technology": "Wissen Technology",
     "wissen": "Wissen",
     "wix": "Wix",
     "workday": "Workday",
     "works-applications": "Works Applications",
     "worldquant": "Worldquant",
     "woven-by-toyota": "Woven By Toyota",
+    "x": "X",
     "xing": "Xing",
     "yahoo": "Yahoo",
     "yandex": "Yandex",
     "yatra": "Yatra",
     "yelp": "Yelp",
-    "yext": "Yext",
     "yugabyte": "Yugabyte",
     "zalando": "Zalando",
     "zappos": "Zappos",
