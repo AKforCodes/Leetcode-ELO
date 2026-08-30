@@ -13282,14 +13282,45 @@
     "Prefix Sum",
     "Monotonic Queue"
   ],
-  "3959": [],
-  "3960": [],
-  "3961": [],
-  "3962": [],
+  "3959": [
+    "Math",
+    "Simulation"
+  ],
+  "3960": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "3961": [
+    "Array",
+    "Greedy",
+    "Sorting",
+    "Matrix"
+  ],
+  "3962": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Binary Indexed Tree",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Ordered Set"
+  ],
   "3963": [],
-  "3964": [],
-  "3965": [],
-  "3966": [],
+  "3964": [
+    "Array",
+    "Prefix Sum"
+  ],
+  "3965": [
+    "Array",
+    "Dynamic Programming",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "3966": [
+    "Math",
+    "Dynamic Programming"
+  ],
   "3968": [
     "Math",
     "String",
@@ -13334,36 +13365,228 @@
     "Heap (Priority Queue)",
     "Shortest Path"
   ],
-  "3978": [],
-  "3979": [],
-  "3980": [],
-  "3981": [],
-  "3982": [],
-  "3983": [],
-  "3984": [],
-  "3985": [],
-  "3986": [],
-  "3987": [],
-  "3988": [],
-  "3989": [],
-  "3992": [],
-  "3993": [],
-  "3994": [],
-  "3995": [],
-  "3996": [],
-  "3997": [],
-  "3998": [],
-  "3999": [],
-  "4000": [],
-  "4001": [],
-  "4002": [],
-  "4003": [],
-  "4006": [],
-  "4007": [],
-  "4008": [],
-  "4009": [],
-  "4010": [],
-  "4011": [],
-  "4012": [],
-  "4013": []
+  "3978": [
+    "Array",
+    "Counting"
+  ],
+  "3979": [
+    "Array",
+    "Enumeration"
+  ],
+  "3980": [
+    "String",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "3981": [
+    "String",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "3982": [
+    "Array",
+    "Math"
+  ],
+  "3983": [
+    "Two Pointers",
+    "String"
+  ],
+  "3984": [
+    "Array",
+    "Math",
+    "Dynamic Programming",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "3985": [
+    "Array",
+    "Binary Search",
+    "Hash Function",
+    "Prefix Sum"
+  ],
+  "3986": [
+    "Math",
+    "String"
+  ],
+  "3987": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "3988": [
+    "Array",
+    "Math",
+    "Matrix",
+    "Combinatorics"
+  ],
+  "3989": [
+    "Array",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "3992": [
+    "Two Pointers",
+    "String",
+    "Sorting"
+  ],
+  "3993": [
+    "Math",
+    "Greedy"
+  ],
+  "3994": [
+    "Array",
+    "Greedy"
+  ],
+  "3995": [
+    "Array",
+    "String",
+    "Dynamic Programming"
+  ],
+  "3996": [
+    "Array",
+    "Math"
+  ],
+  "3997": [
+    "Tree",
+    "Depth-First Search",
+    "Binary Tree"
+  ],
+  "3998": [
+    "Array",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "3999": [
+    "Hash Table",
+    "Two Pointers",
+    "String"
+  ],
+  "4000": [
+    "Math",
+    "Greedy"
+  ],
+  "4001": [
+    "Array",
+    "Two Pointers"
+  ],
+  "4002": [
+    "Math",
+    "Combinatorics"
+  ],
+  "4003": [
+    "Array",
+    "Graph Theory",
+    "Heap (Priority Queue)",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "4006": [
+    "String",
+    "Counting"
+  ],
+  "4007": [
+    "Array",
+    "Hash Table",
+    "Counting",
+    "Enumeration"
+  ],
+  "4008": [
+    "Array",
+    "Binary Search",
+    "Greedy",
+    "Prefix Sum"
+  ],
+  "4009": [
+    "Array",
+    "Dynamic Programming",
+    "Memoization"
+  ],
+  "4010": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "4011": [
+    "Array",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Prefix Sum"
+  ],
+  "4012": [
+    "Array",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "4013": [
+    "Array",
+    "Divide and Conquer",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Merge Sort",
+    "Prefix Sum"
+  ],
+  "4014": [
+    "Array",
+    "Two Pointers",
+    "Greedy",
+    "Sorting"
+  ],
+  "4015": [
+    "Array",
+    "Tree",
+    "Depth-First Search"
+  ],
+  "4016": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Matrix"
+  ],
+  "4017": [
+    "Array",
+    "Divide and Conquer",
+    "Segment Tree"
+  ],
+  "4020": [
+    "Array",
+    "Simulation"
+  ],
+  "4021": [
+    "Math",
+    "String",
+    "Enumeration"
+  ],
+  "4022": [
+    "Math",
+    "Binary Search"
+  ],
+  "4023": [
+    "Array",
+    "Dynamic Programming",
+    "Sorting"
+  ],
+  "4024": [
+    "Array",
+    "Enumeration"
+  ],
+  "4025": [
+    "Array",
+    "Greedy"
+  ],
+  "4026": [
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "4027": [
+    "Array",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Sorting",
+    "Bitmask"
+  ]
 }
