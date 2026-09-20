@@ -13589,20 +13589,134 @@
     "Sorting",
     "Bitmask"
   ],
-  "4030": [],
-  "4031": [],
-  "4032": [],
-  "4033": [],
-  "4034": [],
-  "4035": [],
-  "4036": [],
-  "4037": [],
-  "4038": [],
-  "4039": [],
-  "4040": [],
-  "4041": [],
-  "4043": [],
-  "4044": [],
-  "4045": [],
-  "4046": []
+  "4030": [
+    "Two Pointers",
+    "String",
+    "Bit Manipulation"
+  ],
+  "4031": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "4032": [
+    "Array",
+    "Hash Table",
+    "Math",
+    "Sliding Window",
+    "Number Theory"
+  ],
+  "4033": [
+    "Array",
+    "Bit Manipulation",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Hash Function",
+    "Prefix Sum"
+  ],
+  "4034": [
+    "Array",
+    "Math"
+  ],
+  "4035": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "4036": [
+    "Array",
+    "String",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "4037": [
+    "Array",
+    "Math",
+    "Enumeration",
+    "Number Theory"
+  ],
+  "4038": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "4039": [
+    "Array",
+    "Math",
+    "Simulation"
+  ],
+  "4040": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "4041": [
+    "Array",
+    "Dynamic Programming"
+  ],
+  "4043": [
+    "String",
+    "Sliding Window",
+    "Enumeration"
+  ],
+  "4044": [
+    "Array",
+    "Sliding Window",
+    "Prefix Sum"
+  ],
+  "4045": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "4046": [
+    "Array",
+    "Heap",
+    "Graph Theory",
+    "Matrix",
+    "Shortest Path"
+  ],
+  "4048": [
+    "Array",
+    "Hash Table"
+  ],
+  "4049": [
+    "Array",
+    "Hash Table"
+  ],
+  "4050": [
+    "Math",
+    "Dynamic Programming"
+  ],
+  "4051": [
+    "Array",
+    "Binary Search",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Prefix Sum"
+  ],
+  "4052": [
+    "Array",
+    "Matrix",
+    "Simulation"
+  ],
+  "4053": [
+    "Array",
+    "Binary Search"
+  ],
+  "4054": [
+    "Array",
+    "Stack",
+    "Monotonic Stack"
+  ],
+  "4055": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer",
+    "Stack",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Sorting",
+    "Monotonic Stack"
+  ]
 }
