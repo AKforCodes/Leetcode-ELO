@@ -13719,8 +13719,69 @@
     "Sorting",
     "Monotonic Stack"
   ],
-  "4056": [],
-  "4057": [],
-  "4058": [],
-  "4059": []
+  "4056": [
+    "Array",
+    "Binary Search",
+    "Sorting",
+    "Enumeration"
+  ],
+  "4057": [
+    "Array",
+    "Binary Search",
+    "Sorting"
+  ],
+  "4058": [
+    "Array",
+    "Dynamic Programming",
+    "Prefix Sum"
+  ],
+  "4059": [
+    "Array",
+    "Greedy",
+    "Bit Manipulation"
+  ],
+  "4061": [
+    "Array",
+    "Math"
+  ],
+  "4062": [
+    "Array",
+    "Brainteaser"
+  ],
+  "4063": [
+    "Array",
+    "Hash Table",
+    "Prefix Sum"
+  ],
+  "4064": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "4065": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Heap (Priority Queue)",
+    "Simulation",
+    "Counting",
+    "Ordered Set"
+  ],
+  "4066": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "4067": [
+    "Array",
+    "Hash Table",
+    "Sliding Window"
+  ],
+  "4068": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Sorting"
+  ]
 }

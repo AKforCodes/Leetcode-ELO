@@ -2590,5 +2590,17 @@
   "count-rotations-with-exactly-k-equal-adjacent-pairs": true,
   "count-values-with-equally-spaced-occurrences-i": true,
   "count-integers-appearing-in-a-single-block": true,
-  "check-ascii-palindromic": true
+  "check-ascii-palindromic": true,
+  "lexicographically-largest-power-array": true,
+  "longest-subarray-divisible-by-k-with-at-most-one-negation-ii": true,
+  "maximize-meeting-earnings-with-idle-gaps": true,
+  "longest-subarray-with-restricted-pair-sums": true,
+  "maximum-pulse-value-after-one-subarray-rotation": true,
+  "longest-subarray-divisible-by-k-with-at-most-one-negation-i": true,
+  "maximum-equal-adjacent-pairs-after-at-most-one-replacement": true,
+  "number-of-intersecting-interval-pairs-ii": true,
+  "transform-array-using-pair-operations": true,
+  "minimum-queen-moves-to-reach-target": true,
+  "rearrange-array-by-removing-distinct-values": true,
+  "number-of-intersecting-interval-pairs-i": true
 }
