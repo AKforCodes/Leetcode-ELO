@@ -2602,5 +2602,16 @@
   "transform-array-using-pair-operations": true,
   "minimum-queen-moves-to-reach-target": true,
   "rearrange-array-by-removing-distinct-values": true,
-  "number-of-intersecting-interval-pairs-i": true
+  "number-of-intersecting-interval-pairs-i": true,
+  "count-valid-suffix-sorts-ii": true,
+  "minimum-cost-path-with-even-xor-parity": true,
+  "repeated-string-match-ii": true,
+  "minimum-cost-to-make-red-nodes-connected": true,
+  "minimum-operations-to-sort-with-locked-indices": true,
+  "count-valid-substrings-ii": true,
+  "remove-elements-by-type-and-color": true,
+  "minimize-the-maximum-value-of-gcd-connected-array": true,
+  "count-valid-suffix-sorts-i": true,
+  "count-valid-substrings-i": true,
+  "find-mismatched-segments-between-two-strings": true
 }
