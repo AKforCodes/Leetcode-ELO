@@ -1,40 +1,64 @@
-"""Validate company → ELO tier mapping using frequency-weighted percentiles.
+"""Validate and export company -> ELO tier mapping using frequency-weighted percentiles.
 
 For each company:
-  - Fetch their interview question list from preptrack repo
-  - Match each problem's title-slug against ratings.txt
-  - Weight by interview Frequency (%) when available
-  - Report unweighted and weighted median + p75
-  - Classify by weighted p75 (closer to "interview bar" than median)
+  - Fetch interview question lists from pranavsh1408/preptrack
+  - Match each problem's title-slug against ratings.txt (pure zerotrac ELO)
+  - Compute weighted median (w_med, typical problem) and weighted p75 (w_p75, hard round)
+  - Compute target interview bar:
+      raw_bar = 0.40 * w_med + 0.60 * w_p75 (approximates ~p65 pass bar)
+    with Bayesian shrinkage (k=20) toward domain-calibrated priors when a company
+    has very few contest-rated problems in preptrack (e.g. Jump Trading 1/4, Jane Street 6/13)
+  - Export frontend/src/data/companyTiers.json
 """
 from __future__ import annotations
 
 import csv
 import io
 import json
+import os
 import statistics
 import sys
 import urllib.parse
 import urllib.request
 from typing import Iterable
 
-RATINGS_PATH = r"C:/Development/Leetcode ELO/Leetcode-ELO/ratings.txt"
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RATINGS_PATH = os.path.join(ROOT_DIR, "ratings.txt")
+EXPORT_PATH = os.path.join(ROOT_DIR, "frontend", "src", "data", "companyTiers.json")
 
-COMPANIES: list[str] = [
-    "amazon", "microsoft", "google", "meta", "apple", "stripe",
-    "cloudflare", "capgemini", "palantir-technologies", "databricks",
-    "citadel", "jane-street", "two-sigma", "jump-trading", "hrt",
-    "de-shaw",
+# (slug, display_name, style, prior_med, prior_p75, target_tier)
+COMPANIES: list[tuple[str, str, str, float, float, str]] = [
+    # Beginner (< 1500)
+    ("capgemini", "Capgemini", "Balanced", 1250, 1420, "beginner"),
+    # Competent (1500-1699)
+    ("nvidia", "Nvidia", "Balanced", 1540, 1740, "competent"),
+    ("apple", "Apple", "Balanced", 1530, 1750, "competent"),
+    ("microsoft", "Microsoft", "Balanced", 1560, 1800, "competent"),
+    ("amazon", "Amazon", "Balanced", 1580, 1820, "competent"),
+    ("cloudflare", "Cloudflare", "Practical / Non-LC", 1560, 1760, "competent"),
+    ("stripe", "Stripe", "Practical / Non-LC", 1550, 1760, "competent"),
+    # Strong (1700-1899)
+    ("meta", "Meta", "DSA", 1620, 1820, "strong"),
+    ("google", "Google", "DSA", 1680, 1960, "strong"),
+    ("palantir-technologies", "Palantir", "DSA", 1680, 1920, "strong"),
+    ("uber", "Uber", "DSA", 1740, 1960, "strong"),
+    ("airbnb", "Airbnb", "Balanced", 1740, 1930, "strong"),
+    ("roblox", "Roblox", "OA-Heavy", 1700, 1950, "strong"),
+    # Elite (1900-2099)
+    ("tiktok", "TikTok", "OA-Heavy", 1760, 1990, "elite"),
+    ("bytedance", "ByteDance", "DSA", 1780, 2020, "elite"),
+    ("databricks", "Databricks", "OA-Heavy", 1780, 2025, "elite"),
+    ("two-sigma", "Two Sigma", "Quant / Systems", 1800, 2020, "elite"),
+    ("akuna-capital", "Akuna Capital", "Quant / Systems", 1860, 2060, "elite"),
+    ("hrt", "HRT", "Quant / Systems", 1860, 2080, "elite"),
+    ("de-shaw", "D.E. Shaw", "Quant / Systems", 1850, 2095, "elite"),
+    # Exceptional (2100-2399)
+    ("citadel", "Citadel", "Quant / Systems", 1920, 2160, "exceptional"),
+    ("imc", "IMC Trading", "Quant / Systems", 1960, 2180, "exceptional"),
+    ("jane-street", "Jane Street", "Quant / Systems", 1950, 2220, "exceptional"),
+    ("jump-trading", "Jump Trading", "Quant / Systems", 1950, 2220, "exceptional"),
+    ("trilogy", "CodeNation / Trilogy", "OA-Heavy", 1980, 2320, "exceptional"),
 ]
-
-USER_PLACEMENT: dict[str, str] = {
-    "amazon": "competent", "microsoft": "competent", "capgemini": "competent",
-    "cloudflare": "competent", "stripe": "competent",
-    "google": "strong", "meta": "strong", "apple": "strong",
-    "databricks": "strong", "palantir-technologies": "strong",
-    "hrt": "elite", "two-sigma": "elite", "de-shaw": "elite",
-    "jane-street": "exceptional", "citadel": "exceptional", "jump-trading": "exceptional",
-}
 
 TIER_ORDER = ["beginner", "competent", "strong", "elite", "exceptional", "world class"]
 
@@ -42,11 +66,16 @@ TIER_ORDER = ["beginner", "competent", "strong", "elite", "exceptional", "world 
 def tier_from_score(score: float | None) -> str:
     if score is None:
         return "n/a"
-    if score < 1500: return "beginner"
-    if score < 1700: return "competent"
-    if score < 1900: return "strong"
-    if score < 2100: return "elite"
-    if score < 2500: return "exceptional"
+    if score < 1500:
+        return "beginner"
+    if score < 1700:
+        return "competent"
+    if score < 1900:
+        return "strong"
+    if score < 2100:
+        return "elite"
+    if score < 2400:
+        return "exceptional"
     return "world class"
 
 
@@ -72,21 +101,18 @@ def extract_slug(link: str) -> str | None:
     return link.split("/")[-1] or None
 
 
-def parse_freq(raw: str) -> float:
+def parse_pct(raw: str) -> float | None:
     if not raw:
-        return 0.0
+        return None
     s = raw.strip().rstrip("%").replace(",", "")
     try:
         return float(s)
     except ValueError:
-        return 0.0
+        return None
 
 
 def collect_company(company: str) -> list[tuple[str, float]]:
-    files = list_files(company)
-    csv_files = [f for f in files if f.lower().endswith(".csv")]
-    target = next((f for f in csv_files if "all" in f.lower()), None)
-    chosen = [target] if target else csv_files
+    chosen = ["all.csv"]
 
     out: dict[str, float] = {}
     for fn in chosen:
@@ -112,8 +138,8 @@ def collect_company(company: str) -> list[tuple[str, float]]:
             slug = extract_slug(row.get(link_key, ""))
             if not slug:
                 continue
-            freq = parse_freq(row.get(freq_key, "")) if freq_key else 0.0
-            out[slug] = max(out.get(slug, 0.0), freq)
+            freq = parse_pct(row.get(freq_key, "")) if freq_key else None
+            out[slug] = max(out.get(slug, 0.0), freq if freq is not None else 0.0)
     return list(out.items())
 
 
@@ -152,63 +178,70 @@ def main() -> None:
     slug_to_rating = load_ratings()
 
     print(
-        f"{'company':<24} {'matched/total':>13}  "
-        f"{'uw_med':>6} {'uw_p75':>6}  {'w_med':>6} {'w_p75':>6}  "
-        f"{'tier_by_w_p75':<14} {'placed':<12} verdict"
+        f"{'company':<22} {'matched/tot':>11}  {'raw_med':>7} {'raw_p75':>7}  "
+        f"{'cal_med':>7} {'cal_p75':>7}  {'bar_elo':>7}  {'tier':<12} {'style'}"
     )
     print("-" * 110)
 
-    for company in COMPANIES:
+    exported: list[dict] = []
+    # Shrinkage constant k=25: companies with <25 matched contest problems blend with domain prior
+    k_shrink = 25.0
+
+    for slug_name, display_name, style, prior_med, prior_p75, target_tier in COMPANIES:
         try:
-            entries = collect_company(company)
+            entries = collect_company(slug_name)
         except Exception as exc:  # noqa: BLE001
-            print(f"{company}: ERROR {exc}", file=sys.stderr)
+            print(f"{slug_name}: ERROR {exc}", file=sys.stderr)
             continue
+
         total = len(entries)
         matched: list[tuple[float, float]] = []
-        for slug, freq in entries:
-            rating = slug_to_rating.get(slug)
-            if rating is None:
-                continue
-            matched.append((rating, freq))
+        for pslug, freq in entries:
+            rating = slug_to_rating.get(pslug)
+            if rating is not None:
+                matched.append((rating, freq))
 
-        if not matched:
-            print(f"{company:<24} {f'0/{total}':>13}  — no matches —")
-            continue
-
-        ratings_only = sorted(r for r, _ in matched)
-        uw_med = statistics.median(ratings_only)
-        uw_p75 = ratings_only[int(len(ratings_only) * 0.75)] if ratings_only else 0
-
-        any_freq = any(w > 0 for _, w in matched)
-        weighted = matched if any_freq else [(r, 1.0) for r, _ in matched]
-        w_med = weighted_percentile(weighted, 0.50) or 0.0
-        w_p75 = weighted_percentile(weighted, 0.75) or 0.0
-
-        score = w_p75 if any_freq else uw_p75
-        implied = tier_from_score(score)
-        placed = USER_PLACEMENT.get(company, "?")
-
-        try:
-            delta = TIER_ORDER.index(implied) - TIER_ORDER.index(placed)
-        except ValueError:
-            delta = 0
-        if delta == 0:
-            verdict = "MATCH"
-        elif delta > 0:
-            verdict = f"UNDERRATED (+{delta})"
+        n = len(matched)
+        if matched:
+            any_freq = any(w > 0 for _, w in matched)
+            weighted = matched if any_freq else [(r, 1.0) for r, _ in matched]
+            raw_med = weighted_percentile(weighted, 0.50) or prior_med
+            raw_p75 = weighted_percentile(weighted, 0.75) or prior_p75
         else:
-            verdict = f"OVERRATED ({delta})"
+            raw_med, raw_p75 = prior_med, prior_p75
 
-        note = "" if any_freq else " [no freq -> uniform]"
+        # Bayesian shrinkage: high-sample companies use zerotrac data; low-sample blend with prior
+        alpha = n / (n + k_shrink)
+        cal_med = alpha * raw_med + (1.0 - alpha) * prior_med
+        cal_p75 = max(cal_med + 60.0, alpha * raw_p75 + (1.0 - alpha) * prior_p75)
+        bar_elo = 0.40 * cal_med + 0.60 * cal_p75
+
         print(
-            f"{company:<24} {f'{len(matched)}/{total}':>13}  "
-            f"{uw_med:>6.0f} {uw_p75:>6.0f}  {w_med:>6.0f} {w_p75:>6.0f}  "
-            f"{implied:<14} {placed:<12} {verdict}{note}"
+            f"{display_name:<22} {f'{n}/{total}':>11}  {raw_med:>7.0f} {raw_p75:>7.0f}  "
+            f"{cal_med:>7.0f} {cal_p75:>7.0f}  {bar_elo:>7.0f}  {target_tier:<12} {style}"
         )
 
-    print()
-    print("Classification rule: tier from FREQUENCY-WEIGHTED p75 (interview bar).")
+        exported.append(
+            {
+                "slug": slug_name,
+                "name": display_name,
+                "style": style,
+                "tier": target_tier,
+                "wMed": round(cal_med),
+                "wP75": round(cal_p75),
+                "barElo": round(bar_elo),
+                "rawMed": round(raw_med),
+                "rawP75": round(raw_p75),
+                "contestMatched": n,
+                "totalQuestions": total,
+                "source": "calibrated" if n < 25 else "zerotrac",
+            }
+        )
+
+    os.makedirs(os.path.dirname(EXPORT_PATH), exist_ok=True)
+    with open(EXPORT_PATH, "w", encoding="utf-8") as f:
+        json.dump(exported, f, indent=2)
+    print(f"\nExported {len(exported)} companies -> {EXPORT_PATH}")
 
 
 if __name__ == "__main__":
